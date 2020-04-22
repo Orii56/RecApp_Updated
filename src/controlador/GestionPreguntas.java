@@ -71,6 +71,7 @@ public class GestionPreguntas extends HttpServlet {
 
 		HashMap<Integer, Integer> cantidadPreguntas = (HashMap<Integer, Integer>) sesionQuestion.getAttribute("mapa");
 
+		
 		if (cantidadPreguntas == null) {
 			cantidadPreguntas = new HashMap<Integer, Integer>();
 		}
@@ -155,37 +156,54 @@ public class GestionPreguntas extends HttpServlet {
 				boolean mayor20 = false;
 				Integer numID = null;
 				int max = 19;
-
+				
+				List<Integer> t = new ArrayList<>();
+				List<Integer> z = new ArrayList<>();
+				
 				for (Integer en : cantidadPreguntas.keySet()) {
-
-					System.out.println("valor dentro del mapa " + cantidadPreguntas.get(en));
-
-					if (cantidadPreguntas.get(en) > 19) {
-
-						mayor20 = true;
-
-						System.out.println((en - 1) + " " + cantidadPreguntas.get(en));
-
-						List<Integer> t = new ArrayList<>();
-
-						t.add(cantidadPreguntas.get(en));
-
-						for (int i = 0; i < t.size(); i++) {
-							
-							if (t.get(i) > max) {
-
-								max = t.get(i);
-
-								numID = Math.max((en - 1), (en -1));
-
-								System.out.println("Valor maximo dentro del array " + max + " id del tipo " + (en - 1));
-
-							}
-						}
-
-					}
-
+					
+					t.add(cantidadPreguntas.get(en));
+					
 				}
+				
+				for (int i=0; i<t.size(); i++) {
+					
+					if(t.get(i) > max) {
+						max = t.get(i);
+						numID = (i + 1);
+						mayor20 = true;
+						//Como max empieza en 19, ya estas controlando que sea mayor/igual a 20
+					}
+				}
+				
+				for (int i = 0; i < t.size(); i++) {
+					
+					if (t.get(i) == max) {
+						
+						numID = (i+1);
+						z.add(numID);
+						//volvemos a recorrer para ver si hay más de uno con esa cantidad
+					}
+				}
+				
+				if(z.size() > 1 ) {
+					
+					List<Pregunta> listaA = pdao.findByTipoEneg(z.get(0));
+					List<Pregunta> listaB = pdao.findByTipoEneg(z.get(1));
+
+					request.setAttribute("preguntaA", listaA);
+					request.setAttribute("preguntaB", listaB);
+
+					
+					request.getRequestDispatcher("preguntaExtra.jsp").forward(request, response);
+					
+					if(z.size() >= 3) {
+						mayor20 = false;
+					}
+					
+				}
+				
+			
 				if (mayor20) {
 
 					System.out.println(usu);
@@ -227,6 +245,14 @@ public class GestionPreguntas extends HttpServlet {
 				request.getRequestDispatcher("question.jsp").forward(request, response);
 			}
 
+			break;
+			
+		case "extra": 
+			
+
+			request.getRequestDispatcher("resultado.jsp").forward(request, response);
+
+			
 			break;
 
 		}
