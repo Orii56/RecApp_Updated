@@ -144,8 +144,8 @@
 				<div class="row">
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><strong class="d-block mb-1">Direcciï¿½n</strong>
-								<span>Julián Camarillo 45, 28029 Madrid Espaï¿½a</span></li>
+							<li class="mb-3"><strong class="d-block mb-1">Dirección</strong>
+								<span>Julián Camarillo 45, 28029 Madrid España</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Telefono
 									de contacto</strong> <span>654577850</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Nuesto
@@ -189,7 +189,7 @@
 								<div class="col-md-12 mb-3">
 									<div class="loading">Cargando</div>
 									<div class="error-message"></div>
-									<div class="sent-message">ï¿½Su mensaje ha sido enviado!
+									<div class="sent-message">¡Su mensaje ha sido enviado!
 										Gracias por contactar con RecApp</div>
 								</div>
 

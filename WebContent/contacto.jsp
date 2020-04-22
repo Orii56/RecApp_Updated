@@ -129,8 +129,8 @@
               <div class="col-md-4 ml-auto order-2"  data-aos="fade-up">
                 <ul class="list-unstyled">
                   <li class="mb-3">
-                    <strong class="d-block mb-1">Direcciï¿½n</strong>
-                    <span>Juliï¿½n Camarillo 45, 28029 Madrid Espaï¿½a</span>
+                    <strong class="d-block mb-1">Direcci�n</strong>
+                    <span>Juli�n Camarillo 45, 28029 Madrid Espa�a</span>
                   </li>
                   <li class="mb-3">
                     <strong class="d-block mb-1">Telefono de contacto</strong>
