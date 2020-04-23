@@ -9,10 +9,9 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	
-<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="style.css">
 
-<title>RecApp</title>
+<title>Eneagramas</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -30,7 +29,7 @@
 	rel="stylesheet">
 
 <!-- Bootstrap CSS File -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Vendor CSS Files -->
 <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -76,14 +75,15 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=registrar" class="registrarse">registrate</a></li>
+								<li><a href="Login?option=registrar" class="nav-link">registro</a></li>
 								<li><a href="contacto.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotros.jsp" class="nav-link">nosotros</a></li>
-								<li><a href="eneagramas.jsp" class="nav-link">eneagramas</a></li>
+								<li class="active"><a href="#" class="nav-link">eneagramas</a></li>
 								<li><a href="logear.jsp" class="nav-link">login</a></li>
 							</ul>
 						</nav>
 					</div>
+
 
 					<div class="col-6 d-inline-block d-lg-none ml-md-0 py-3"
 						style="position: relative; top: 3px;">
@@ -100,147 +100,44 @@
 
 
 		<main id="main">
-		<div class="hero-section">
+		<div class="hero-section inner-page">
 			<div class="wave">
 
-				<svg width="100%" height="355px" viewBox="0 0 1920 355"
+				<svg width="1920px" height="265px" viewBox="0 0 1920 265"
 					version="1.1" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1"
-						fill="none" fill-rule="evenodd">
-                            <g id="Apple-TV"
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+						fill-rule="evenodd">
+                  <g id="Apple-TV"
 						transform="translate(0.000000, -402.000000)" fill="#FFFFFF">
-                                <path
-						d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z"
+                      <path
+						d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z"
 						id="Path"></path>
-                            </g>
-                        </g>
-                        </svg>
+                  </g>
+              </g>
+          </svg>
 
 			</div>
 
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 hero-text-image">
-						<div class="row" id="idImg">
-							<div class="col-lg-7 text-center text-lg-left">
-								<h1 data-aos="fade-right">Tú nos hablas sobre ti, y
-									nosotros encontramos el trabajo que mejor encaja contigo.</h1>
-								<p class="mb-5" data-aos="fade-right" data-aos-delay="100">Regístrate
-									y accede a nuestro test de personalidad.</p>
-								<p data-aos="fade-right" data-aos-delay="200"
-									data-aos-offset="-500">
-									<a href="Login?option=registrar"
-										class="registrarse btn btn-outline-white">regístrate</a>
+					<div class="col-12">
+						<div class="row justify-content-center">
+							<div class="col-md-7 text-center hero-text">
+								<h1 data-aos="fade-up" data-aos-delay="">
+									Eneagrama de <br>la personalidad
+								</h1>
+								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+									Consiste en un sistema de clasificacion de la personalidad que
+									divide <br>a las personas en nueve tipos.
 								</p>
 							</div>
-							<div class="col-lg-5 iphone-wrap">
-								<!-- <img src="img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right"> -->
-								<img src="img/iphone.png" alt="Image" class="phone-2"
-									data-aos="fade-right" data-aos-delay="200">
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 		</div>
-
-		<div class="site-section">
-			<div class="container">
-
-				<div class="row justify-content-center text-center mb-5">
-					<div class="col-md-5" data-aos="fade-up">
-						<h2 class="section-heading">Beneficios de usar RecApp</h2>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4" data-aos="fade-up" data-aos-delay="">
-						<div class="feature-1 text-center">
-							<div class="wrap-icon icon-1">
-								<span class="icon la la-users"></span>
-							</div>
-							<h3 class="mb-3">Trabajos como tú</h3>
-							<p>Cualidades personales que están relacionadas con tu
-								trabajo soñado.</p>
-						</div>
-					</div>
-					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-						<div class="feature-1 text-center">
-							<div class="wrap-icon icon-1">
-								<span class="icon la la-toggle-off"></span>
-							</div>
-							<h3 class="mb-3">A un click del ascenso</h3>
-							<p>El 75% del éxito en el trabajo a largo plazo tiene más que
-								ver con las habilidades blandas.</p>
-						</div>
-					</div>
-					<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-						<div class="feature-1 text-center">
-							<div class="wrap-icon icon-1">
-								<span class="icon la la-umbrella"></span>
-							</div>
-							<h3 class="mb-3">Ventajas competitivas</h3>
-							<p>Capacidad de comunicación. Gestión del tiempo. Capacidad
-								crítica. Estabilidad emocional...</p>
-						</div>
-					</div>
-					<div>
-						<p data-aos="fade-right" data-aos-delay="200"
-							data-aos-offset="-500">
-							<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
-						</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- .site-section -->
-
-		<div class="site-section">
-			<div class="container">
-				<div class="row justify-content-center text-center mb-5"
-					data-aos="fade">
-					<div class="col-md-6 mb-5">
-						<img src="img/undraw_svg_1.svg" alt="Image" class="img-fluid">
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="step">
-							<span class="number">01</span>
-							<h3>Regístrate</h3>
-							<p>Date de alta como usuario para realizar el test de la
-								personalidad</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="step">
-							<span class="number">02</span>
-							<h3>Test eneagramas</h3>
-							<p>Este test se realizará para detectar tus “soft skills”.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="step">
-							<span class="number">03</span>
-							<h3>Encuentra trabajo</h3>
-							<p>Encuentra el trabajo que mejor encaja contigo utilizando
-								la App.</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p data-aos="fade-right" data-aos-delay="200"
-						data-aos-offset="-500">
-						<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- .site-section -->
 
 
 
@@ -248,20 +145,28 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 mr-auto">
-						<h2 class="mb-4">Soft Skills o habilidades blandas</h2>
-						<p class="mb-4">son aquellas cualidades personales que están
-							relacionadas con la perspectiva emocional y social. Se adquieren
-							en la vida día a día y forman parte del bagaje social del
-							trabajador. Son una de las principales ventajas competitivas que
-							diferencia un profesional cualquiera de uno a la altura de las
-							grandes corporaciones.</p>
+						<h2 class="mb-4">Historia del Eneagrama</h2>
+						<p class="mb-4">
+							El eneagrama de la personalidad es un sistema de clasificación de
+							la personalidad. Esta propuesta es una elaboración histórica por
+							parte de autores occidentales que se basa en ideas anteriores de
+							origen místico y oriental. Don Richard Riso autor del libro La
+							sabiduría del Eneagrama, sostiene que la figura del eneagrama
+							tuvo origen alrededor del 2500 a. C. <br> <br> Otros
+							autores afirman libremente que el Eneagrama se trata de una
+							antiquísima teoría, nacida hace más de 2000 años en Afganistán y
+							Babilonia, pasando por los griegos Pitágoras y los primeros
+							cristianos y siendo transmitida por la tradición oral sufí. Sin
+							embargo, no existen testimonios arqueológicos o históricos
+							independientes que permitan corroborar muchas de esas
+							afirmaciones.
+						</p>
 						<p>
-							<a class="test btn btn-outline-blue"
-								href="GestionTest?option=validar">test</a>
+							<a class="test btn btn-outline-blue" href="https://www.enneagraminstitute.com/" target="_blank">leer mas</a>
 						</p>
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
-						<img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_5.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -272,15 +177,21 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
-						<h2 class="mb-4">Test personalidad</h2>
-						<p class="mb-4">Consiste en un método de clasificación, para
-							conocer el autoconocimiento y desarrollo personal. Existen varios
-							tipos de personalidades principales, esta idea nace bajo el punto
-							de vista de la psicología.</p>
-						<p>
-							<a class="test btn btn-outline-blue"
-								href="GestionTest?option=validar">test</a>
+						<h2 class="mb-4">Eneagrama</h2>
+						<p class="mb-4">
+							El eneagrama describe nueve tipos de personalidad distintos y sus
+							interrelaciones, asociadas a esta figura. Cada tipo de
+							personalidad asociada al Eneagrama representa un mapa de
+							características que denotan patrones de pensamiento, sentimiento
+							y comportamiento. <br> <br>Uno de los propósitos del
+							Eneagrama es aprender sobre el tipo de uno mismo y los patrones y
+							hábitos asociados a ese tipo con el fin de autocomprenderse y
+							autodesarrollarse.
 						</p>
+						<p>
+							<a class="test btn btn-outline-blue" href="https://www.enneagraminstitute.com/" target="_blank">leer mas</a>
+						</p>
+
 					</div>
 					<div class="col-md-6" data-aos="fade-right">
 						<img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
@@ -290,12 +201,123 @@
 		</div>
 		<!-- .site-section -->
 
+		<div class="site-section pb-0">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4 mr-auto">
+						<h2 class="mb-4">Eneatipos</h2>
+						<p class="mb-4">Hay nueve tipos básicos de personalidad. Es
+							habitual referirse a las personas de cada eneatipo por el número
+							del punto del eneagrama (unos, doses, treses, cuatros, etc.) que
+							indica su espacio psicológico y lugar de conexión con otros
+							tipos.</p>
+
+					</div>
+					<div class="col-md-6" data-aos="fade-left">
+						<img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+				<br> <br>
+				<table class="table table-borderless">
+					<thead>
+						<tr>
+							<th scope="col">Eneatipo</th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Descripcion</th>
+							<th scope="col">Empleo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-primary">
+							<th scope="row">1</th>
+							<td>El Reformador</td>
+							<td>Estas personas creen tener una misión en la vida. Se
+								esfuerzan por superar la adversidad.</td>
+							<td>Política, periodismo...</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">2</th>
+							<td>El Ayudador</td>
+							<td>Desvivirse por los demás las hace pensar que su forma de
+								ser es la que tiene más sentido.</td>
+							<td>Servicios públicos...</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">3</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">4</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">5</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">6</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">7</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						<tr class="table-info">
+							<th scope="row">8</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr class="table-primary">
+							<th scope="row">9</th>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<p>
+					<a class="test btn btn-outline-blue" href="#">leer mas</a>
+				</p>
+			</div>
+		</div>
+
+
+		<!-- .site-section --> <!-- <div class="site-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4 ml-auto order-2">
+						<h2 class="mb-4">Powerful App Design</h2>
+						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
+							adipisicing elit. Tenetur at reprehenderit optio, laudantium eius
+							quod, eum maxime molestiae porro omnis. Dolores aspernatur
+							delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+
+					</div>
+					<div class="col-md-6" data-aos="fade-right">
+						<img src="img/undraw_svg_4.svg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div> --> <!-- .site-section -->
+
 
 		<div class="site-section border-top border-bottom">
 			<div class="container">
 				<div class="row justify-content-center text-center mb-5">
 					<div class="col-md-4">
-						<h2 class="section-heading">Valoración de los usuarios</h2>
+						<h2 class="section-heading">Valoracion de los usuarios</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center text-center">
@@ -318,8 +340,8 @@
 								<p class="review-user">
 									<img src="img/person_1.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Eva 
-										</span> &mdash; Usuaria RecApp
+										class="d-block"> <span class="text-black">Eva </span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -342,7 +364,8 @@
 								<p class="review-user">
 									<img src="img/person_2.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Juan</span> &mdash; Usuario RecApp
+										class="d-block"> <span class="text-black">Juan</span>
+										&mdash; Usuario RecApp
 									</span>
 								</p>
 
@@ -368,7 +391,8 @@
 								<p class="review-user">
 									<img src="img/person_3.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Julia</span> &mdash; Usuaria RecApp
+										class="d-block"> <span class="text-black">Julia</span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -416,15 +440,7 @@
 					</div>
 					<div class="col-md-7 ml-auto">
 						<div class="row site-section pt-0">
-							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Navigation</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Pricing</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
+							<div class="col-md-4 mb-4 mb-md-0"></div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
@@ -470,9 +486,5 @@
 
 	<!-- Template Main JS File -->
 	<script src="js/main.js"></script>
-
 </body>
-
-
-
 </html>

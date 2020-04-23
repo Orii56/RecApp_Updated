@@ -36,17 +36,15 @@
 	rel="stylesheet">
 
 <script type="text/javascript">
-	
-	function noBackButton(){
-		window.location.hash="no-back-button";
-		window.location.hash="Again-No-back-button" //for chrome
-
-		window.onhashchange=function(){window.location.hash="no-back-button";}
+	window.history.forward();
+	function noBack() {
+		window.history.forward();
 	}
 </script>
 
 </head>
-<body onload="noBackButton();">
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();"
+	onunload="">
 
 
 	<div class="site-wrap">
