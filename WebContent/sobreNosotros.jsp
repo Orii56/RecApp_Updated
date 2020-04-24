@@ -118,11 +118,12 @@
 					<div class="col-12">
 						<div class="row justify-content-center">
 							<div class="col-md-7 text-center hero-text">
-								<h1 data-aos="fade-up" data-aos-delay="">Eneagrama de <br>la
-									personalidad</h1>
-								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">Consiste en un sistema de
-									clasificacion de la personalidad que divide a las personas en
-									nueve tipos segun su perfil de comportamiento.</p>
+								<h1 data-aos="fade-up" data-aos-delay="">
+									Eneagrama de <br>la personalidad
+								</h1>
+								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">Consiste
+									en un sistema de clasificacion de la personalidad que divide a
+									las personas en nueve tipos segun su perfil de comportamiento.</p>
 							</div>
 						</div>
 					</div>
@@ -163,8 +164,8 @@
 							que no estan agusto en su trabajo o sector un oportunidad de
 							reinventarse y dar un giro a su carrera profesional. Para ello,
 							creemos que enfocar tus "soft-skills" y aptitudes personales
-							ayudares a enfocar que campos se adaptan a lo que quieres y
-							donde estas mas comodo</p>
+							ayudares a enfocar que campos se adaptan a lo que quieres y donde
+							estas mas comodo</p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">

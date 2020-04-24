@@ -33,7 +33,6 @@ input[type=checkbox] {
 	border: 2px solid #00EA90 !important;
 }
 
-
 #viewPort {
 	background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%,
 		rgba(61, 179, 197, 0.8) 100%) !important;
@@ -164,20 +163,24 @@ keyframes lds-ring { 0% {
 transform
 
 
+
+
 :
 
+
  
+
 
 rotate
 
 
+
+
 (360
 deg
+
+
 );
-
-
-    
-
 }
 }
 
@@ -586,13 +589,17 @@ deg
 
 
 
+
+
 :
 
 
 
 
 
+
  
+
 
 
 
@@ -609,8 +616,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 
@@ -631,13 +642,17 @@ transform
 
 
 
+
+
 :
 
 
 
 
 
+
  
+
 
 
 
@@ -654,8 +669,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 
@@ -686,13 +705,17 @@ keyframes animate-loading { 0% {
 
 
 
+
+
 :
 
 
 
 
 
+
  
+
 
 
 
@@ -709,8 +732,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 
@@ -731,13 +758,17 @@ transform
 
 
 
+
+
 :
 
 
 
 
 
+
  
+
 
 
 
@@ -754,8 +785,12 @@ rotate
 
 
 
+
+
 (360
 deg
+
+
 
 
 

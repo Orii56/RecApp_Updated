@@ -9,7 +9,7 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+
 
 <title>RecApp</title>
 
@@ -44,7 +44,7 @@
 
 </head>
 
-<body >
+<body>
 
 	<div class="site-wrap">
 
@@ -80,7 +80,9 @@
 										out</a></li>
 								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
-								<li><a href="GestionAnuncios?option=anuncios" class="nav-link">empleo</a></li>
+								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
+								<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">empleo</a></li>
 							</ul>
 						</nav>
 					</div>
