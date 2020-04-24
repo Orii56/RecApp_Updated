@@ -65,6 +65,7 @@ input[type=checkbox] {
 .reg {
 	color: steelblue !important;
 	margin-top: 50px !important;
+	text-align:center !important;
 }
 
 .test {

@@ -288,12 +288,18 @@
 					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
 						<h2>RecApp está disponible en</h2>
 					</div>
-					<div class="col-md-5 text-center text-md-right">
+					<div class="col-md-5 text-center">
+						<p >
+							<a href="https://www.apple.com/ios/app-store/" class=""
+								target="_blank"> <img
+								style="max-width: 200px;"
+								src="img/Apple_Store.png" alt="apple"></img>
+							</a>
+						</p>
 						<p>
-							<a href="#" class="btn"><span
-								class="icofont-brand-apple mr-3"></span>App store</a> <a href="#"
-								class="btn"><span class="icofont-ui-play mr-3"></span>Google
-								play</a>
+							<a href="https://play.google.com/store?hl=es" target="_blank"
+								class=""> <img style="max-width: 200px;"
+								src="img/Google_Play_badge.png" alt="google"></img></a>
 						</p>
 					</div>
 				</div>

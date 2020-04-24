@@ -75,7 +75,6 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<!-- <li><a href="#" class="nav-link">Regístrate</a></li> -->
 								<li><a href="Login?option=logout" class="registrarse">log
 										out</a></li>
 								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
@@ -399,12 +398,17 @@
 					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
 						<h2>RecApp está disponible en</h2>
 					</div>
-					<div class="col-md-5 text-center text-md-right">
+					<div class="col-md-5 text-center">
 						<p>
-							<a href="#" class="btn"><span
-								class="icofont-brand-apple mr-3"></span>App store</a> <a href="#"
-								class="btn"><span class="icofont-ui-play mr-3"></span>Google
-								play</a>
+							<a href="https://www.apple.com/ios/app-store/" class=""
+								target="_blank"> <img style="max-width: 200px;"
+								src="img/Apple_Store.png" alt="apple"></img>
+							</a>
+						</p>
+						<p>
+							<a href="https://play.google.com/store?hl=es" target="_blank"
+								class=""> <img style="max-width: 200px;"
+								src="img/Google_Play_badge.png" alt="google"></img></a>
 						</p>
 					</div>
 				</div>
@@ -424,21 +428,12 @@
 						<p class="social">
 							<a href="#"><span class="icofont-twitter"></span></a> <a href="#"><span
 								class="icofont-facebook"></span></a>
-							<!-- <a href="#"><span class="icofont-dribbble"></span></a>
-                    <a href="#"><span class="icofont-behance"></span></a> -->
+
 						</p>
 					</div>
 					<div class="col-md-7 ml-auto">
 						<div class="row site-section pt-0">
-							<div class="col-md-4 mb-4 mb-md-0">
-								<!-- <h3>Navigation</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul> -->
-							</div>
+							<div class="col-md-4 mb-4 mb-md-0"></div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">

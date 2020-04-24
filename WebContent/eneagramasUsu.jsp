@@ -234,62 +234,62 @@
 					</thead>
 					<tbody>
 						<tr class="table-primary">
-							<th scope="row">1</th>
+							<th >1</th>
 							<td>El Reformador</td>
 							<td>Estas personas creen tener una misión en la vida. Se
 								esfuerzan por superar la adversidad.</td>
 							<td>Política, periodismo...</td>
 						</tr>
 						<tr class="table-info">
-							<th scope="row">2</th>
+							<th >2</th>
 							<td>El Ayudador</td>
 							<td>Desvivirse por los demás las hace pensar que su forma de
 								ser es la que tiene más sentido.</td>
 							<td>Servicios públicos...</td>
 						</tr>
 						<tr class="table-primary">
-							<th scope="row">3</th>
+							<th >3</th>
 							<td>El Triunfador</td>
 							<td>Disfrutan motivando a los demás a consecuciones
 								personales.</td>
 							<td>Comercial, escritor...</td>
 						</tr>
 						<tr class="table-info">
-							<th scope="row">4</th>
+							<th >4</th>
 							<td>El Individualista</td>
 							<td>Suelen pensar que poseen talentos únicos, pero también
 								defectos únicos.</td>
 							<td>Diseño...</td>
 						</tr>
 						<tr class="table-primary">
-							<th scope="row">5</th>
+							<th >5</th>
 							<td>El Investigador</td>
 							<td>Desean entender por qué funciona el mundo. No aceptan
 								opiniones recibidas.</td>
 							<td>Ingenieria, matematica...</td>
 						</tr>
 						<tr class="table-info">
-							<th scope="row">6</th>
+							<th>6</th>
 							<td>El Leal</td>
 							<td>Son leales a ideas. Desean evitar que les controlen,
 								pero temen asumir responsabilidades</td>
 							<td>Analista, profesor...</td>
 						</tr>
 						<tr class="table-primary">
-							<th scope="row">7</th>
+							<th >7</th>
 							<td>El Entusiasta</td>
 							<td>Atraen la atención. Son emprendedores, osados y alegres.</td>
 							<td>Marketing, eventos...</td>
 						</tr>
 						<tr class="table-info">
-							<th scope="row">8</th>
+							<th>8</th>
 							<td>El Desafiador</td>
 							<td>Tienen carisma, además de capacidades físicas y
 								psíquicas para convencer a la gente.</td>
 							<td>Autonomo...</td>
 						</tr>
 						<tr class="table-primary">
-							<th scope="row">9</th>
+							<th>9</th>
 							<td>El Pacificador</td>
 							<td>Trabajan por mantener su paz mental. Les aterra ser
 								individuos aislados.</td>
