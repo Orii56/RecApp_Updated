@@ -9,9 +9,10 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+	
 <link rel="stylesheet" href="style.css">
 
-<title>RECAPP</title>
+<title>Nosotros</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -70,10 +71,11 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=registrar" class="nav-link">registro</a></li>
+								<li><a href="Login?option=registrar" class="nav-link">regístrate</a></li>
 								<li><a href="contacto.jsp" class="nav-link">contacto</a></li>
 								<li class="active"><a href="#" class="nav-link">nosotros</a></li>
-								<li><a href="#" class="nav-link">login</a></li>
+								<li><a href="eneagramas.jsp" class="nav-link">eneagramas</a></li>
+								<li><a href="logear.jsp" class="nav-link">login</a></li>
 							</ul>
 						</nav>
 					</div>
