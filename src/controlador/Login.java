@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 import modelo.DAOS.UsuarioDAOImpl;
+//import modelo.DAOS.UsuarioDAOImpl;
 import modelo.beans.Eneagrama;
 import modelo.beans.Usuario;
 
@@ -52,7 +53,6 @@ public class Login extends HttpServlet {
 		Usuario usu = null;
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
 
-
 		// request.getSession().setAttribute("usuario", usu);
 		usu = (Usuario) request.getSession().getAttribute("usuario");
 
@@ -62,44 +62,36 @@ public class Login extends HttpServlet {
 
 		int autoIncrement = 0;
 
-
 		switch (request.getParameter("option")) {
 
 		case "validar":
-
 
 			Pattern pattern = Pattern.compile(
 					"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 			Matcher mather = pattern.matcher(email);
 
-if (udao.findByEmail(email) != null) {
-
 			if (mather.find() == true && pwd.length() >= 5) {
 
 				if (udao.findLogin(email, pwd) == null) {
 
-					request.setAttribute("estado", "combinaci�n de usuario y contrase�a incorrecta");
-					request.getRequestDispatcher("logear.jsp").forward(request, response);	
-				
-					
+					// showMessageDialog(null, "El usuario no existe. Registrate :)");
+					request.getRequestDispatcher("registro.jsp").forward(request, response);
+
 				} else {
-					
+					System.out.println("El usuario y contrasena ok!");
+					// showMessageDialog(null, "El usuario y contrasena ok!");
 					usu = udao.findLogin(email, pwd);
 					
 					request.getSession().setAttribute("usuario", usu);
 					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 				}
 
-
+			} else {
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 			}
-} else {
-				request.getRequestDispatcher("registro.jsp").forward(request, response);
-
-}
-
 
 			break;
-        
+
 		case "registrar":
 
 			usu = (Usuario) request.getSession().getAttribute("usuario");
@@ -122,13 +114,11 @@ if (udao.findByEmail(email) != null) {
 
 			if (math.find() == true && pwd.length() >= 5) {
 
-
 				if (udao.findByEmail(email) != null) {
 
 					if (udao.findLogin(email, pwd) != null) {
 
-						request.setAttribute("estado", "ya estas registrado, haz login!");
-
+						// showMessageDialog(null, "El usuario ya existe. Logeate :)");
 						request.getRequestDispatcher("logear.jsp").forward(request, response);
 
 					} else {
@@ -140,7 +130,6 @@ if (udao.findByEmail(email) != null) {
 					usu = new Usuario(autoIncrement, email, new Date(), nombre, pwd, 0, null, null);
 
 					udao.insert(usu);
-
 
 					System.out.println("Objeto usuario " + usu);
 
@@ -155,11 +144,6 @@ if (udao.findByEmail(email) != null) {
 					// showMessageDialog(null, "Usuario registrado :)");
 					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 				}
-			} else {
-				
-				request.setAttribute("estado", "El email es invalido o la contrase�a muy corta");
-				request.getRequestDispatcher("registro.jsp").forward(request, response);
-
 			}
 
 			break;
@@ -184,7 +168,6 @@ if (udao.findByEmail(email) != null) {
 			request.getSession().removeAttribute("mapa");
 
 
-
 			request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 
 			break;
@@ -192,12 +175,11 @@ if (udao.findByEmail(email) != null) {
 		case "usuario":
 
 			if (usu == null) {
-				
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
-				
-					} else {
+			} else {
 				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 			}
+
 			break;
 
 		}

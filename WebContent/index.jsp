@@ -9,8 +9,6 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	
-<link rel="stylesheet" href="style.css"> 
 
 <title>RecApp</title>
 
@@ -30,7 +28,7 @@
 	rel="stylesheet">
 
 <!-- Bootstrap CSS File -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Vendor CSS Files -->
 <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -318,8 +316,8 @@
 								<p class="review-user">
 									<img src="img/person_1.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Eva 
-										</span> &mdash; Usuaria RecApp
+										class="d-block"> <span class="text-black">Eva </span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -342,7 +340,8 @@
 								<p class="review-user">
 									<img src="img/person_2.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Juan</span> &mdash; Usuario RecApp
+										class="d-block"> <span class="text-black">Juan</span>
+										&mdash; Usuario RecApp
 									</span>
 								</p>
 
@@ -368,7 +367,8 @@
 								<p class="review-user">
 									<img src="img/person_3.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Julia</span> &mdash; Usuaria RecApp
+										class="d-block"> <span class="text-black">Julia</span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -416,15 +416,7 @@
 					</div>
 					<div class="col-md-7 ml-auto">
 						<div class="row site-section pt-0">
-							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Navigation</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Pricing</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
+							<div class="col-md-4 mb-4 mb-md-0"></div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
@@ -447,7 +439,6 @@
 
 				<div class="row justify-content-center text-center">
 					<div class="col-md-7">
-						<!-- <p class="copyright">&copy; Copyright SoftLand. All Rights Reserved</p> -->
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>

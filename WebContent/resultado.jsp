@@ -98,7 +98,6 @@
 				<div class="row align-items-center ">
 
 					<div class="mr-auto"
-
 						style="max-width: 500px; position: relative; left: 10px; top: -25px;">
 						<h1 class="" style="color: white;">
 							<span style="font-size: 14px;">El tipo de Eneagrama que
