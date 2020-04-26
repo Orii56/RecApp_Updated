@@ -302,9 +302,9 @@
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<h3>Sobre RecApp</h3>
-						<p>Somos la aplicaciï¿½n nï¿½mero 1 de bï¿½squeda de empleo, creada
-							por 3 estudiantes con la intenciï¿½n de ofrecer una oportunidad de
-							reubicarse a personas que no estï¿½n agusto en su sector.</p>
+						<p>Somos la aplicación número 1 de búsqueda de empleo, creada
+							por 3 estudiantes con la intención de ofrecer una oportunidad de
+							reubicarse a personas que no están a gusto en su sector.</p>
 						<p class="social">
 							<a href="#"><span class="icofont-twitter"></span></a> <a href="#"><span
 								class="icofont-facebook"></span></a> <a href="#"><span

@@ -188,18 +188,39 @@ public class GestionPreguntas extends HttpServlet {
 				
 				if(z.size() > 1 ) {
 					
+					if(z.size() > 2) {
+						
+						
+						mayor20 = false;
+						
+						sesionQuestion.removeAttribute("idEneag");
+						sesionQuestion.removeAttribute("id");
+						sesionQuestion.removeAttribute("mapa");
+						sesionQuestion.removeAttribute("descTipo");
+
+			
+						
+						usu = (Usuario) request.getSession().getAttribute("usuario");
+
+						request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
+						
+					}
+						
 					List<Pregunta> listaA = pdao.findByTipoEneg(z.get(0));
 					List<Pregunta> listaB = pdao.findByTipoEneg(z.get(1));
+					
 
+					sesionQuestion.setAttribute("tipoEneA", edao.findEneagrama(z.get(0)));
+
+					sesionQuestion.setAttribute("tipoEneB", edao.findEneagrama(z.get(1)));
+					
 					request.setAttribute("preguntaA", listaA);
 					request.setAttribute("preguntaB", listaB);
 
 					
+					
 					request.getRequestDispatcher("preguntaExtra.jsp").forward(request, response);
 					
-					if(z.size() >= 3) {
-						mayor20 = false;
-					}
 					
 				}
 				
@@ -249,10 +270,64 @@ public class GestionPreguntas extends HttpServlet {
 			
 		case "extra": 
 			
+			int a = 0;
+			int b = 0;
+			
+			for (int i=6; i<=7; i++) {
+				request.getParameterValues("isbn");
+				a += Integer.valueOf(request.getParameter("cantidadA"+i));
+
+				b += Integer.valueOf(request.getParameter("cantidadB"+i));
+
+			} 
+			
+			int numID = 0;
+			
+			if(a != b) {
+				if(a > b) {
+
+					Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneA");
+					numID = res.getIdEneagrama();
+					System.out.println("en el desempate, A es mayor");	
+					}
+				if(a < b){
+			
+				Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneB");
+				numID = res.getIdEneagrama();
+
+				System.out.println("en el desempate, B es mayor");
+				}
+				
+			} else {
+					
+					sesionQuestion.removeAttribute("idEneag");
+					sesionQuestion.removeAttribute("id");
+					sesionQuestion.removeAttribute("mapa");
+					sesionQuestion.removeAttribute("descTipo");
+
+		
+					
+					usu = (Usuario) request.getSession().getAttribute("usuario");
+
+					request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
+					}
+				
+			
+			int max = 20;
+			
+
+			sesionQuestion.setAttribute("descTipo", edao.findEneagrama(numID));
+
+			Eneagrama userValues = (Eneagrama) sesionQuestion.getAttribute("descTipo");
+
+			usu.setEneagrama(userValues);
+			usu.setTipoEneagrama(userValues.getTipo());
+			usu.setResultadoTest(max);
+
+			udao.insert(usu);
 
 			request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
-			
 			break;
 
 		}

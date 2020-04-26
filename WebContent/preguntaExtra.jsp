@@ -109,6 +109,8 @@
 
 
 							<div style="max-width: 450px; position: absolute; z-index: 99;">
+							
+
 
 							<!-- THE BIG DEAL STUFF ////////////////////////////////////////////////// -->
 								<c:forEach items="${requestScope.preguntaA}" var="preguntaA"
@@ -124,7 +126,7 @@
 												<td><p
 														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
 														${preguntaA.pregunta }</p></td>
-												<td><select name="cantidad${preguntaA.idPregunta}">
+												<td><select name="cantidadA${preguntaA.numPregunta}">
 														<option value="1">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
@@ -142,6 +144,7 @@
 										<table>
 											<tr>
 
+
 												<td><input
 													style="position: relative; top: -22px; border: 1px solid red; visibility: hidden;"
 													type="checkbox" name="isbn" value="${preguntaB.idAux}"
@@ -149,23 +152,25 @@
 												<td><p
 														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
 														${preguntaB.pregunta }</p></td>
-												<td><select name="cantidad${preguntaB.idPregunta}">
+												<td><select name="cantidadB${preguntaB.numPregunta}">
 														<option value="1">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
 														<option value="4">4</option>
 														<option value="5">5</option>
 												</select></td>
-
 											</tr>
 										</table>
 									</div>
+									
+									
 								</c:forEach>
 							<!-- THE BIG DEAL STUFF ////////////////////////////////////////////////// -->
 
 								<button style="margin-left: 25px;" type="submit" class="registro btn btn-outline-white">siguiente</button>
 							</div>
 						</form>
+						
 
 					</div>
 <!--DESDE AQUI ES EL CUADRO BLANCO DE LAS INSTRUCCIONES -->
