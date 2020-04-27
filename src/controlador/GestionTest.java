@@ -46,9 +46,9 @@ public class GestionTest extends HttpServlet {
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
 
 		System.out.println(request.getSession().getAttribute("usuario"));
-		
+
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-		
+
 		System.out.println("es este null? " + usu);
 
 		switch (request.getParameter("option")) {
@@ -58,8 +58,8 @@ public class GestionTest extends HttpServlet {
 			if (usu == null) {
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 			} else if (usu.getTipoEneagrama() == null) {
-				request.getRequestDispatcher("test.jsp").forward(request, response);
-			} else if(usu.getEneagrama() != null) {
+				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
+			} else if (usu.getEneagrama() != null) {
 				request.getRequestDispatcher("anuncios.jsp").forward(request, response);
 			} else {
 				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
@@ -67,13 +67,6 @@ public class GestionTest extends HttpServlet {
 
 			System.out.println("aqui");
 			System.out.println(usu);
-
-			/*
-			 * System.out.println(usu.getNombre());
-			 * System.out.println(usu.getTipoEneagrama());
-			 */
-
-			// request.getRequestDispatcher("index.jsp").forward(request, response);
 
 			break;
 		}

@@ -189,10 +189,6 @@
 							<br> <br>Asi, RecApp ofrece a las personas que no estan
 							agusto en su trabajo, o sector profesional, un oportunidad de
 							reinventarse y dar un giro a su carrera profesional.
-							<!--  Para
-							ello, creemos que enfocar tus "soft-skills" y aptitudes
-							personales ayudares a enfocar que campos se adaptan a lo que
-							quieres y donde estas mas comodo -->
 						</p>
 						<p>
 							<a class="test btn btn-outline-blue"
@@ -255,6 +251,47 @@
 			</div>
 		</div>
 		<!-- .site-section -->
+
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+					<h2 class="section-heading">Anímate y realiza el test!</h2>
+					<p style="margin-top: 50px;">
+						<a class="test btn btn-outline-blue"
+							href="GestionTest?option=validar">test</a>
+					</p>
+					<span style="font-size: 10px;"><i>*Este test tiene un
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+							Hudson.
+					</i></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="site-section cta-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
+						<h2>RecApp está disponible en</h2>
+					</div>
+					<div class="col-md-5 text-center">
+						<p>
+							<a href="https://www.apple.com/ios/app-store/" class=""
+								target="_blank"> <img style="max-width: 200px;"
+								src="img/Apple_Store.png" alt="apple"></img>
+							</a>
+						</p>
+						<p>
+							<a href="https://play.google.com/store?hl=es" target="_blank"
+								class=""> <img style="max-width: 200px;"
+								src="img/Google_Play_badge.png" alt="google"></img></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<div class="site-section border-top border-bottom">
@@ -349,29 +386,7 @@
 
 
 
-		<div class="site-section cta-section">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-						<h2>RecApp está disponible en</h2>
-					</div>
-					<div class="col-md-5 text-center">
-						<p >
-							<a href="https://www.apple.com/ios/app-store/" class=""
-								target="_blank"> <img
-								style="max-width: 200px;"
-								src="img/Apple_Store.png" alt="apple"></img>
-							</a>
-						</p>
-						<p>
-							<a href="https://play.google.com/store?hl=es" target="_blank"
-								class=""> <img style="max-width: 200px;"
-								src="img/Google_Play_badge.png" alt="google"></img></a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
 
 		</main>
 		<footer class="footer" role="contentinfo">
@@ -395,16 +410,17 @@
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
 									<li><a href="#">Equipo</a></li>
-									<li><a href="#">Sinergias</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Eventos</a></li>
+									<li><a href="eneagramas.jsp">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">App Store</a></li>
-									<li><a href="#">Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>

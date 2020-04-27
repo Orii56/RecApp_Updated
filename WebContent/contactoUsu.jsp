@@ -8,7 +8,7 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+
 
 <title>Contacto</title>
 
@@ -16,8 +16,10 @@
 <meta content="" name="keywords">
 <meta content="" name="description">
 
-<!-- Favicons -->
+<!-- ICONO DE LA PESTANA DEL NAVEGADOR -->
 <link href="img/_miniLogo.png" rel="icon">
+
+<!-- Favicons -->
 <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -35,6 +37,11 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="style.css" rel="stylesheet">
+
+</head>
 <body>
 
 	<div class="site-wrap">
@@ -70,8 +77,9 @@
 										out</a></li>
 								<li class="active"><a href="#" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
-								<li><a href="eneagramas.jsp" class="nav-link">eneagramas</a></li>
-								<li><a href="GestionAnuncios?option=anuncios" class="nav-link">empleo</a></li>
+								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
+								<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">empleo</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -116,10 +124,10 @@
 					<div class="col-12">
 						<div class="row justify-content-center">
 							<div class="col-md-7 text-center hero-text">
-								<h1 data-aos="fade-up" data-aos-delay="">Contáctanos</h1>
+								<h1 data-aos="fade-up" data-aos-delay="">ContÃ¡ctanos</h1>
 								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-									Si quieres saber más sobre RecApp, o si quieres preguntarnos
-									algo, <br>estamos a tu completa disposicion
+									Si quieres saber mÃ¡s sobre RecApp, o si quieres preguntarnos
+									algo, <br>estamos a tu completa disposiciÃ³n
 								</p>
 							</div>
 						</div>
@@ -144,8 +152,8 @@
 				<div class="row">
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><strong class="d-block mb-1">Dirección</strong>
-								<span>Julián Camarillo 45, 28029 Madrid España</span></li>
+							<li class="mb-3"><strong class="d-block mb-1">Direccion</strong>
+								<span>Julian Camarillo 45, 28029 Madrid Espana</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Telefono
 									de contacto</strong> <span>654577850</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Nuesto
@@ -189,7 +197,7 @@
 								<div class="col-md-12 mb-3">
 									<div class="loading">Cargando</div>
 									<div class="error-message"></div>
-									<div class="sent-message">¡Su mensaje ha sido enviado!
+									<div class="sent-message">Su mensaje ha sido enviado!
 										Gracias por contactar con RecApp</div>
 								</div>
 
@@ -202,6 +210,41 @@
 						</form>
 					</div>
 
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+					<h2 class="section-heading">AnÃ­mate y realiza el test!</h2>
+					<p style="margin-top: 50px;">
+						<a class="test btn btn-outline-blue"
+							href="GestionTest?option=validar">test</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="site-section cta-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
+						<h2>RecApp estÃ¡ disponible en</h2>
+					</div>
+					<div class="col-md-5 text-center">
+						<p>
+							<a href="https://www.apple.com/ios/app-store/" class=""
+								target="_blank"> <img style="max-width: 200px;"
+								src="img/Apple_Store.png" alt="apple"></img>
+							</a>
+						</p>
+						<p>
+							<a href="https://play.google.com/store?hl=es" target="_blank"
+								class=""> <img style="max-width: 200px;"
+								src="img/Google_Play_badge.png" alt="google"></img></a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -274,74 +317,41 @@
 			</div>
 		</div>
 
-
-
-		<div class="site-section cta-section">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-						<h2>RecApp está disponible en</h2>
-					</div>
-					<div class="col-md-5 text-center">
-						<p >
-							<a href="https://www.apple.com/ios/app-store/" class=""
-								target="_blank"> <img
-								style="max-width: 200px;"
-								src="img/Apple_Store.png" alt="apple"></img>
-							</a>
-						</p>
-						<p>
-							<a href="https://play.google.com/store?hl=es" target="_blank"
-								class=""> <img style="max-width: 200px;"
-								src="img/Google_Play_badge.png" alt="google"></img></a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<h3>Sobre RecApp</h3>
-						<p>Somos la aplicación número 1 de búsqueda de empleo, creada
-							por 3 estudiantes con la intención de ofrecer una oportunidad de
-							reubicarse a personas que no están agusto en su sector.</p>
+						<p>Herramienta digital para encontrar trabajo en otra Ã¡rea
+							profesional para gente que quiere reinventarse y/o cambiar. EstÃ¡
+							app valorara las Soft Skills personales previas importantes para
+							el nuevo puesto de trabajo.</p>
 						<p class="social">
 							<a href="#"><span class="icofont-twitter"></span></a> <a href="#"><span
-								class="icofont-facebook"></span></a> <a href="#"><span
-								class="icofont-dribbble"></span></a> <a href="#"><span
-								class="icofont-behance"></span></a>
+								class="icofont-facebook"></span></a>
 						</p>
 					</div>
 					<div class="col-md-7 ml-auto">
 						<div class="row site-section pt-0">
+							<div class="col-md-4 mb-4 mb-md-0"></div>
 							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Navigation</h3>
+								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Pricing</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="sobreNosotrosUsu.jsp">Equipo</a></li>
+									<li><a href="eneagramasUsu.jsp">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
+									<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Services</h3>
+								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Team</a></li>
-									<li><a href="#">Collaboration</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Events</a></li>
-								</ul>
-							</div>
-							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Downloads</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Get from the App Store</a></li>
-									<li><a href="#">Get from the Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>
@@ -350,17 +360,7 @@
 
 				<div class="row justify-content-center text-center">
 					<div class="col-md-7">
-						<p class="copyright">&copy; Copyright RecApp. All Rights
-							Reserved</p>
-						<div class="credits">
-							<!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
-              -->
-							Designed by <a href="https://bootstrapmade.com/">Peter Pan</a>
-						</div>
+						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>
 
@@ -369,12 +369,13 @@
 	</div>
 	<!-- .site-wrap -->
 
+	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
 	<!-- Vendor JS Files -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/easing/easing.min.js"></script>
-	<script src="vendor/php-email-form/validate.js"></script>
 	<script src="vendor/sticky/sticky.js"></script>
 	<script src="vendor/aos/aos.js"></script>
 	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
@@ -383,4 +384,7 @@
 	<script src="js/main.js"></script>
 
 </body>
+
+
+
 </html>

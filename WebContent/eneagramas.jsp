@@ -303,7 +303,26 @@
 				</p>
 			</div>
 		</div>
-
+		<br>
+		<br>
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+					<h2 class="section-heading">Anímate y realiza el test!</h2>
+					<p style="margin-top: 50px;">
+						<a class="test btn btn-outline-blue"
+							href="GestionTest?option=validar">test</a>
+					</p>
+					<span style="font-size: 10px;"><i>*Este test tiene un
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+							Hudson.
+					</i></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
 
 
 
@@ -315,10 +334,9 @@
 						<h2>RecApp está disponible en</h2>
 					</div>
 					<div class="col-md-5 text-center">
-						<p >
+						<p>
 							<a href="https://www.apple.com/ios/app-store/" class=""
-								target="_blank"> <img
-								style="max-width: 200px;"
+								target="_blank"> <img style="max-width: 200px;"
 								src="img/Apple_Store.png" alt="apple"></img>
 							</a>
 						</p>
@@ -327,6 +345,73 @@
 								class=""> <img style="max-width: 200px;"
 								src="img/Google_Play_badge.png" alt="google"></img></a>
 						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="site-section border-top border-bottom">
+			<div class="container">
+				<div class="row justify-content-center text-center mb-5">
+					<div class="col-md-4">
+						<h2 class="section-heading">Otras formas de contacto</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center text-center">
+					<div class="col-md-7">
+						<div class="owl-carousel testimonial-carousel">
+							<div class="review text-center">
+								<h3>Nuestras redes sociales</h3>
+								<blockquote>
+									<p>Instagram</p>
+								</blockquote>
+
+
+
+								<p class="review-user">
+									<img src="img/person_1.jpg" alt="Image"
+										class="img-fluid rounded-circle mb-3"> <span
+										class="d-block"> <span class="text-black">@RecApp</span>
+									</span>
+								</p>
+
+							</div>
+
+							<div class="review text-center">
+								<h3>Nuestras redes sociales</h3>
+								<blockquote>
+									<p>Twitter</p>
+								</blockquote>
+
+
+
+								<p class="review-user">
+									<img src="img/person_2.jpg" alt="Image"
+										class="img-fluid rounded-circle mb-3"> <span
+										class="d-block"> <span class="text-black">@RecAppOficial</span>
+									</span>
+								</p>
+
+							</div>
+
+
+							<div class="review text-center">
+								<h3>Nuestras redes sociales</h3>
+								<blockquote>
+									<p>Fake Uber</p>
+								</blockquote>
+
+
+
+								<p class="review-user">
+									<img src="img/person_3.jpg" alt="Image"
+										class="img-fluid rounded-circle mb-3"> <span
+										class="d-block"> <span class="text-black">RecApp</span>
+									</span>
+								</p>
+
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -353,17 +438,18 @@
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Equipo</a></li>
-									<li><a href="#">Sinergias</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Eventos</a></li>
+									<li><a href="sobreNosotros.jsp">Equipo</a></li>
+									<li><a href="#">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">App Store</a></li>
-									<li><a href="#">Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>
@@ -372,7 +458,6 @@
 
 				<div class="row justify-content-center text-center">
 					<div class="col-md-7">
-						<!-- <p class="copyright">&copy; Copyright SoftLand. All Rights Reserved</p> -->
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>

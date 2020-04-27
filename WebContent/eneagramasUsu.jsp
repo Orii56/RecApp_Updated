@@ -76,11 +76,13 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=registrar" class="nav-link">regístrate</a></li>
-								<li><a href="contacto.jsp" class="nav-link">contacto</a></li>
-								<li><a href="sobreNosotros.jsp" class="nav-link">nosotros</a></li>
+								<li><a href="Login?option=logout" class="registrarse">log
+										out</a></li>
+								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
+								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
 								<li class="active"><a href="#" class="nav-link">eneagramas</a></li>
-								<li><a href="logear.jsp" class="nav-link">login</a></li>
+								<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">empleo</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -234,35 +236,35 @@
 					</thead>
 					<tbody>
 						<tr class="table-primary">
-							<th >1</th>
+							<th>1</th>
 							<td>El Reformador</td>
 							<td>Estas personas creen tener una misión en la vida. Se
 								esfuerzan por superar la adversidad.</td>
 							<td>Política, periodismo...</td>
 						</tr>
 						<tr class="table-info">
-							<th >2</th>
+							<th>2</th>
 							<td>El Ayudador</td>
 							<td>Desvivirse por los demás las hace pensar que su forma de
 								ser es la que tiene más sentido.</td>
 							<td>Servicios públicos...</td>
 						</tr>
 						<tr class="table-primary">
-							<th >3</th>
+							<th>3</th>
 							<td>El Triunfador</td>
 							<td>Disfrutan motivando a los demás a consecuciones
 								personales.</td>
 							<td>Comercial, escritor...</td>
 						</tr>
 						<tr class="table-info">
-							<th >4</th>
+							<th>4</th>
 							<td>El Individualista</td>
 							<td>Suelen pensar que poseen talentos únicos, pero también
 								defectos únicos.</td>
 							<td>Diseño...</td>
 						</tr>
 						<tr class="table-primary">
-							<th >5</th>
+							<th>5</th>
 							<td>El Investigador</td>
 							<td>Desean entender por qué funciona el mundo. No aceptan
 								opiniones recibidas.</td>
@@ -276,7 +278,7 @@
 							<td>Analista, profesor...</td>
 						</tr>
 						<tr class="table-primary">
-							<th >7</th>
+							<th>7</th>
 							<td>El Entusiasta</td>
 							<td>Atraen la atención. Son emprendedores, osados y alegres.</td>
 							<td>Marketing, eventos...</td>
@@ -317,10 +319,9 @@
 						<h2>RecApp está disponible en</h2>
 					</div>
 					<div class="col-md-5 text-center">
-						<p >
+						<p>
 							<a href="https://www.apple.com/ios/app-store/" class=""
-								target="_blank"> <img
-								style="max-width: 200px;"
+								target="_blank"> <img style="max-width: 200px;"
 								src="img/Apple_Store.png" alt="apple"></img>
 							</a>
 						</p>
@@ -355,17 +356,20 @@
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Equipo</a></li>
-									<li><a href="#">Sinergias</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Eventos</a></li>
+									<li><a href="sobreNosotrosUsu.jsp">Equipo</a></li>
+									<li><a href="#">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
+									<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">App Store</a></li>
-									<li><a href="#">Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>

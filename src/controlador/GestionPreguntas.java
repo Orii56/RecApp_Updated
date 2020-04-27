@@ -58,10 +58,8 @@ public class GestionPreguntas extends HttpServlet {
 
 		Usuario usu;
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
-
-		
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-		
+
 		HttpSession sesionQuestion = request.getSession();
 		Integer tipoEneagrama = (Integer) sesionQuestion.getAttribute("id");
 
@@ -118,23 +116,26 @@ public class GestionPreguntas extends HttpServlet {
 					arrayResultadoPreguntas = new ArrayList<Integer>();
 				}
 
-				for (String ele : request.getParameterValues("isbn")) {
-					arrayResultadoPreguntas.add(Integer.valueOf(request.getParameter("cantidad" + ele)));
+				String[] isbns = request.getParameterValues("isbn");
+
+				if (isbns != null) {
+					for (String ele : request.getParameterValues("isbn")) {
+						arrayResultadoPreguntas.add(Integer.valueOf(request.getParameter("cantidad" + ele)));
+					}
+					System.out.println("cosas dentro del array preguntas: " + arrayResultadoPreguntas);
+
+					int num = 0;
+
+					for (Integer l : arrayResultadoPreguntas) {
+						num += l;
+					}
+
+					cantidadPreguntas.put(idEneagrama, num);
+
+					sesionQuestion.setAttribute("mapa", cantidadPreguntas);
+
+					System.out.println("valores del array " + num);
 				}
-
-				System.out.println("cosas dentro del array preguntas: " + arrayResultadoPreguntas);
-
-				int num = 0;
-
-				for (Integer l : arrayResultadoPreguntas) {
-					num += l;
-				}
-
-				cantidadPreguntas.put(idEneagrama, num);
-
-				sesionQuestion.setAttribute("mapa", cantidadPreguntas);
-
-				System.out.println("valores del array " + num);
 
 			}
 
@@ -171,12 +172,12 @@ public class GestionPreguntas extends HttpServlet {
 						t.add(cantidadPreguntas.get(en));
 
 						for (int i = 0; i < t.size(); i++) {
-							
+
 							if (t.get(i) > max) {
 
 								max = t.get(i);
 
-								numID = Math.max((en - 1), (en -1));
+								numID = Math.max((en - 1), (en - 1));
 
 								System.out.println("Valor maximo dentro del array " + max + " id del tipo " + (en - 1));
 
@@ -214,9 +215,8 @@ public class GestionPreguntas extends HttpServlet {
 					sesionQuestion.removeAttribute("id");
 					sesionQuestion.removeAttribute("mapa");
 					sesionQuestion.removeAttribute("descTipo");
+					// sesionQuestion.invalidate();
 
-		
-					
 					usu = (Usuario) request.getSession().getAttribute("usuario");
 
 					request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
@@ -227,6 +227,11 @@ public class GestionPreguntas extends HttpServlet {
 				request.getRequestDispatcher("question.jsp").forward(request, response);
 			}
 
+			break;
+			
+		case "rapido":
+			
+			
 			break;
 
 		}

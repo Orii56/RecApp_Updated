@@ -5,21 +5,17 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
 
-<title>Empleo</title>
+<link rel="stylesheet" href="style.css">
+
+<title>Test</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
 
-<!-- ICONO DE LA PESTANA DEL NAVEGADOR -->
-<link href="img/_miniLogo.png" rel="icon">
-
 <!-- Favicons -->
+<link href="img/_miniLogo.png" rel="icon">
 <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -38,14 +34,10 @@
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
 
-<!-- Template Main CSS File -->
-<link href="style.css" rel="stylesheet">
 
 
 </head>
 <body>
-
-
 	<div class="site-wrap">
 
 		<div class="site-mobile-menu site-navbar-target">
@@ -59,7 +51,6 @@
 
 		<main id="viewPort"> <header
 			class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
 			<div class="container">
 				<div class="row align-items-center">
 
@@ -75,16 +66,14 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=logout" class="registrarse">log
-										out</a></li>
-								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
-								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
-								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
-								<li class="active"><a  href="#" class="nav-link">empleo</a></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li><a href="Login?option=cerrar-test" class="registrarse"
+									onclick="cerrarTest()">cerrar test</a></li>
 							</ul>
 						</nav>
 					</div>
-
 
 					<div class="col-6 d-inline-block d-lg-none ml-md-0 py-3"
 						style="position: relative; top: 3px;">
@@ -96,31 +85,56 @@
 
 				</div>
 			</div>
-
 		</header>
-		<div style="max-width: 100%; min-height: 100vh; border: 1px solid;">
-			<div class="d-flex flex-wrap justify-content-around"
-				style="border: 1px solid hidden; width: 86%; height: 84vh; margin: 100px 0px 0px 80px;">
 
-				<c:forEach items="${sessionScope.anuncio}" var="trabajo">
-					<div class="card"
-						style="width: 40%; height: 40vh; margin: 0px 0px 0px 20px;">
-						<div class="card-body">
-							<h5 class="card-title">${trabajo.cargo }</h5>
-							<p class="card-text">${trabajo.requerimientos }</p>
-							<p class="card-text">${trabajo.detalle }</p>
-							<p class="card-text">
-								<span>Salario </span>${trabajo.salario} €
-							</p>
-							<a href="https://www.indeed.es/ofertas?q=${trabajo.keyword}"
-								class="btn btn-primary" target="_blank">Indeed</a>
+
+		<div class="site-section pb-0">
+			<div class="container">
+				<div class="row align-items-center ">
+
+					<a href="test.jsp" style="text-decoration: none;"><div
+							class="mr-auto"
+							style="min-width: 400px; min-height: 400px; position: relative; padding: 40px 80px 40px 80px; left: 40px; top: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+							<h4 class="mb-4" style="color: grey; text-align: center;">TEST
+								COMPLETO</h4>
+							<img src="img/undraw_svg_6.svg" alt="Image" class="img-fluid"
+								style="max-width: 300px; margin-top: 40px;">
+
+						</div></a> <a href="testRapido.jsp" style="text-decoration: none;">
+						<div
+							style="padding: 40px 80px 40px 80px; min-width: 400px; min-height: 400px; position: relative; left: 170px; top: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+							<h4 class="mb-4" style="color: grey; text-align: center;">TEST
+								RÁPIDO</h4>
+							<img src="img/undraw_svg_14.svg" alt="Image" class="img-fluid"
+								style="max-width: 300px;">
+
 						</div>
-					</div>
-				</c:forEach>
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+
+					<span style="font-size: 10px; position:relative; top:45px; color:white;"><i>*Este test tiene un
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+							Hudson.
+					</i></span>
+				</div>
 			</div>
 		</div>
 		</main>
+
 	</div>
+
+
+
 
 </body>
 </html>

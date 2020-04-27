@@ -9,16 +9,18 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
 
-<title>RecApp</title>
+
+<title>Nosotros</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
 
-<!-- Favicons -->
+<!-- ICONO DE LA PESTANA DEL NAVEGADOR -->
 <link href="img/_miniLogo.png" rel="icon">
+
+<!-- Favicons -->
 <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -36,6 +38,9 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="style.css" rel="stylesheet">
 
 </head>
 
@@ -74,6 +79,7 @@
 										out</a></li>
 								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
 								<li class="active"><a href="#" class="nav-link">nosotros</a></li>
+								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
 							</ul>
@@ -121,11 +127,14 @@
 						<div class="row justify-content-center">
 							<div class="col-md-7 text-center hero-text">
 								<h1 data-aos="fade-up" data-aos-delay="">
-									Eneagrama de <br>la personalidad
+									RecApp <br> case study
 								</h1>
-								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">Consiste
-									en un sistema de clasificacion de la personalidad que divide a
-									las personas en nueve tipos segun su perfil de comportamiento.</p>
+								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
+									RecApp es una herramienta digital de job search que surge como
+									alternativa a las herramientas actuales. RecApp considera
+									valores muy importantes como <i>soft skills</i> o habilidades
+									blandas.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -140,17 +149,27 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 mr-auto">
-						<h2 class="mb-4">Nuestro metodo</h2>
-						<p class="mb-4">En RecApp tienes a tu disposicion un test
-							creado para identificar tu eneatipo, y en base a eso te
-							buscaremos las ofertas de trabajo que sean afines a tu
-							personalidad.</p>
+						<h2 class="mb-4">Conceptualización</h2>
+						<p class="mb-4">
+							RecApp nace de la experiencia profesional y personal de los
+							miembros del grupo. Con ésta herramienta digital queremos ayudar
+							a cualquier persona a encontrar trabajo en otra área profesional
+							para toda aquella gente que quiere reinventarse y/o cambiar. <br>
+							<br>RecApp valora las Soft Skills personales previas de cada
+							persona importantes para el nuevo puesto de trabajo. En la gran
+							mayoría de los trabajos lo que más se valora es la aptitud y
+							forma de ser del individuo en cuestión y no tanto las habilidades
+							técnicas que pueden llegar a adquirirse y mejorar con el paso del
+							tiempo y la práctica.
+						</p>
 						<p>
-							<a href="#">leer mas</a>
+							<a class="test btn btn-outline-blue"
+								href="https://docs.google.com/document/d/1t2VqIDnzBNNkTnLCmxLcepI1oorYrJDZi7mOyd2RDjc/edit?usp=sharing"
+								target="_blank">leer mas</a>
 						</p>
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
-						<img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_11.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -161,17 +180,28 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
-						<h2 class="mb-4">¿Por que RecApp?</h2>
-						<p class="mb-4">RecApp fue creado para ofrecer a las personas
-							que no estan agusto en su trabajo o sector un oportunidad de
-							reinventarse y dar un giro a su carrera profesional. Para ello,
-							creemos que enfocar tus "soft-skills" y aptitudes personales
-							ayudares a enfocar que campos se adaptan a lo que quieres y donde
-							esta¡s mas comodo</p>
+						<h2 class="mb-4">Naming</h2>
+						<p class="mb-4">
+							El nombre RecApp nace de la convinacion de palabras tales como:
+							reciclar, recuperar, reconvertir, reconstruir etc. Observamos un
+							mismo patron en todas las palabras que era la parte de "re". El
+							componente lexico del prefijo "re" hace referencia a una
+							repeticion que unido a verbos denota reiteracion. El prefijo "re"
+							se usa en la formación de palabras con el significado de "volver
+							a". App hace referencia a la palabra inglesa <i>Application.</i>
+							<br> <br>Asi, RecApp ofrece a las personas que no estan
+							agusto en su trabajo, o sector profesional, un oportunidad de
+							reinventarse y dar un giro a su carrera profesional.
+						</p>
+						<p>
+							<a class="test btn btn-outline-blue"
+								href="https://docs.google.com/document/d/1t2VqIDnzBNNkTnLCmxLcepI1oorYrJDZi7mOyd2RDjc/edit?usp=sharing"
+								target="_blank">leer mas</a>
+						</p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">
-						<img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_10.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -182,14 +212,24 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 mr-auto">
-						<h2 class="mb-4">Sobre Nosotros</h2>
-						<p class="mb-4">RecApp ha sido creado por tres estudiantes que
-							buscan ayudar a otros a salir de esa rutina que acaba quemando a
-							las personas cuando su trabajo no les gusta. Y para aprobar tb xd</p>
+						<h2 class="mb-4">¿Como funciona?</h2>
+						<p class="mb-4">
+							En el site, los usuarios realizarán un test para determinar qué
+							tipo de Eneagrama les corresponde,y definir así las habilidades
+							blandas que poseen, entonces obtendrán acceso a ofertas de
+							trabajo personalizadas, enfocadas en dichas habilidades. <br>
+							<br>RecApp se basa en la teoría de los Eneagramas, un
+							sistema de clasificación de personalidad, que sostiene que hay
+							nueve arquetipos con características particulares que denotan
+							patrones de pensamiento, sentimiento y comportamiento.
+						</p>
+						<p>
+							<a class="test btn btn-outline-blue" href="eneagramas.jsp">eneagramas</a>
+						</p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
-						<img src="img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_13.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -200,7 +240,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
-						<h2 class="mb-4">Powerful App Design</h2>
+						<h2 class="mb-4">Equipo RecApp</h2>
 						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
 							adipisicing elit. Tenetur at reprehenderit optio, laudantium eius
 							quod, eum maxime molestiae porro omnis. Dolores aspernatur
@@ -208,7 +248,7 @@
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">
-						<img src="img/undraw_svg_4.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_12.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -216,11 +256,49 @@
 		<!-- .site-section -->
 
 
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+					<h2 class="section-heading">Anímate y realiza el test!</h2>
+					<p style="margin-top: 50px;">
+						<a class="test btn btn-outline-blue"
+							href="GestionTest?option=validar">test</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="site-section cta-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
+						<h2>RecApp está disponible en</h2>
+					</div>
+					<div class="col-md-5 text-center">
+						<p>
+							<a href="https://www.apple.com/ios/app-store/" class=""
+								target="_blank"> <img style="max-width: 200px;"
+								src="img/Apple_Store.png" alt="apple"></img>
+							</a>
+						</p>
+						<p>
+							<a href="https://play.google.com/store?hl=es" target="_blank"
+								class=""> <img style="max-width: 200px;"
+								src="img/Google_Play_badge.png" alt="google"></img></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
 		<div class="site-section border-top border-bottom">
 			<div class="container">
 				<div class="row justify-content-center text-center mb-5">
 					<div class="col-md-4">
-						<h2 class="section-heading">Review From Our Users</h2>
+						<h2 class="section-heading">Valoración de los usuarios</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center text-center">
@@ -232,21 +310,19 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>Excellent App!</h3>
+								<h3>RecApp es excelente</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
 										optio dolorem facilis itaque voluptatum recusandae deleniti
 										minus animi, provident voluptates consectetur maiores quos.</p>
 								</blockquote>
-
-
 
 								<p class="review-user">
 									<img src="img/person_1.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Jean
-											Doe</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Eva </span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -258,7 +334,7 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>This App is easy to use!</h3>
+								<h3>RecApp se usa facilmente</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
@@ -266,13 +342,11 @@
 										minus animi, provident voluptates consectetur maiores quos.</p>
 								</blockquote>
 
-
-
 								<p class="review-user">
 									<img src="img/person_2.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Johan
-											Smith</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Juan</span>
+										&mdash; Usuario RecApp
 									</span>
 								</p>
 
@@ -285,7 +359,7 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>Awesome functionality!</h3>
+								<h3>RecApp funciona muy bien</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
@@ -298,8 +372,8 @@
 								<p class="review-user">
 									<img src="img/person_3.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Jean
-											Thunberg</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Julia</span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -311,68 +385,41 @@
 		</div>
 
 
-
-		<div class="site-section cta-section">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-						<h2>Starts Publishing Your Apps</h2>
-					</div>
-					<div class="col-md-5 text-center text-md-right">
-						<p>
-							<a href="#" class="btn"><span
-								class="icofont-brand-apple mr-3"></span>App store</a> <a href="#"
-								class="btn"><span class="icofont-ui-play mr-3"></span>Google
-								play</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
 		</main>
 		<footer class="footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
-						<h3>About SoftLand</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Eius ea delectus pariatur, numquam aperiam dolore nam optio
-							dolorem facilis itaque voluptatum recusandae deleniti minus
-							animi.</p>
+						<h3>Sobre RecApp</h3>
+						<p>Herramienta digital para encontrar trabajo en otra área
+							profesional para gente que quiere reinventarse y/o cambiar. Está
+							app valorara las Soft Skills personales previas importantes para
+							el nuevo puesto de trabajo.</p>
 						<p class="social">
 							<a href="#"><span class="icofont-twitter"></span></a> <a href="#"><span
-								class="icofont-facebook"></span></a> <a href="#"><span
-								class="icofont-dribbble"></span></a> <a href="#"><span
-								class="icofont-behance"></span></a>
+								class="icofont-facebook"></span></a>
 						</p>
 					</div>
 					<div class="col-md-7 ml-auto">
 						<div class="row site-section pt-0">
+							<div class="col-md-4 mb-4 mb-md-0"></div>
 							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Navigation</h3>
+								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Pricing</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="#">Equipo</a></li>
+									<li><a href="eneagramasUsu.jsp">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
+									<li><a href="GestionAnuncios?option=anuncios"
+									class="nav-link">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Services</h3>
+								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Team</a></li>
-									<li><a href="#">Collaboration</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Events</a></li>
-								</ul>
-							</div>
-							<div class="col-md-4 mb-4 mb-md-0">
-								<h3>Downloads</h3>
-								<ul class="list-unstyled">
-									<li><a href="#">Get from the App Store</a></li>
-									<li><a href="#">Get from the Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>
@@ -381,17 +428,7 @@
 
 				<div class="row justify-content-center text-center">
 					<div class="col-md-7">
-						<p class="copyright">&copy; Copyright SoftLand. All Rights
-							Reserved</p>
-						<div class="credits">
-							<!--
-                All the links in the footer should remain intact.
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
-              -->
-							Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-						</div>
+						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>
 
@@ -400,12 +437,13 @@
 	</div>
 	<!-- .site-wrap -->
 
+	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
 	<!-- Vendor JS Files -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/easing/easing.min.js"></script>
-	<script src="vendor/php-email-form/validate.js"></script>
 	<script src="vendor/sticky/sticky.js"></script>
 	<script src="vendor/aos/aos.js"></script>
 	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
@@ -414,4 +452,7 @@
 	<script src="js/main.js"></script>
 
 </body>
+
+
+
 </html>
