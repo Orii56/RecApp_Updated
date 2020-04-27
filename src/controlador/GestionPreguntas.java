@@ -58,10 +58,8 @@ public class GestionPreguntas extends HttpServlet {
 
 		Usuario usu;
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
-
-		
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-		
+
 		HttpSession sesionQuestion = request.getSession();
 		Integer tipoEneagrama = (Integer) sesionQuestion.getAttribute("id");
 
@@ -119,23 +117,26 @@ public class GestionPreguntas extends HttpServlet {
 					arrayResultadoPreguntas = new ArrayList<Integer>();
 				}
 
-				for (String ele : request.getParameterValues("isbn")) {
-					arrayResultadoPreguntas.add(Integer.valueOf(request.getParameter("cantidad" + ele)));
+				String[] isbns = request.getParameterValues("isbn");
+
+				if (isbns != null) {
+					for (String ele : request.getParameterValues("isbn")) {
+						arrayResultadoPreguntas.add(Integer.valueOf(request.getParameter("cantidad" + ele)));
+					}
+					System.out.println("cosas dentro del array preguntas: " + arrayResultadoPreguntas);
+
+					int num = 0;
+
+					for (Integer l : arrayResultadoPreguntas) {
+						num += l;
+					}
+
+					cantidadPreguntas.put(idEneagrama, num);
+
+					sesionQuestion.setAttribute("mapa", cantidadPreguntas);
+
+					System.out.println("valores del array " + num);
 				}
-
-				System.out.println("cosas dentro del array preguntas: " + arrayResultadoPreguntas);
-
-				int num = 0;
-
-				for (Integer l : arrayResultadoPreguntas) {
-					num += l;
-				}
-
-				cantidadPreguntas.put(idEneagrama, num);
-
-				sesionQuestion.setAttribute("mapa", cantidadPreguntas);
-
-				System.out.println("valores del array " + num);
 
 			}
 
@@ -182,7 +183,7 @@ public class GestionPreguntas extends HttpServlet {
 						
 						numID = (i+1);
 						z.add(numID);
-						//volvemos a recorrer para ver si hay más de uno con esa cantidad
+						//volvemos a recorrer para ver si hay mï¿½s de uno con esa cantidad
 					}
 				}
 				
@@ -253,9 +254,8 @@ public class GestionPreguntas extends HttpServlet {
 					sesionQuestion.removeAttribute("id");
 					sesionQuestion.removeAttribute("mapa");
 					sesionQuestion.removeAttribute("descTipo");
+					// sesionQuestion.invalidate();
 
-		
-					
 					usu = (Usuario) request.getSession().getAttribute("usuario");
 
 					request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
@@ -328,6 +328,9 @@ public class GestionPreguntas extends HttpServlet {
 
 			request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
+		case "rapido":
+			
+			
 			break;
 
 		}

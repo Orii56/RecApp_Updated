@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<title>Test Completo</title>
+<title>Test Rapido</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -103,48 +103,52 @@
 				<div class="row align-items-center ">
 
 					<div class="mr-auto"
-						style="max-width: 400px; position: relative; left: 10px;">
-						<h2 class="mb-4" style="color: white;">¿Cómo realizar el test
-							completo?</h2>
-						<p class="mb-4" style="color: white;">Hay nueve tipos de
-							eneagramas. El Reformador, el Ayudador, el Triunfador, el
-							Individualista, el Investigador, el Leal, el Entusiasta, el
-							Desafiador y el Pacificador</p>
-						<p class="mb-4" style="color: white;">Por cada eneagrama se
-							realizaran cinco preguntas.</p>
-						<p class="mb-4" style="color: white;">Cada pregunta tiene que
-							ser evaluada con puntos del 1 al 5 segun sean verdaderas o
-							aplicables a ti.</p>
-						<p class="mb-4" style="color: white;">No se puede dejar
-							ninguna pregunta sin responder.</p>
-						<p class="mb-4" style="color: white;">Puedes encontrar el
-							sistema de puntucaion en la tabla de la derecha.</p>
+						style="max-width: 420px; position: relative; left: 10px;">
+						<h2 class="mb-4" style="color: white;">
+							¿Cómo realizar el <br>test rápido?
+						</h2>
+						<p class="mb-4" style="color: white;">Para obtener del TRIE un
+							resultado correcto es importante que leas y sigas estas sencillas
+							instrucciones:</p>
+						<p class="mb-4" style="color: white;">En cada uno de los dos
+							grupos elige el parrafo que refleje mejor tus actitudes y tu
+							comportamiento en general segun tu forma de ser la mayor parte de
+							tu vida.</p>
+						<p class="mb-4" style="color: white;">No es necesario que
+							estes totalmente de acuerdo con cada palabra del parrafo. Pero si
+							deberias identificarte con el tono en general.</p>
+
+						<p class="mb-4" style="color: white;">La idea general y el
+							sentimiento del parrafo en su conjunto es mas importante que sus
+							elementos individuales.</p>
 					</div>
 
 					<div
-						style="padding: 40px 80px 40px 80px; max-width: 400px; position: absolute; left: 720px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
-						<h4 class="mb-4" style="color: grey;">sistema de puntos</h4>
+						style="text-align: center; padding: 40px 80px 40px 80px; min-width: 400px; position: absolute; left: 720px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+						<h4 class="mb-4" style="color: grey;">Grupo 1</h4>
 						<ul style="list-style-type: none; margin-left: -35px;">
 							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									1 ...</span>
-								<p style="color: steelblue; font-size: 12px;">nunca</p></li>
+								style="color: steelblue; font-size: 25px; font-weight: 500;">A</span>
+							</li>
 							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									2 ...</span>
-								<p style="color: steelblue; font-size: 12px;">rara vez</p></li>
+								style="color: steelblue; font-size: 25px; font-weight: 500;">B</span>
+							</li>
 							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									3 ...</span>
-								<p style="color: steelblue; font-size: 12px;">quizas</p></li>
+								style="color: steelblue; font-size: 25px; font-weight: 500;">C</span>
+							</li>
+						</ul>
+						<br>
+						<h4 class="mb-4" style="color: grey;">Grupo 2</h4>
+						<ul style="list-style-type: none; margin-left: -35px;">
 							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">
-									... 4 ...</span>
-								<p style="color: steelblue; font-size: 12px;">normalmente</p></li>
+								style="color: steelblue; font-size: 25px; font-weight: 500;">X</span>
+							</li>
 							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									5 ...</span>
-								<p style="color: steelblue; font-size: 12px;">siempre</p></li>
+								style="color: steelblue; font-size: 25px; font-weight: 500;">Y</span>
+							</li>
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">Z</span>
+							</li>
 						</ul>
 
 					</div>
@@ -152,7 +156,7 @@
 				</div>
 				<p style="margin-left: -10px; margin-top: 15px;">
 					<a class="registro btn btn-outline-white"
-						href="GestionPreguntas?option=question">test</a>
+						href="GestionPreguntas?option=rapido">test</a>
 				</p>
 			</div>
 

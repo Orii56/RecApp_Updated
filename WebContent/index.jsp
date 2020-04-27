@@ -124,8 +124,11 @@
 							<div class="col-lg-7 text-center text-lg-left">
 								<h1 data-aos="fade-right">Tú nos hablas sobre ti, y
 									nosotros encontramos el trabajo que mejor encaja contigo.</h1>
-								<p class="mb-5" data-aos="fade-right" data-aos-delay="100">Regístrate
-									y accede a nuestro test de personalidad.</p>
+								<p class="mb-5" data-aos="fade-right" data-aos-delay="100">
+									Regístrate y accede a nuestro test* de personalidad.<br>
+
+								</p>
+
 								<p data-aos="fade-right" data-aos-delay="200"
 									data-aos-offset="-500">
 									<a href="Login?option=registrar"
@@ -183,16 +186,16 @@
 								crítica. Estabilidad emocional...</p>
 						</div>
 					</div>
-					<div>
-						<p data-aos="fade-right" data-aos-delay="200"
-							data-aos-offset="-500">
-							<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
-						</p>
-					</div>
+
 				</div>
 			</div>
-
+			<div class="row justify-content-center text-center mb-5">
+				<p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
+					<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
+				</p>
+			</div>
 		</div>
+
 		<!-- .site-section -->
 
 		<div class="site-section">
@@ -229,12 +232,12 @@
 						</div>
 					</div>
 				</div>
-				<div>
-					<p data-aos="fade-right" data-aos-delay="200"
-						data-aos-offset="-500">
-						<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
-					</p>
-				</div>
+
+			</div>
+			<div class="row justify-content-center text-center mb-5">
+				<p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
+					<a href="Login?option=registrar" class="reg btn btn-outline-blue">regístrate</a>
+				</p>
 			</div>
 		</div>
 		<!-- .site-section -->
@@ -387,10 +390,9 @@
 						<h2>RecApp está disponible en</h2>
 					</div>
 					<div class="col-md-5 text-center">
-						<p >
+						<p>
 							<a href="https://www.apple.com/ios/app-store/" class=""
-								target="_blank"> <img
-								style="max-width: 200px;"
+								target="_blank"> <img style="max-width: 200px;"
 								src="img/Apple_Store.png" alt="apple"></img>
 							</a>
 						</p>
@@ -425,30 +427,37 @@
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Equipo</a></li>
-									<li><a href="#">Sinergias</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Eventos</a></li>
+									<li><a href="sobreNosotros.jsp">Equipo</a></li>
+									<li><a href="eneagramas.jsp">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">App Store</a></li>
-									<li><a href="#">Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row justify-content-center text-center">
+				<span style="font-size: 10px;"><i>*Este test tiene un
+						porcentaje de acierto del 70%. <br>**Información obtenida del
+						libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+						Hudson.
+				</i></span>
+
+				<div style="margin-top:25px;" class="row justify-content-center text-center">
 					<div class="col-md-7">
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>
-
 			</div>
+
 		</footer>
 	</div>
 	<!-- .site-wrap -->
