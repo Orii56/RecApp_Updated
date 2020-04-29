@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -73,7 +74,7 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=registrar" class="nav-link">reg�strate</a></li>
+								<li><a href="Login?option=registrar" class="nav-link">regístrate</a></li>
 								<li class="active"><a href="contacto.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotros.jsp" class="nav-link">nosotros</a></li>
 								<li><a href="eneagramas.jsp" class="nav-link">eneagramas</a></li>
@@ -216,14 +217,14 @@
 		<div class="container">
 			<div class="row justify-content-center text-center mb-5">
 				<div class="col-md-4">
-					<h2 class="section-heading">An�mate y realiza el test!</h2>
+					<h2 class="section-heading">Anímate y realiza el test!</h2>
 					<p style="margin-top: 50px;">
 						<a class="test btn btn-outline-blue"
 							href="GestionTest?option=validar">test</a>
 					</p>
 					<span style="font-size: 10px;"><i>*Este test tiene un
-							porcentaje de acierto del 70%. <br>**Informaci�n obtenida
-							del libro "La Sabidur�a del Eneagrama" de Don Richard Riso y Russ
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
 							Hudson.
 					</i></span>
 				</div>
@@ -235,7 +236,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-						<h2>RecApp est� disponible en</h2>
+						<h2>RecApp está disponible en</h2>
 					</div>
 					<div class="col-md-5 text-center">
 						<p>

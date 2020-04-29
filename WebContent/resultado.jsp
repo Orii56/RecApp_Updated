@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="ISO-8859-1">
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta charset="UTF-8">
 
 <link rel="stylesheet" href="style.css">
 
