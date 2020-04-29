@@ -4,14 +4,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="ISO-8859-1">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
-
-<title>Test Rapido</title>
+<title>Preguntas</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -43,19 +42,17 @@
 <link href="style.css" rel="stylesheet">
 
 <script type="text/javascript">
-	function preback() {
+	window.history.forward();
+	function noBack() {
 		window.history.forward();
-	}
-	setTimeout("preback()", 0);
-	window.onunload = function() {
-		null;
 	}
 </script>
 
-
-
 </head>
-<body>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();"
+	onunload="">
+
+
 	<div class="site-wrap">
 
 		<div class="site-mobile-menu site-navbar-target">
@@ -74,7 +71,7 @@
 
 					<div class="col-6 col-lg-2">
 						<h1 class="mb-0 site-logo">
-							<a href="indexUsu.jsp" class="mb-0">RecApp</a>
+							<a href="Login?option=validar" class="mb-0">RecApp</a>
 						</h1>
 					</div>
 
@@ -105,75 +102,80 @@
 			</div>
 		</header>
 
-
 		<div class="site-section pb-0">
 			<div class="container">
 				<div class="row align-items-center ">
 
-					<div class="mr-auto"
-						style="max-width: 420px; position: relative; left: 10px;">
-						<h2 class="mb-4" style="color: white;">
-							¿Cómo realizar el <br>test rápido?
-						</h2>
-						<p class="mb-4" style="color: white;">Para obtener del TRIE un
-							resultado correcto es importante que leas y sigas estas sencillas
-							instrucciones:</p>
-						<p class="mb-4" style="color: white;">En cada uno de los dos
-							grupos elige el parrafo que refleje mejor tus actitudes y tu
-							comportamiento en general segun tu forma de ser la mayor parte de
-							tu vida.</p>
-						<p class="mb-4" style="color: white;">No es necesario que
-							estes totalmente de acuerdo con cada palabra del parrafo. Pero si
-							deberias identificarte con el tono en general.</p>
+					<div class="mr-auto" style="max-width: 600px; margin-top: -20px;">
 
-						<p class="mb-4" style="color: white;">La idea general y el
-							sentimiento del parrafo en su conjunto es mas importante que sus
-							elementos individuales.</p>
-					</div>
+						<form class="" action="GestionPreguntas?option=rapido"
+							method="POST">
+							<div style="position: relative;">
 
-					<div
-						style="text-align: center; padding: 40px 80px 40px 80px; min-width: 400px; position: absolute; left: 720px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
-						<h4 class="mb-4" style="color: grey;">Grupo 1</h4>
-						<ul style="list-style-type: none; margin-left: -35px;">
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">A</span>
-							</li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">B</span>
-							</li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">C</span>
-							</li>
-						</ul>
-						<br>
-						<h4 class="mb-4" style="color: grey;">Grupo 2</h4>
-						<ul style="list-style-type: none; margin-left: -35px;">
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">X</span>
-							</li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">Y</span>
-							</li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">Z</span>
-							</li>
-						</ul>
+								<%-- <h2 class="mb-4" style="color: white;">
+									<span>${requestScope.tipoEne.idEneagrama } </span><span>-
+										${requestScope.tipoEne.tipo } </span>
+								</h2> --%>
+
+							</div>
+							<div style="max-width: 750px; position: absolute; z-index: 99;">
+								<c:forEach items="${requestScope.preguntas}" var="pregunta"
+									begin="0" end="2">
+									<div style="display: flex;">
+										<table>
+											<tr>
+
+												<td><input
+													style="position: relative; top: -55px; border: 1px solid red;"
+													type="checkbox" name="isbn" value="${pregunta}"></td>
+												
+												<td><p
+														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
+														${pregunta.letraGrupo } - ${pregunta.txtGrupo }</p></td>
+												<%-- <td>${pregunta.txtGrupo }</td> --%>
+											</tr>
+										</table>
+									</div>
+								</c:forEach>
+
+								<button style="margin-left: 25px;" type="submit"
+									class="registro btn btn-outline-white">siguiente</button>
+							</div>
+						</form>
 
 					</div>
 
+					<!-- <div style="padding: 40px 80px 40px 80px; max-width: 400px; position: absolute; left: 780px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+						<h4 class="mb-4" style="color: grey;">sistema de puntos</h4>
+						<ul style="list-style-type: none; margin-left: -35px;">
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">...
+									1 ...</span>
+								<p style="color: steelblue; font-size: 12px;">nunca</p></li>
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">...
+									2 ...</span>
+								<p style="color: steelblue; font-size: 12px;">rara vez</p></li>
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">...
+									3 ...</span>
+								<p style="color: steelblue; font-size: 12px;">quizás</p></li>
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">
+									... 4 ...</span>
+								<p style="color: steelblue; font-size: 12px;">normalmente</p></li>
+							<li style="text-align: center;"><span
+								style="color: steelblue; font-size: 25px; font-weight: 500;">...
+									5 ...</span>
+								<p style="color: steelblue; font-size: 12px;">siempre</p></li>
+						</ul>
+					</div> -->
 				</div>
-				<p style="margin-left: -10px; margin-top: 15px;">
-					<a class="registro btn btn-outline-white"
-						href="GestionPreguntas?option=rapido">test</a>
-				</p>
 			</div>
-
 		</div>
+
 		</main>
 	</div>
-
-
-
 
 </body>
 </html>

@@ -1,14 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="ISO-8859-1">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-
 
 <title>Contacto</title>
 
@@ -73,7 +73,7 @@
 
 							<ul
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="Login?option=registrar" class="nav-link">regÌstrate</a></li>
+								<li><a href="Login?option=registrar" class="nav-link">reg√≠strate</a></li>
 								<li class="active"><a href="contacto.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotros.jsp" class="nav-link">nosotros</a></li>
 								<li><a href="eneagramas.jsp" class="nav-link">eneagramas</a></li>
@@ -122,10 +122,10 @@
 					<div class="col-12">
 						<div class="row justify-content-center">
 							<div class="col-md-7 text-center hero-text">
-								<h1 data-aos="fade-up" data-aos-delay="">Cont·ctanos</h1>
+								<h1 data-aos="fade-up" data-aos-delay="">Cont√°ctanos</h1>
 								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-									Si quieres saber m·s sobre RecApp, o si quieres preguntarnos
-									algo, <br>estamos a tu completa disposiciÛn.
+									Si quieres saber m√°s sobre RecApp, o si quieres preguntarnos
+									algo, <br>estamos a tu completa disposici√≥n.
 								</p>
 							</div>
 						</div>
@@ -150,8 +150,8 @@
 				<div class="row">
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><strong class="d-block mb-1">DirecciÛn</strong>
-								<span>Juli·n Camarillo 45, 28029 Madrid EspaÒa</span></li>
+							<li class="mb-3"><strong class="d-block mb-1">Direcci√≥n</strong>
+								<span>Juli√°n Camarillo 45, 28029 Madrid Espa√±a</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Telefono
 									de contacto</strong> <span>654577850</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Nuesto
@@ -195,7 +195,7 @@
 								<div class="col-md-12 mb-3">
 									<div class="loading">Cargando</div>
 									<div class="error-message"></div>
-									<div class="sent-message">°Su mensaje ha sido enviado!
+									<div class="sent-message">¬°Su mensaje ha sido enviado!
 										Gracias por contactar con RecApp</div>
 								</div>
 
@@ -216,14 +216,14 @@
 		<div class="container">
 			<div class="row justify-content-center text-center mb-5">
 				<div class="col-md-4">
-					<h2 class="section-heading">AnÌmate y realiza el test!</h2>
+					<h2 class="section-heading">An√≠mate y realiza el test!</h2>
 					<p style="margin-top: 50px;">
 						<a class="test btn btn-outline-blue"
 							href="GestionTest?option=validar">test</a>
 					</p>
 					<span style="font-size: 10px;"><i>*Este test tiene un
-							porcentaje de acierto del 70%. <br>**InformaciÛn obtenida
-							del libro "La SabidurÌa del Eneagrama" de Don Richard Riso y Russ
+							porcentaje de acierto del 70%. <br>**Informaci√≥n obtenida
+							del libro "La Sabidur√≠a del Eneagrama" de Don Richard Riso y Russ
 							Hudson.
 					</i></span>
 				</div>
@@ -235,7 +235,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
-						<h2>RecApp est· disponible en</h2>
+						<h2>RecApp est√° disponible en</h2>
 					</div>
 					<div class="col-md-5 text-center">
 						<p>
@@ -328,8 +328,8 @@
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
 						<h3>Sobre RecApp</h3>
-						<p>Herramienta digital para encontrar trabajo en otra ·rea
-							profesional para gente que quiere reinventarse y/o cambiar. Est·
+						<p>Herramienta digital para encontrar trabajo en otra √°rea
+							profesional para gente que quiere reinventarse y/o cambiar. Est√°
 							app valorara las Soft Skills personales previas importantes para
 							el nuevo puesto de trabajo.</p>
 						<p class="social">

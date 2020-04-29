@@ -179,7 +179,7 @@
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Naming</h2>
 						<p class="mb-4">
-							El nombre RecApp nace de la convinacion de palabras tales como:
+							El nombre RecApp nace de la combinacion de palabras tales como:
 							reciclar, recuperar, reconvertir, reconstruir etc. Observamos un
 							mismo patron en todas las palabras que era la parte de "re". El
 							componente lexico del prefijo "re" hace referencia a una

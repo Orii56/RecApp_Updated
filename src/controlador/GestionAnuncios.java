@@ -57,7 +57,7 @@ public class GestionAnuncios extends HttpServlet {
 			case "anuncios":
 	
 				if (usu.getTipoEneagrama() == null) {
-					request.getRequestDispatcher("test.jsp").forward(request, response);
+					request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
 				} else if (usu.getEneagrama() != null) {
 					request.getSession().setAttribute("anuncio", anundao.findByID(userValues.getIdEneagrama()));
 					request.getRequestDispatcher("anuncios.jsp").forward(request, response);

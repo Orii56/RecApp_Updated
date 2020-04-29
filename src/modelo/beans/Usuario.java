@@ -4,43 +4,63 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 
-
 /**
- * The persistent class for the usuario database table.
+ * The persistent class for the USUARIO database table.
  * 
  */
 @Entity
-@NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")
+@NamedQuery(name = "Usuario.findAll", query = "SELECT u FROM Usuario u")
 public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="ID_USUARIO")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_USUARIO")
 	private int idUsuario;
 
 	private String email;
 
 	@Temporal(TemporalType.DATE)
-	@Column(name="FECHA_ALTA")
+	@Column(name = "FECHA_ALTA")
 	private Date fechaAlta;
 
 	private String nombre;
 
 	private String password;
 
-	@Column(name="RESULTADO_TEST")
+	@Column(name = "RESULTADO_RAPIDO")
+	private String resultadoRapido;
+
+	@Column(name = "RESULTADO_TEST")
 	private int resultadoTest;
 
-	@Column(name="TIPO_ENEAGRAMA")
+	@Column(name = "TIPO_ENEAGRAMA")
 	private String tipoEneagrama;
 
-	//uni-directional many-to-one association to Eneagrama
+	@Column(name = "TIPO_RAPIDO")
+	private String tipoRapido;
+
+	// uni-directional many-to-one association to Eneagrama
 	@ManyToOne
-	@JoinColumn(name="ID_ENE")
+	@JoinColumn(name = "ID_ENE")
 	private Eneagrama eneagrama;
 
 	public Usuario() {
+	}
+
+	public Usuario(int idUsuario, String email, Date fechaAlta, String nombre, String password, String resultadoRapido,
+			int resultadoTest, String tipoEneagrama, String tipoRapido, Eneagrama eneagrama) {
+		super();
+		this.idUsuario = idUsuario;
+		this.email = email;
+		this.fechaAlta = fechaAlta;
+		this.nombre = nombre;
+		this.password = password;
+		this.resultadoRapido = resultadoRapido;
+		this.resultadoTest = resultadoTest;
+		this.tipoEneagrama = tipoEneagrama;
+		this.tipoRapido = tipoRapido;
+		this.eneagrama = eneagrama;
 	}
 
 	public int getIdUsuario() {
@@ -83,6 +103,14 @@ public class Usuario implements Serializable {
 		this.password = password;
 	}
 
+	public String getResultadoRapido() {
+		return this.resultadoRapido;
+	}
+
+	public void setResultadoRapido(String resultadoRapido) {
+		this.resultadoRapido = resultadoRapido;
+	}
+
 	public int getResultadoTest() {
 		return this.resultadoTest;
 	}
@@ -99,12 +127,28 @@ public class Usuario implements Serializable {
 		this.tipoEneagrama = tipoEneagrama;
 	}
 
+	public String getTipoRapido() {
+		return this.tipoRapido;
+	}
+
+	public void setTipoRapido(String tipoRapido) {
+		this.tipoRapido = tipoRapido;
+	}
+
 	public Eneagrama getEneagrama() {
 		return this.eneagrama;
 	}
 
 	public void setEneagrama(Eneagrama eneagrama) {
 		this.eneagrama = eneagrama;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario [idUsuario=" + idUsuario + ", email=" + email + ", fechaAlta=" + fechaAlta + ", nombre="
+				+ nombre + ", password=" + password + ", resultadoRapido=" + resultadoRapido + ", resultadoTest="
+				+ resultadoTest + ", tipoEneagrama=" + tipoEneagrama + ", tipoRapido=" + tipoRapido + ", eneagrama="
+				+ eneagrama + "]";
 	}
 
 	@Override
@@ -117,8 +161,10 @@ public class Usuario implements Serializable {
 		result = prime * result + idUsuario;
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + ((resultadoRapido == null) ? 0 : resultadoRapido.hashCode());
 		result = prime * result + resultadoTest;
 		result = prime * result + ((tipoEneagrama == null) ? 0 : tipoEneagrama.hashCode());
+		result = prime * result + ((tipoRapido == null) ? 0 : tipoRapido.hashCode());
 		return result;
 	}
 
@@ -158,6 +204,11 @@ public class Usuario implements Serializable {
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
+		if (resultadoRapido == null) {
+			if (other.resultadoRapido != null)
+				return false;
+		} else if (!resultadoRapido.equals(other.resultadoRapido))
+			return false;
 		if (resultadoTest != other.resultadoTest)
 			return false;
 		if (tipoEneagrama == null) {
@@ -165,32 +216,14 @@ public class Usuario implements Serializable {
 				return false;
 		} else if (!tipoEneagrama.equals(other.tipoEneagrama))
 			return false;
+		if (tipoRapido == null) {
+			if (other.tipoRapido != null)
+				return false;
+		} else if (!tipoRapido.equals(other.tipoRapido))
+			return false;
 		return true;
 	}
+	
+	
 
-	@Override
-	public String toString() {
-		return "Usuario [idUsuario=" + idUsuario + ", email=" + email + ", fechaAlta=" + fechaAlta + ", nombre="
-				+ nombre + ", password=" + password + ", resultadoTest=" + resultadoTest + ", tipoEneagrama="
-				+ tipoEneagrama + ", eneagrama=" + eneagrama + "]";
-	}
-
-	public Usuario(int idUsuario, String email, Date fechaAlta, String nombre, String password, int resultadoTest,
-			String tipoEneagrama, Eneagrama eneagrama) {
-		super();
-		this.idUsuario = idUsuario;
-		this.email = email;
-		this.fechaAlta = fechaAlta;
-		this.nombre = nombre;
-		this.password = password;
-		this.resultadoTest = resultadoTest;
-		this.tipoEneagrama = tipoEneagrama;
-		this.eneagrama = eneagrama;
-	}
-
-	
-	
-	
-	
-	
 }

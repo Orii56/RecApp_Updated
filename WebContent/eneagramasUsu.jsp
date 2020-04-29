@@ -300,7 +300,7 @@
 					</tbody>
 				</table>
 				<br>
-				<p>
+				<p style="margin-bottom:80px;">
 					<a class="test btn btn-outline-blue"
 						href="https://www.enneagraminstitute.com/type-descriptions"
 						target="_blank">leer mas</a>

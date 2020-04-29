@@ -5,8 +5,10 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 
 <title>Preguntas</title>
 
@@ -15,8 +17,10 @@
 <meta content="" name="keywords">
 <meta content="" name="description">
 
-<!-- Favicons -->
+<!-- ICONO DE LA PESTANA DEL NAVEGADOR -->
 <link href="img/_miniLogo.png" rel="icon">
+
+<!-- Favicons -->
 <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -34,6 +38,9 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="style.css" rel="stylesheet">
 
 <script type="text/javascript">
 	window.history.forward();

@@ -81,7 +81,7 @@ public class Login extends HttpServlet {
 					System.out.println("El usuario y contrasena ok!");
 					// showMessageDialog(null, "El usuario y contrasena ok!");
 					usu = udao.findLogin(email, pwd);
-					
+
 					request.getSession().setAttribute("usuario", usu);
 					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 				}
@@ -127,7 +127,7 @@ public class Login extends HttpServlet {
 
 				} else {
 
-					usu = new Usuario(autoIncrement, email, new Date(), nombre, pwd, 0, null, null);
+					usu = new Usuario(autoIncrement, email, new Date(), nombre, pwd, null, 0, null, null, null);
 
 					udao.insert(usu);
 
@@ -158,7 +158,7 @@ public class Login extends HttpServlet {
 			request.getSession().invalidate();
 
 			request.getRequestDispatcher("index.jsp").forward(request, response);
-			
+
 			break;
 
 		case "cerrar-test":
@@ -166,7 +166,6 @@ public class Login extends HttpServlet {
 			request.getSession().removeAttribute("idEneag");
 			request.getSession().removeAttribute("id");
 			request.getSession().removeAttribute("mapa");
-
 
 			request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 
