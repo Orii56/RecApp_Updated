@@ -157,7 +157,7 @@ if (udao.findByEmail(email) != null) {
 				}
 			} else {
 				
-				request.setAttribute("estado", "El email es invalido o la contraseï¿½a muy corta");
+				request.setAttribute("estado", "El email es invalido o la contraseña muy corta");
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 
 			}
