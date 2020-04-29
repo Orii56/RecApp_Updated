@@ -118,7 +118,7 @@ public class Login extends HttpServlet {
 
 					if (udao.findLogin(email, pwd) != null) {
 
-						// showMessageDialog(null, "El usuario ya existe. Logeate :)");
+						request.setAttribute("estado", "ya estas registrado, haz login!");
 						request.getRequestDispatcher("logear.jsp").forward(request, response);
 
 					} else {
@@ -144,6 +144,11 @@ public class Login extends HttpServlet {
 					// showMessageDialog(null, "Usuario registrado :)");
 					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 				}
+			} else {
+				
+				request.setAttribute("estado", "El email es invalido o la contraseña muy corta");
+				request.getRequestDispatcher("registro.jsp").forward(request, response);
+
 			}
 
 			break;
