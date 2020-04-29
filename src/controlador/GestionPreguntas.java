@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 
 import modelo.DAOS.EneagramaDAOImpl;
 import modelo.DAOS.PreguntaDAOImpl;
+import modelo.DAOS.TestRapidoDAOImpl;
 import modelo.DAOS.UsuarioDAOImpl;
 import modelo.beans.Eneagrama;
 import modelo.beans.Pregunta;
@@ -53,6 +54,8 @@ public class GestionPreguntas extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		// Logica Test Completo //
+
 		EneagramaDAOImpl edao = new EneagramaDAOImpl();
 		PreguntaDAOImpl pdao = new PreguntaDAOImpl();
 
@@ -69,7 +72,14 @@ public class GestionPreguntas extends HttpServlet {
 
 		HashMap<Integer, Integer> cantidadPreguntas = (HashMap<Integer, Integer>) sesionQuestion.getAttribute("mapa");
 
+		////////////////////////
+
+		// Logica Test Rapido //
+
+		TestRapidoDAOImpl tdao = new TestRapidoDAOImpl();
 		
+		///////////////////////
+
 		if (cantidadPreguntas == null) {
 			cantidadPreguntas = new HashMap<Integer, Integer>();
 		}
@@ -151,8 +161,6 @@ public class GestionPreguntas extends HttpServlet {
 			sesionQuestion.setAttribute("id", tipoEneagrama);
 
 			if (tipoEneagrama > 9) {
-
-				// sesionQuestion.invalidate();
 
 				boolean mayor20 = false;
 				Integer numID = null;
@@ -329,8 +337,13 @@ public class GestionPreguntas extends HttpServlet {
 			request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
 		case "rapido":
-			
-			
+
+			if (usu.getResultadoRapido() == null && usu.getTipoRapido() == null) {
+				request.setAttribute("preguntas", tdao.findAll()); 
+			}
+
+			request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
+
 			break;
 
 		}

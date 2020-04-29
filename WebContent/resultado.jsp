@@ -9,8 +9,12 @@
 
 <link rel="stylesheet" href="style.css">
 
-<title>Resultado</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 
+<title>Resultado</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -37,6 +41,9 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -75,6 +82,7 @@
 										out</a></li>
 								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
+								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
 
@@ -101,21 +109,27 @@
 					<div class="mr-auto"
 						style="max-width: 500px; position: relative; left: 10px; top: -25px;">
 						<h1 class="" style="color: white;">
-							<span style="font-size: 14px;">El tipo de Eneagrama que
-								eres es</span> <br> <b>El ${sessionScope.descTipo.tipo }</b>
+							<span style="font-size: 14px;">El Eneatipo que eres es</span> <br>
+							<b>El ${sessionScope.descTipo.tipo }*</b>
 						</h1>
-						<p class="" style="color: white;">
-							<span style="font-size: 14px;">Breve descripcion del tipo</span>
-							<br>${sessionScope.descTipo.descripcion }</p>
-						<p class="" style="color: white;">
+						<p class=""
+							style="color: white; position: relative; top: 20px !important;">
+							<span style="font-size: 14px;">Breve descripción</span> <br>${sessionScope.descTipo.descripcion }</p>
+						<p class=""
+							style="color: white; position: relative; top: 30px !important;">
 							<span style="font-size: 14px;"><i>Quote</i></span> <br>${sessionScope.descTipo.quote }</p>
 
 					</div>
 					<div
-						style="padding: 20px 20px 20px 20px; max-width: 450px; position: absolute; left: 720px; top: 220px; background-color: rgba(255, 255, 255); border-radius: 20px;">
-						<img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+						style="padding: 20px 20px 30px 20px; max-width: 450px; position: absolute; left: 720px; top: 220px; background-color: rgba(255, 255, 255); border-radius: 20px;">
+						<img src="img/undraw_svg_15.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
+				<span style="font-size: 10px; color:white;"><i>*Este test tiene un
+						porcentaje de acierto del 70%. <br>**Información obtenida del
+						libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+						Hudson.
+				</i></span>
 			</div>
 		</div>
 

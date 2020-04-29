@@ -100,7 +100,8 @@
 							<img src="img/undraw_svg_6.svg" alt="Image" class="img-fluid"
 								style="max-width: 300px; margin-top: 40px;">
 
-						</div></a> <a href="testRapido.jsp" style="text-decoration: none;">
+						</div></a> 
+						<a href="testRapido.jsp" style="text-decoration: none;">
 						<div
 							style="padding: 40px 80px 40px 80px; min-width: 400px; min-height: 400px; position: relative; left: 170px; top: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
 							<h4 class="mb-4" style="color: grey; text-align: center;">TEST

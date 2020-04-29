@@ -3,18 +3,17 @@ package modelo.beans;
 import java.io.Serializable;
 import javax.persistence.*;
 
-
 /**
- * The persistent class for the eneagrama database table.
+ * The persistent class for the ENEAGRAMA database table.
  * 
  */
 @Entity
-@NamedQuery(name="Eneagrama.findAll", query="SELECT e FROM Eneagrama e")
+@NamedQuery(name = "Eneagrama.findAll", query = "SELECT e FROM Eneagrama e")
 public class Eneagrama implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="ID_ENEAGRAMA")
+	@Column(name = "ID_ENEAGRAMA")
 	private int idEneagrama;
 
 	private String descripcion;
@@ -27,7 +26,15 @@ public class Eneagrama implements Serializable {
 
 	public Eneagrama() {
 	}
-	
+
+	public Eneagrama(int idEneagrama, String descripcion, String quote, int sum, String tipo) {
+		super();
+		this.idEneagrama = idEneagrama;
+		this.descripcion = descripcion;
+		this.quote = quote;
+		this.sum = sum;
+		this.tipo = tipo;
+	}
 
 	public int getIdEneagrama() {
 		return this.idEneagrama;
@@ -66,16 +73,6 @@ public class Eneagrama implements Serializable {
 	}
 
 	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-public Eneagrama(int idEneagrama, String descripcion, String quote, int sum, String tipo) {
-
-		super();
-		this.idEneagrama = idEneagrama;
-		this.descripcion = descripcion;
-		this.quote = quote;
-		this.sum = sum;
 		this.tipo = tipo;
 	}
 
@@ -127,5 +124,5 @@ public Eneagrama(int idEneagrama, String descripcion, String quote, int sum, Str
 			return false;
 		return true;
 	}
-	
+
 }

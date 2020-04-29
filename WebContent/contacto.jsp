@@ -10,7 +10,6 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
-
 <title>Contacto</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -126,7 +125,7 @@
 								<h1 data-aos="fade-up" data-aos-delay="">Contáctanos</h1>
 								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
 									Si quieres saber más sobre RecApp, o si quieres preguntarnos
-									algo, <br>estamos a tu completa disposición
+									algo, <br>estamos a tu completa disposición.
 								</p>
 							</div>
 						</div>
@@ -330,7 +329,7 @@
 					<div class="col-md-4 mb-4 mb-md-0">
 						<h3>Sobre RecApp</h3>
 						<p>Herramienta digital para encontrar trabajo en otra área
-							profesional para gente que quiere reinventarse y/o cambiar. Esta
+							profesional para gente que quiere reinventarse y/o cambiar. Está
 							app valorara las Soft Skills personales previas importantes para
 							el nuevo puesto de trabajo.</p>
 						<p class="social">

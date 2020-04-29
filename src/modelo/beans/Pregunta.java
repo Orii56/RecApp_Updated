@@ -3,36 +3,33 @@ package modelo.beans;
 import java.io.Serializable;
 import javax.persistence.*;
 
-
 /**
  * The persistent class for the PREGUNTA database table.
  * 
  */
 @Entity
-@NamedQuery(name="Pregunta.findAll", query="SELECT p FROM Pregunta p")
+@NamedQuery(name = "Pregunta.findAll", query = "SELECT p FROM Pregunta p")
 public class Pregunta implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="ID_AUX")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_AUX")
 	private int idAux;
 
-	@Column(name="ID_PREGUNTA")
+	@Column(name = "ID_PREGUNTA")
 	private int idPregunta;
 
-	@Column(name="NUM_PREGUNTA")
+	@Column(name = "NUM_PREGUNTA")
 	private int numPregunta;
 
 	private String pregunta;
 
-	@Column(name="TIPO_ENEAG")
+	@Column(name = "TIPO_ENEAG")
 	private String tipoEneag;
 
 	public Pregunta() {
 	}
-	
-	
 
 	public Pregunta(int idAux, int idPregunta, int numPregunta, String pregunta, String tipoEneag) {
 		super();
@@ -42,8 +39,6 @@ public class Pregunta implements Serializable {
 		this.pregunta = pregunta;
 		this.tipoEneag = tipoEneag;
 	}
-
-
 
 	public int getIdAux() {
 		return this.idAux;
@@ -84,7 +79,13 @@ public class Pregunta implements Serializable {
 	public void setTipoEneag(String tipoEneag) {
 		this.tipoEneag = tipoEneag;
 	}
-  
+
+	@Override
+	public String toString() {
+		return "Pregunta [idAux=" + idAux + ", idPregunta=" + idPregunta + ", numPregunta=" + numPregunta
+				+ ", pregunta=" + pregunta + ", tipoEneag=" + tipoEneag + "]";
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -96,8 +97,6 @@ public class Pregunta implements Serializable {
 		result = prime * result + ((tipoEneag == null) ? 0 : tipoEneag.hashCode());
 		return result;
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -127,17 +126,4 @@ public class Pregunta implements Serializable {
 		return true;
 	}
 
-
-
-	@Override
-	public String toString() {
-		return "Pregunta [idAux=" + idAux + ", idPregunta=" + idPregunta + ", numPregunta=" + numPregunta
-				+ ", pregunta=" + pregunta + ", tipoEneag=" + tipoEneag + "]";
-	}
-
-	
-	
-	
-	
-	
 }

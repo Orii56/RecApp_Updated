@@ -140,7 +140,6 @@
 								</div>
 							</div>
 							<div class="col-lg-5 iphone-wrap">
-								<!-- <img src="img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right"> -->
 								<img src="img/iphone.png" alt="Image" class="phone-2"
 									data-aos="fade-right" data-aos-delay="200">
 							</div>
@@ -192,7 +191,7 @@
 						</div>
 					</div>
 				</div>
-				<div>
+				<div style="margin-top:50px;" class="row justify-content-center text-center mb-5">
 					<p data-aos="fade-right" data-aos-delay="200"
 						data-aos-offset="-500">
 						<a class="test btn btn-outline-blue"
@@ -237,7 +236,7 @@
 						</div>
 					</div>
 				</div>
-				<div>
+				<div style="margin-top:50px;" class="row justify-content-center text-center mb-5">
 					<p data-aos="fade-right" data-aos-delay="200"
 						data-aos-offset="-500">
 						<a class="test btn btn-outline-blue"
@@ -301,7 +300,7 @@
 			<div class="container">
 				<div class="row justify-content-center text-center mb-5">
 					<div class="col-md-4">
-						<h2 class="section-heading">Review From Our Users</h2>
+						<h2 class="section-heading">Valoración de los usuarios</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center text-center">
@@ -313,21 +312,19 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>Excellent App!</h3>
+								<h3>RecApp es excelente</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
 										optio dolorem facilis itaque voluptatum recusandae deleniti
 										minus animi, provident voluptates consectetur maiores quos.</p>
 								</blockquote>
-
-
 
 								<p class="review-user">
 									<img src="img/person_1.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Jean
-											Doe</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Eva </span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -339,7 +336,7 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>This App is easy to use!</h3>
+								<h3>RecApp se usa facilmente</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
@@ -347,13 +344,11 @@
 										minus animi, provident voluptates consectetur maiores quos.</p>
 								</blockquote>
 
-
-
 								<p class="review-user">
 									<img src="img/person_2.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Johan
-											Smith</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Juan</span>
+										&mdash; Usuario RecApp
 									</span>
 								</p>
 
@@ -366,7 +361,7 @@
 									<span class="icofont-star"></span> <span class="icofont-star"></span>
 									<span class="icofont-star muted"></span>
 								</p>
-								<h3>Awesome functionality!</h3>
+								<h3>RecApp funciona muy bien</h3>
 								<blockquote>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
 										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
@@ -379,8 +374,8 @@
 								<p class="review-user">
 									<img src="img/person_3.jpg" alt="Image"
 										class="img-fluid rounded-circle mb-3"> <span
-										class="d-block"> <span class="text-black">Jean
-											Thunberg</span>, &mdash; App User
+										class="d-block"> <span class="text-black">Julia</span>
+										&mdash; Usuaria RecApp
 									</span>
 								</p>
 
@@ -429,7 +424,6 @@
 						<p class="social">
 							<a href="#"><span class="icofont-twitter"></span></a> <a href="#"><span
 								class="icofont-facebook"></span></a>
-
 						</p>
 					</div>
 					<div class="col-md-7 ml-auto">
@@ -438,33 +432,37 @@
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">Equipo</a></li>
-									<li><a href="#">Sinergias</a></li>
-									<li><a href="#">Todos</a></li>
-									<li><a href="#">Eventos</a></li>
+									<li><a href="sobreNosotros.jsp">Equipo</a></li>
+									<li><a href="eneagramas.jsp">Eneagramas</a></li>
+									<li><a href="GestionTest?option=validar">Test</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Descarga RecApp</h3>
 								<ul class="list-unstyled">
-									<li><a href="#">App Store</a></li>
-									<li><a href="#">Play Store</a></li>
+									<li><a href="https://www.apple.com/ios/app-store/"
+										class="" target="_blank">App Store</a></li>
+									<li><a href="https://play.google.com/store?hl=es"
+										target="_blank" class="">Play Store</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row justify-content-center text-center">
+				<span style="font-size: 10px;"><i>*Este test tiene un
+						porcentaje de acierto del 70%. <br>**Información obtenida del
+						libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+						Hudson.
+				</i></span>
+
+				<div style="margin-top:25px;" class="row justify-content-center text-center">
 					<div class="col-md-7">
-						<!-- <p class="copyright">&copy; Copyright SoftLand. All Rights Reserved</p> -->
-						<!-- <div class="credits">
-                    Designed by Diego / Oriana / Jesus
-                </div> -->
+						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>
-
 			</div>
+
 		</footer>
 	</div>
 	<!-- .site-wrap -->
@@ -476,7 +474,6 @@
 	<script src="vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/easing/easing.min.js"></script>
-	<script src="vendor/php-email-form/validate.js"></script>
 	<script src="vendor/sticky/sticky.js"></script>
 	<script src="vendor/aos/aos.js"></script>
 	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
@@ -485,6 +482,7 @@
 	<script src="js/main.js"></script>
 
 </body>
+
 
 
 </html>

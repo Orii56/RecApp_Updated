@@ -8,6 +8,8 @@
 		<class>modelo.beans.Anuncio</class>
 		<class>modelo.beans.Eneagrama</class>
 		<class>modelo.beans.Pregunta</class>
+		<class>modelo.beans.Resultadorapido</class>
+		<class>modelo.beans.Testrapido</class>
 		<class>modelo.beans.Usuario</class>
 		<properties>
 			<property name="eclipselink.jdbc.batch-writing" value="JDBC" />

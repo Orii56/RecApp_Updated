@@ -452,7 +452,8 @@
 						Hudson.
 				</i></span>
 
-				<div style="margin-top:25px;" class="row justify-content-center text-center">
+				<div style="margin-top: 25px;"
+					class="row justify-content-center text-center">
 					<div class="col-md-7">
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>

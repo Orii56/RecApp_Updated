@@ -7,7 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import modelo.DAOS.AnuncioDAOImpl;
 import modelo.DAOS.UsuarioDAOImpl;
+import modelo.beans.Anuncio;
+import modelo.beans.Eneagrama;
 import modelo.beans.Usuario;
 
 /**
@@ -43,13 +46,12 @@ public class GestionTest extends HttpServlet {
 			throws ServletException, IOException {
 
 		Usuario usu = null;
-		UsuarioDAOImpl udao = new UsuarioDAOImpl();
-
-		System.out.println(request.getSession().getAttribute("usuario"));
-
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-
-		System.out.println("es este null? " + usu);
+		UsuarioDAOImpl udao = new UsuarioDAOImpl();		
+		Eneagrama userValues = usu.getEneagrama();
+			
+		Anuncio anuncio = null;
+		AnuncioDAOImpl anundao = new AnuncioDAOImpl();
 
 		switch (request.getParameter("option")) {
 
@@ -60,6 +62,7 @@ public class GestionTest extends HttpServlet {
 			} else if (usu.getTipoEneagrama() == null) {
 				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
 			} else if (usu.getEneagrama() != null) {
+				request.getSession().setAttribute("anuncio", anundao.findByID(userValues.getIdEneagrama()));
 				request.getRequestDispatcher("anuncios.jsp").forward(request, response);
 			} else {
 				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
