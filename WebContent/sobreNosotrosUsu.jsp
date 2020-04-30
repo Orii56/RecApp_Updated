@@ -242,10 +242,15 @@
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Equipo RecApp</h2>
-						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Tenetur at reprehenderit optio, laudantium eius
-							quod, eum maxime molestiae porro omnis. Dolores aspernatur
-							delectus impedit incidunt dolore mollitia esse natus beatae.</p>
+						<p class="mb-4">
+						El team RecApp es uno bastante diverso, con personas de experiencias muy variadas 
+						a nivel personal, académico y profesional.<br>
+						Hemos tenido la oportunidad de explorar campos que desconocemos, 
+						así como de probar nuestras habilidades como Desarrolladores web,
+					    lo que nos ha ayudado a crecer como equipo y como individuos.<br>
+					    Sabemos lo importante que es encontrar tu vocación y estamos 
+					    convencidos de que RecApp te ayudará en tu búsqueda.
+					    </p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">

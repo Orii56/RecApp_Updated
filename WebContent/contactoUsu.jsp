@@ -144,7 +144,7 @@
 					<div class="col-md-6" data-aos="fade-up">
 
 						<h2>Formulario de contacto</h2>
-						<p class="mb-0">Introduce tus datos de contacto, escribenos y
+						<p class="mb-0">Introduce tus datos de contacto, escríbenos y
 							te responderemos lo antes posible.</p>
 					</div>
 

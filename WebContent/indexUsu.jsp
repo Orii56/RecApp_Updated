@@ -266,7 +266,7 @@
 						</p>
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
-						<img src="img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+						<img src="img/undraw_svg_16.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
 			</div>

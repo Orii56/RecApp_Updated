@@ -158,7 +158,7 @@
 							tuvo origen alrededor del 2500 a. C. <br> <br> Otros
 							autores afirman libremente que el Eneagrama se trata de una
 							antiquísima teoría, nacida hace más de 2000 años en Afganistán y
-							Babilonia, pasando por los griegos Pitágoras y los primeros
+							Babilonia, pasando por filósofos griegos como Pitágoras y los primeros
 							cristianos y siendo transmitida por la tradición oral sufí. Sin
 							embargo, no existen testimonios arqueológicos o históricos
 							independientes que permitan corroborar muchas de esas
@@ -342,7 +342,7 @@
 					<div class="col-md-4 mb-4 mb-md-0">
 						<h3>Sobre RecApp</h3>
 						<p>Herramienta digital para encontrar trabajo en otra área
-							profesional para gente que quiere reinventarse y/o cambiar. Está
+							profesional para gente que quiere reinventarse y/o cambiar. Ésta
 							app valorara las Soft Skills personales previas importantes para
 							el nuevo puesto de trabajo.</p>
 						<p class="social">
