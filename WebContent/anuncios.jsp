@@ -113,7 +113,7 @@
 								<span>Salario </span>${trabajo.salario} €
 							</p>
 							<a href="https://www.indeed.es/ofertas?q=${trabajo.keyword}"
-								class="btn btn-primary" target="_blank">Indeed</a>
+								class="btn btn-primary" target="_blank">ver mas</a>
 						</div>
 					</div>
 				</c:forEach>

@@ -434,6 +434,7 @@
 									<li><a href="sobreNosotros.jsp">Equipo</a></li>
 									<li><a href="eneagramas.jsp">Eneagramas</a></li>
 									<li><a href="GestionTest?option=validar">Test</a></li>
+									<li><a href="GestionAnuncios?option=anuncios">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">

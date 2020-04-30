@@ -26,7 +26,7 @@ public class TestRapidoDAOImpl implements TestRapidoDAO {
 
 	@Override
 	public List<Testrapido> findAll() {
-		
+
 		query = em.createNamedQuery("Testrapido.findAll");
 
 		return query.getResultList();
@@ -40,7 +40,18 @@ public class TestRapidoDAOImpl implements TestRapidoDAO {
 
 	@Override
 	public List<Testrapido> findByID(int tipoID) {
-		// TODO Auto-generated method stub
+
+		System.out.println("Aqui tipoID " + tipoID);
+
+		sql = "select t from Testrapido t where t.grupo = :nid";
+
+		try {
+			query = em.createQuery(sql);
+			query.setParameter("nid", tipoID);
+			return query.getResultList();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		return null;
 	}
 

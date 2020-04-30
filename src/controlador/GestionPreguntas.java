@@ -65,7 +65,6 @@ public class GestionPreguntas extends HttpServlet {
 
 		HttpSession sesionQuestion = request.getSession();
 		Integer tipoEneagrama = (Integer) sesionQuestion.getAttribute("id");
-
 		Integer idEneagrama = (Integer) sesionQuestion.getAttribute("idEneag");
 
 		List<Integer> arrayResultadoPreguntas = null;
@@ -77,7 +76,8 @@ public class GestionPreguntas extends HttpServlet {
 		// Logica Test Rapido //
 
 		TestRapidoDAOImpl tdao = new TestRapidoDAOImpl();
-		
+		Integer grupoRapido = (Integer) sesionQuestion.getAttribute("idRapido");
+
 		///////////////////////
 
 		if (cantidadPreguntas == null) {
@@ -239,11 +239,32 @@ public class GestionPreguntas extends HttpServlet {
 			break;
 
 		case "rapido":
+			String[] todo = null ;
+			String pr1 ;
+			// String pr2 ;
 
-			if (usu.getResultadoRapido() == null && usu.getTipoRapido() == null) {
-				request.setAttribute("preguntas", tdao.findAll()); 
+			if (grupoRapido == null) {
+
+				String letraG1 = request.getParameter("same");
+				System.out.println("Que estas pintando " + letraG1);
+				pr1 = letraG1;
+				todo[0] = pr1;
+				grupoRapido = 1;
+
+			} else {
+
+				String letraG2 = request.getParameter("same");
+				System.out.println("Que estas pintando " + letraG2);
+				pr1 = letraG2;
+				todo[1] = pr1;
+				grupoRapido++;
 			}
 
+			// todo = pr1 + pr2;
+			System.out.println(pr1);
+			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
+			sesionQuestion.setAttribute("idRapido", grupoRapido);
+			System.out.println(sesionQuestion.getAttribute("idRapido"));
 			request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
 
 			break;

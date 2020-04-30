@@ -12,6 +12,9 @@
 
 <title>Preguntas</title>
 
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -112,27 +115,24 @@
 							method="POST">
 							<div style="position: relative;">
 
-								<%-- <h2 class="mb-4" style="color: white;">
-									<span>${requestScope.tipoEne.idEneagrama } </span><span>-
-										${requestScope.tipoEne.tipo } </span>
-								</h2> --%>
+								<h2 class="mb-4" style="color: white;">
+									<span>Grupo ${sessionScope.idRapido } </span>
+								</h2>
 
 							</div>
 							<div style="max-width: 750px; position: absolute; z-index: 99;">
 								<c:forEach items="${requestScope.preguntas}" var="pregunta"
 									begin="0" end="2">
+
 									<div style="display: flex;">
 										<table>
 											<tr>
 
-												<td><input
-													style="position: relative; top: -55px; border: 1px solid red;"
-													type="checkbox" name="isbn" value="${pregunta}"></td>
-												
+												<input style="position: relative; top: 5px;" type="radio" name="same" value="${pregunta.letraGrupo }">
+
 												<td><p
 														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
 														${pregunta.letraGrupo } - ${pregunta.txtGrupo }</p></td>
-												<%-- <td>${pregunta.txtGrupo }</td> --%>
 											</tr>
 										</table>
 									</div>
