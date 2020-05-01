@@ -359,8 +359,7 @@
 									<li><a href="sobreNosotrosUsu.jsp">Equipo</a></li>
 									<li><a href="#">Eneagramas</a></li>
 									<li><a href="GestionTest?option=validar">Test</a></li>
-									<li><a href="GestionAnuncios?option=anuncios"
-									class="nav-link">Empleo</a></li>
+									<li><a href="GestionAnuncios?option=anuncios">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">

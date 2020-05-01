@@ -12,6 +12,9 @@
 
 <title>Preguntas</title>
 
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -112,27 +115,25 @@
 							method="POST">
 							<div style="position: relative;">
 
-								<%-- <h2 class="mb-4" style="color: white;">
-									<span>${requestScope.tipoEne.idEneagrama } </span><span>-
-										${requestScope.tipoEne.tipo } </span>
-								</h2> --%>
+								<h2 class="mb-4" style="color: white;">
+									<span>Grupo ${sessionScope.idRapido } </span>
+								</h2>
 
 							</div>
 							<div style="max-width: 750px; position: absolute; z-index: 99;">
 								<c:forEach items="${requestScope.preguntas}" var="pregunta"
 									begin="0" end="2">
+
 									<div style="display: flex;">
 										<table>
 											<tr>
 
-												<td><input
-													style="position: relative; top: -55px; border: 1px solid red;"
-													type="checkbox" name="isbn" value="${pregunta}"></td>
-												
+												<td><input style="position: relative; top: 5px;"
+													type="radio" name="letra" value="${pregunta.letraGrupo }"></td>
+
 												<td><p
 														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
 														${pregunta.letraGrupo } - ${pregunta.txtGrupo }</p></td>
-												<%-- <td>${pregunta.txtGrupo }</td> --%>
 											</tr>
 										</table>
 									</div>
@@ -147,28 +148,6 @@
 
 					<!-- <div style="padding: 40px 80px 40px 80px; max-width: 400px; position: absolute; left: 780px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
 						<h4 class="mb-4" style="color: grey;">sistema de puntos</h4>
-						<ul style="list-style-type: none; margin-left: -35px;">
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									1 ...</span>
-								<p style="color: steelblue; font-size: 12px;">nunca</p></li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									2 ...</span>
-								<p style="color: steelblue; font-size: 12px;">rara vez</p></li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									3 ...</span>
-								<p style="color: steelblue; font-size: 12px;">quizás</p></li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">
-									... 4 ...</span>
-								<p style="color: steelblue; font-size: 12px;">normalmente</p></li>
-							<li style="text-align: center;"><span
-								style="color: steelblue; font-size: 25px; font-weight: 500;">...
-									5 ...</span>
-								<p style="color: steelblue; font-size: 12px;">siempre</p></li>
-						</ul>
 					</div> -->
 				</div>
 			</div>
