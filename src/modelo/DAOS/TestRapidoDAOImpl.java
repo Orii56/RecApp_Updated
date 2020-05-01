@@ -41,7 +41,7 @@ public class TestRapidoDAOImpl implements TestRapidoDAO {
 	@Override
 	public List<Testrapido> findByID(int tipoID) {
 
-		System.out.println("Aqui tipoID " + tipoID);
+		// System.out.println("Aqui tipoID " + tipoID);
 
 		sql = "select t from Testrapido t where t.grupo = :nid";
 

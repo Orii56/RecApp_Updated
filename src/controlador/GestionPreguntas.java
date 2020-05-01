@@ -2,6 +2,7 @@ package controlador;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -70,8 +71,6 @@ public class GestionPreguntas extends HttpServlet {
 		List<Integer> arrayResultadoPreguntas = null;
 
 		HashMap<Integer, Integer> cantidadPreguntas = (HashMap<Integer, Integer>) sesionQuestion.getAttribute("mapa");
-
-		////////////////////////
 
 		// Logica Test Rapido //
 
@@ -239,34 +238,37 @@ public class GestionPreguntas extends HttpServlet {
 			break;
 
 		case "rapido":
-			String[] todo = null ;
-			String pr1 ;
-			// String pr2 ;
-
+			
+			
 			if (grupoRapido == null) {
 
-				String letraG1 = request.getParameter("same");
-				System.out.println("Que estas pintando " + letraG1);
-				pr1 = letraG1;
-				todo[0] = pr1;
+				System.out.println("hp: " + request.getParameter("letra"));
+
 				grupoRapido = 1;
 
 			} else {
 
-				String letraG2 = request.getParameter("same");
-				System.out.println("Que estas pintando " + letraG2);
-				pr1 = letraG2;
-				todo[1] = pr1;
+				System.out.println("else " + request.getParameter("letra"));
+
+				
+				
 				grupoRapido++;
+
 			}
 
-			// todo = pr1 + pr2;
-			System.out.println(pr1);
 			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
-			sesionQuestion.setAttribute("idRapido", grupoRapido);
-			System.out.println(sesionQuestion.getAttribute("idRapido"));
-			request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
 
+			sesionQuestion.setAttribute("idRapido", grupoRapido);
+			
+			if (grupoRapido > 2) {
+
+				request.getRequestDispatcher("resultado.jsp").forward(request, response);
+
+			} else {
+
+				request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
+			}
+			
 			break;
 
 		}
