@@ -16,10 +16,13 @@ import javax.servlet.http.HttpSession;
 
 import modelo.DAOS.EneagramaDAOImpl;
 import modelo.DAOS.PreguntaDAOImpl;
+import modelo.DAOS.ResultadoRapidoDAO;
+import modelo.DAOS.ResultadoRapidoDAOImpl;
 import modelo.DAOS.TestRapidoDAOImpl;
 import modelo.DAOS.UsuarioDAOImpl;
 import modelo.beans.Eneagrama;
 import modelo.beans.Pregunta;
+import modelo.beans.Resultadorapido;
 import modelo.beans.Usuario;
 
 /**
@@ -72,19 +75,28 @@ public class GestionPreguntas extends HttpServlet {
 
 		HashMap<Integer, Integer> cantidadPreguntas = (HashMap<Integer, Integer>) sesionQuestion.getAttribute("mapa");
 
+		if (cantidadPreguntas == null) {
+			cantidadPreguntas = new HashMap<Integer, Integer>();
+		}
+
 		// Logica Test Rapido //
 
 		TestRapidoDAOImpl tdao = new TestRapidoDAOImpl();
 		Integer grupoRapido = (Integer) sesionQuestion.getAttribute("idRapido");
+		
+		Resultadorapido resrap = new Resultadorapido();
+		ResultadoRapidoDAOImpl rdao = new ResultadoRapidoDAOImpl();
 
-		ArrayList<String> combi = null;
-		String let = "";
+		List<String> combi = null;
+
+		String letra1 = (String) sesionQuestion.getAttribute("letra1");
+		String grupos;
+		
+		if (combi == null) {
+			combi = new ArrayList<String>();
+		}
 
 		///////////////////////
-
-		if (cantidadPreguntas == null) {
-			cantidadPreguntas = new HashMap<Integer, Integer>();
-		}
 
 		switch (request.getParameter("option")) {
 
@@ -244,35 +256,39 @@ public class GestionPreguntas extends HttpServlet {
 
 			if (grupoRapido == null) {
 
-				// System.out.println("hp: " + request.getParameter("letra"));
-				combi = new ArrayList<>();
-
 				grupoRapido = 1;
-
-			} else if (grupoRapido < 3) {
-
-				System.out.println("else " + request.getParameter("letra"));
-
-				// let = request.getParameter("letra");
-				combi.add(request.getParameter("letra"));
-			
-				grupoRapido++;
-
-			}
-			
-			// combi.add(let);
-			System.out.println(combi);
-			
-			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
-
-			sesionQuestion.setAttribute("idRapido", grupoRapido);
-
-			if (grupoRapido > 2) {
-
-				request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
 			} else {
 
+				grupoRapido++;
+
+				sesionQuestion.setAttribute("letra1", request.getParameter("letra"));
+
+				System.out.println("dentro del else: " + sesionQuestion.getAttribute("letra1"));
+
+				combi.add((String) sesionQuestion.getAttribute("letra1"));
+
+				System.out.println("dss zfsz 1 " + combi);
+
+			}
+
+
+			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
+			sesionQuestion.setAttribute("idRapido", grupoRapido);
+
+			if (grupoRapido > 2) {
+				// System.out.println(" combi " + letra1 + combi.get(0).toString());
+				
+				grupos = letra1 + combi.get(0).toString();
+				
+				rdao.findByCombinacion(grupos);
+				resrap.getIdEneatipo();
+				
+				System.out.println("result rapido eneatipo: " + resrap.getIdEneatipo());
+				
+				sesionQuestion.setAttribute("descTipo", edao.findEneagrama(resrap.getIdEneatipo()));
+				request.getRequestDispatcher("resultado.jsp").forward(request, response);
+			} else {
 				request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
 			}
 
