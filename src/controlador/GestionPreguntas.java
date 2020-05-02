@@ -77,6 +77,9 @@ public class GestionPreguntas extends HttpServlet {
 		TestRapidoDAOImpl tdao = new TestRapidoDAOImpl();
 		Integer grupoRapido = (Integer) sesionQuestion.getAttribute("idRapido");
 
+		ArrayList<String> combi = null;
+		String let = "";
+
 		///////////////////////
 
 		if (cantidadPreguntas == null) {
@@ -336,28 +339,32 @@ public class GestionPreguntas extends HttpServlet {
 			request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
 		case "rapido":
-			
-			
+
 			if (grupoRapido == null) {
 
-				System.out.println("hp: " + request.getParameter("letra"));
+				// System.out.println("hp: " + request.getParameter("letra"));
+				combi = new ArrayList<>();
 
 				grupoRapido = 1;
 
-			} else {
+			} else if (grupoRapido < 3) {
 
 				System.out.println("else " + request.getParameter("letra"));
 
-				
-				
+				// let = request.getParameter("letra");
+				combi.add(request.getParameter("letra"));
+			
 				grupoRapido++;
 
 			}
-
+			
+			// combi.add(let);
+			System.out.println(combi);
+			
 			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
 
 			sesionQuestion.setAttribute("idRapido", grupoRapido);
-			
+
 			if (grupoRapido > 2) {
 
 				request.getRequestDispatcher("resultado.jsp").forward(request, response);
@@ -366,7 +373,7 @@ public class GestionPreguntas extends HttpServlet {
 
 				request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
 			}
-			
+
 			break;
 
 		}
