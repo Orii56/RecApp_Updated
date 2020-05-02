@@ -116,7 +116,21 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 			System.out.println(e.getMessage());
 		}
 		return null;
+		public Usuario deleteUser(String email) {
 
+
+			sql = "delete from usuario u where u.email = :email";
+
+			try {
+				query = em.createQuery(sql);
+				query.setParameter("email", email);
+				return (Usuario) query.getSingleResult();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+			return null;
+
+		}
 	}
 	
 	
