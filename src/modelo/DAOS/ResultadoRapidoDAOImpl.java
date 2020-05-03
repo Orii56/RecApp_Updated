@@ -28,7 +28,7 @@ public class ResultadoRapidoDAOImpl implements ResultadoRapidoDAO {
 		
 		System.out.println("dentro de la SQL " + letras);
 
-		sql = "select r from Resultadorapido r where r.combinacion = ':letras' ORDER BY r.combinacion ASC";
+		sql = "select r from Resultadorapido r where r.combinacion = :letras";
 
 		try {
 			query = em.createQuery(sql);

@@ -277,16 +277,25 @@ public class GestionPreguntas extends HttpServlet {
 			sesionQuestion.setAttribute("idRapido", grupoRapido);
 
 			if (grupoRapido > 2) {
-				// System.out.println(" combi " + letra1 + combi.get(0).toString());
 				
 				grupos = letra1 + combi.get(0).toString();
 				
 				rdao.findByCombinacion(grupos);
-				resrap.getIdEneatipo();
 				
-				System.out.println("result rapido eneatipo: " + resrap.getIdEneatipo());
+				resrap.getIdEneatipo();
+				resrap.getCombinacion();
+				
+				System.out.println("result rapido eneatipo: " + resrap.getIdEneatipo() + resrap.getCombinacion());
 				
 				sesionQuestion.setAttribute("descTipo", edao.findEneagrama(resrap.getIdEneatipo()));
+				
+			
+//				usu.setEneagrama();
+//				usu.setTipoEneagrama();
+//				usu.setResultadoTest();
+//
+//				udao.insert(usu);
+
 				request.getRequestDispatcher("resultado.jsp").forward(request, response);
 			} else {
 				request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
