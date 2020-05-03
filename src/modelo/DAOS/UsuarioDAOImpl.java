@@ -44,7 +44,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 				tx.commit();
 
 				return 1;
-				
+
 			} else if (usu == null) {
 
 				tx.begin();
@@ -86,7 +86,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 
 	@Override
 
-
 	public Usuario findByEmail(String email) {
 
 		sql = "select u from Usuario u where u.email = :email";
@@ -104,7 +103,6 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 
 	public Usuario findLogin(String email, String pwd) {
 
-
 		sql = "select u from Usuario u where u.email = :email and u.password = :pwd";
 
 		try {
@@ -116,56 +114,52 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 			System.out.println(e.getMessage());
 		}
 		return null;
-		public Usuario deleteUser(String email) {
 
-
-			sql = "delete from usuario u where u.email = :email";
-
-			try {
-				query = em.createQuery(sql);
-				query.setParameter("email", email);
-				return (Usuario) query.getSingleResult();
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
-			return null;
-
-		}
-		public Usuario updatePassword(String pwd) {
-
-
-			sql = "update usuario u set u.password = :pwd";
-
-			try {
-				query = em.createQuery(sql);
-				query.setParameter("pwd", pwd);
-				return (Usuario) query.getSingleResult();
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
-			return null;
-
-		}
-		public Usuario deleteEneagrama(String idUsuario) {
-
-
-			sql = "delete u.tipoEneagrama, u.tipoRapido, u.resultadoRapido, u.resultadoTest from Usuario where u.idUsuario = :usu";
-
-			try {
-				query = em.createQuery(sql);
-				query.setParameter("usu", idUsuario);
-				return (Usuario) query.getSingleResult();
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
-			}
-			return null;
-
-		}
-		
-		
 	}
-	
-	
-	
+
+	public Usuario deleteUser(String email) {
+
+		sql = "delete from usuario u where u.email = :email";
+
+		try {
+			query = em.createQuery(sql);
+			query.setParameter("email", email);
+			return (Usuario) query.getSingleResult();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return null;
+
+	}
+
+	public Usuario updatePassword(String pwd) {
+
+		sql = "update usuario u set u.password = :pwd";
+
+		try {
+			query = em.createQuery(sql);
+			query.setParameter("pwd", pwd);
+			return (Usuario) query.getSingleResult();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return null;
+
+	}
+
+	public Usuario deleteEneagrama(String idUsuario) {
+
+		sql = "delete u.tipoEneagrama, u.tipoRapido, u.resultadoRapido, u.resultadoTest from Usuario where u.idUsuario = :usu";
+
+		try {
+			query = em.createQuery(sql);
+			query.setParameter("usu", idUsuario);
+			return (Usuario) query.getSingleResult();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return null;
+
+	}
 
 }
