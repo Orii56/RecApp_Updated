@@ -39,6 +39,11 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
+	
+
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 <!-- Template Main CSS File -->
 <link href="style.css" rel="stylesheet">
@@ -83,6 +88,8 @@
 								<li class="active"><a href="#" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
+									
+								<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
 							</ul>
 						</nav>
 					</div>

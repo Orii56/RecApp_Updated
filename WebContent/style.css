@@ -238,6 +238,16 @@ deg
 	color: white !important;
 }
 
+.btn.btn-outline-danger{
+	border: 2px solid steelblue;
+	background: none;
+}
+
+.btn.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
 .btn.btn-primary {
 	background: #2d71a1;
 	background: linear-gradient(-45deg, #1391a5, #274685);

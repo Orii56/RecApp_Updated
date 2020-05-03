@@ -1,17 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
 <meta charset="UTF-8">
+
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-<title>Contacto</title>
+
+
+<title>Dashboard</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
@@ -43,6 +46,7 @@
 <link href="style.css" rel="stylesheet">
 
 </head>
+
 <body>
 
 	<div class="site-wrap">
@@ -50,7 +54,7 @@
 		<div class="site-mobile-menu site-navbar-target">
 			<div class="site-mobile-menu-header">
 				<div class="site-mobile-menu-close mt-3">
-					<span class="icon-close2 js-menu-toggle"></span>
+					<span class="icofont-close js-menu-toggle"></span>
 				</div>
 			</div>
 			<div class="site-mobile-menu-body"></div>
@@ -76,12 +80,13 @@
 								class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
 								<li><a href="Login?option=logout" class="registrarse">log
 										out</a></li>
-								<li class="active"><a href="#" class="nav-link">contacto</a></li>
+								<li><a href="contactoUsu.jsp" class="nav-link">contacto</a></li>
 								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-									<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li class="active"><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+							
 							</ul>
 						</nav>
 					</div>
@@ -100,8 +105,7 @@
 
 		</header>
 
-
-		<main id="main">
+	<main id="main">
 		<div class="hero-section inner-page">
 			<div class="wave">
 
@@ -126,10 +130,9 @@
 					<div class="col-12">
 						<div class="row justify-content-center">
 							<div class="col-md-7 text-center hero-text">
-								<h1 data-aos="fade-up" data-aos-delay="">Contáctanos</h1>
+								<h1 data-aos="fade-up" data-aos-delay="">Dashboard</h1>
 								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-									Si quieres saber más sobre RecApp, o si quieres preguntarnos
-									algo, <br>estamos a tu completa disposición
+									Aquí puedes ver y modificar tus datos.
 								</p>
 							</div>
 						</div>
@@ -144,88 +147,99 @@
 				<div class="row mb-5 align-items-end">
 					<div class="col-md-6" data-aos="fade-up">
 
-						<h2>Formulario de contacto</h2>
-						<p class="mb-0">Introduce tus datos de contacto, escríbenos y
-							te responderemos lo antes posible.</p>
+						<h2>Información personal</h2>
+						<p class="mb-0">Éstos son tus datos.[Scope and bring info]</p>
 					</div>
 
 				</div>
 
 				<div class="row">
+					<div class="col-md-4 mr-auto order-2" data-aos="fade-up">
+						<ul class="list-unstyled">
+							<li class="mb-3"><strong class="d-block mb-1">Nombre</strong>
+								<span>Nombre Apellido</span></li>
+							<li class="mb-3"><strong class="d-block mb-1">Email usuario</strong> <span>xxxx@gmail.com</span></li>
+						</ul>
+					</div> <!-- col -->
+					
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><strong class="d-block mb-1">Dirección</strong>
-								<span>Julián Camarillo 45, 28029 Madrid España</span></li>
-							<li class="mb-3"><strong class="d-block mb-1">Telefono
-									de contacto</strong> <span>654577850</span></li>
-							<li class="mb-3"><strong class="d-block mb-1">Nuesto
-									email</strong> <span>recappjs@gmail.com</span></li>
-						</ul>
+							<li class="mb-3"><button type="button" class="btn btn-primary">Cambiar mi nombre</button></li>
+							<li class="mb-3"><button type="button" class="btn btn-primary">Cambiar mi contraseña</button></li>
+							<!-- estos son los botones -->
+							</ul>
 					</div>
-
-					<div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-						<form action="forms/contact.php" method="post" role="form"
-							class="php-email-form">
-
-							<div class="row">
-								<div class="col-md-6 form-group">
-									<label for="name">Nombre</label> <input type="text" name="name"
-										class="form-control" id="name" data-rule="minlen:4"
-										data-msg="Por favor introduzca al menos 4 caracteres" />
-									<div class="validate"></div>
-								</div>
-								<div class="col-md-6 form-group">
-									<label for="name">Email</label> <input type="email"
-										class="form-control" name="email" id="email" data-rule="email"
-										data-msg="Por favor introduzca un email valido" />
-									<div class="validate"></div>
-								</div>
-								<div class="col-md-12 form-group">
-									<label for="name">Asunto</label> <input type="text"
-										class="form-control" name="subject" id="subject"
-										data-rule="minlen:4"
-										data-msg="Por favor escriba al menos 8 caracteres" />
-									<div class="validate"></div>
-								</div>
-								<div class="col-md-12 form-group">
-									<label for="name">Mensaje</label>
-									<textarea class="form-control" name="message" cols="30"
-										rows="10" data-rule="required"
-										data-msg="Por favor escriba su mensaje"></textarea>
-									<div class="validate"></div>
-								</div>
-
-
-								<div class="col-md-12 mb-3">
-									<div class="loading">Cargando</div>
-									<div class="error-message"></div>
-									<div class="sent-message">¡Su mensaje ha sido enviado!
-										Gracias por contactar con RecApp</div>
-								</div>
-
-								<div class="col-md-6 form-group">
-									<input type="submit" class="btn btn-primary d-block w-100"
-										value="Enviar Mensaje">
-								</div>
-							</div>
-
-						</form>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row justify-content-center text-center mb-5">
-				<div class="col-md-4">
-					<h2 class="section-heading">Anímate y realiza el test!</h2>
-					<p style="margin-top: 50px;">
+					
+							</div> <!-- Termina class:row -->
+			</div><!-- termina container -->
+		</div><!-- termina sitesection -->
+		
+		
+		
+		<div class="site-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4 ml-auto order-2">
+						<h2 class="mb-4">Tipo de Eneagrama</h2>
+						<p class="mb-4">
+							Descripción del eneagrama que tiene el usuario, la misma que sale al final del test y sacamos de la base de datos <br>
+							¿Y si no ha hecho aún el test? ¿Sacamos la historia de los eneagramas o algo asi? 
+						 	elementum odio in, mattis risus. Nulla lorem elit, varius non fringilla sed, volutpat non eros
+							Proin nec dui tortor. Ut nibh diam, ornare ultrices nibh in, tincidunt viverra erat. Proin consectetur sit amet lacus vitae semper.
+						</p>
+						
+						<strong >Quote</strong>
+						<p>Quote del eneagrama aquí yay</p>
+						
+						
 						<a class="test btn btn-outline-blue"
-							href="GestionTest?option=validar">test</a>
-					</p>
+							href="#danger">Quiero repetir el test...</a>
+
+
+
+					</div>
+					<div class="col-md-6" data-aos="fade-right">
+						<img src="img/undraw_svg_8.svg" alt="Image" class="img-fluid">
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- .site-section -->
+		
+		
+		
+				<div id="danger" class="site-section">
+			<div class="container">
+				<div class="row mb-5 align-items-end">
+					<div class="col-md-6" data-aos="fade-up">
+
+						<h2>Zona de peligro</h2>
+						<p class="mb-0">¿Estas seguro de que quieres continuar?<br>
+						Una vez utilices alguna de estas opciones, no hay marcha atrás.</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 mr-auto order-2" data-aos="fade-up">
+						<ul class="list-unstyled">
+							<li class="mb-3"><button type="button" class="btn btn-outline-danger">Quiero repetir el test</button></li>
+							
+							</ul>
+					</div> <!-- col -->
+					
+					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+					<ul class="list-unstyled">
+						<li class="mb-3"><button type="button" class="btn btn-outline-danger">Quiero eliminar mi cuenta</button></li>
+							<!-- estos son los botones -->
+							</ul>
+					</div>
+					
+							</div> <!-- Termina class:row -->
+			</div><!-- termina container -->
+		</div><!-- termina sitesection -->
+		
+		
 		<br>
 		<br>
 		<div class="site-section cta-section">
@@ -320,7 +334,10 @@
 		</div>
 
 		</main>
-		<footer class="footer" role="contentinfo">
+
+
+		
+				<footer class="footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
@@ -340,8 +357,8 @@
 							<div class="col-md-4 mb-4 mb-md-0">
 								<h3>Servicios</h3>
 								<ul class="list-unstyled">
-									<li><a href="sobreNosotrosUsu.jsp">Equipo</a></li>
-									<li><a href="eneagramasUsu.jsp">Eneagramas</a></li>
+									<li><a href="sobreNosotros.jsp">Equipo</a></li>
+									<li><a href="eneagramas.jsp">Eneagramas</a></li>
 									<li><a href="GestionTest?option=validar">Test</a></li>
 									<li><a href="GestionAnuncios?option=anuncios">Empleo</a></li>
 								</ul>
@@ -359,13 +376,19 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center text-center">
+				<span style="font-size: 10px;"><i>*Este test tiene un
+						porcentaje de acierto del 70%. <br>**Información obtenida del
+						libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+						Hudson.
+				</i></span>
+
+				<div style="margin-top:25px;" class="row justify-content-center text-center">
 					<div class="col-md-7">
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
 				</div>
-
 			</div>
+
 		</footer>
 	</div>
 	<!-- .site-wrap -->
