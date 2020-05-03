@@ -128,8 +128,8 @@
 										<table>
 											<tr>
 
-												<td><input style="position: relative; top: 5px;"
-													type="radio" name="letra" value="${pregunta.letraGrupo }" required></td>
+												<input style="position: relative; top: 5px;" type="radio"
+													name="letra" value="${pregunta.letraGrupo }" required>
 
 												<td><p
 														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
