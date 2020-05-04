@@ -35,7 +35,7 @@ public class EneagramaDAOImpl implements EneagramaDAO {
 			query.setParameter("usu", id);
 			return (Eneagrama) query.getSingleResult();
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("este? " + e.getMessage());
 		}
 		return null;
 	}

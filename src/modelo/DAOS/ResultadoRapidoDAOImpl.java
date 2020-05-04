@@ -25,7 +25,7 @@ public class ResultadoRapidoDAOImpl implements ResultadoRapidoDAO {
 
 	@Override
 	public Resultadorapido findByCombinacion(String letras) {
-		
+
 		System.out.println("dentro de la SQL " + letras);
 
 		sql = "select r from Resultadorapido r where r.combinacion = :letras";
@@ -33,9 +33,11 @@ public class ResultadoRapidoDAOImpl implements ResultadoRapidoDAO {
 		try {
 			query = em.createQuery(sql);
 			query.setParameter("letras", letras);
-			return (Resultadorapido) query.getSingleResult();
+			Resultadorapido rdo = (Resultadorapido) query.getSingleResult();
+			System.out.println("esto es RDO de la sql: " + rdo);
+			return rdo;
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("entiendo que es esto " + e.getMessage());
 		}
 		return null;
 	}

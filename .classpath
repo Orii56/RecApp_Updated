@@ -19,8 +19,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/mysql-connector-java-5.1.35-bin.jar"/>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="/Applications/apache-tomcat-9.0.31/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="/Applications/apache-tomcat-9.0.31/lib/mysql-connector-java-5.1.35-bin.jar"/>
+	<classpathentry kind="lib" path="/Applications/apache-tomcat-9.0.31/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -83,15 +83,14 @@ public class GestionPreguntas extends HttpServlet {
 
 		TestRapidoDAOImpl tdao = new TestRapidoDAOImpl();
 		Integer grupoRapido = (Integer) sesionQuestion.getAttribute("idRapido");
-		
-		Resultadorapido resrap = new Resultadorapido();
+
 		ResultadoRapidoDAOImpl rdao = new ResultadoRapidoDAOImpl();
 
 		List<String> combi = null;
 
 		String letra1 = (String) sesionQuestion.getAttribute("letra1");
 		String grupos;
-		
+
 		if (combi == null) {
 			combi = new ArrayList<String>();
 		}
@@ -179,75 +178,67 @@ public class GestionPreguntas extends HttpServlet {
 				boolean mayor20 = false;
 				Integer numID = null;
 				int max = 19;
-				
+
 				List<Integer> t = new ArrayList<>();
 				List<Integer> z = new ArrayList<>();
-				
+
 				for (Integer en : cantidadPreguntas.keySet()) {
-					
+
 					t.add(cantidadPreguntas.get(en));
-					
+
 				}
-				
-				for (int i=0; i<t.size(); i++) {
-					
-					if(t.get(i) > max) {
+
+				for (int i = 0; i < t.size(); i++) {
+
+					if (t.get(i) > max) {
 						max = t.get(i);
 						numID = (i + 1);
 						mayor20 = true;
-						//Como max empieza en 19, ya estas controlando que sea mayor/igual a 20
+						// Como max empieza en 19, ya estas controlando que sea mayor/igual a 20
 					}
 				}
-				
+
 				for (int i = 0; i < t.size(); i++) {
-					
+
 					if (t.get(i) == max) {
-						
-						numID = (i+1);
+
+						numID = (i + 1);
 						z.add(numID);
-						//volvemos a recorrer para ver si hay m�s de uno con esa cantidad
+						// volvemos a recorrer para ver si hay m�s de uno con esa cantidad
 					}
 				}
-				
-				if(z.size() > 1 ) {
-					
-					if(z.size() > 2) {
-						
-						
+
+				if (z.size() > 1) {
+
+					if (z.size() > 2) {
+
 						mayor20 = false;
-						
+
 						sesionQuestion.removeAttribute("idEneag");
 						sesionQuestion.removeAttribute("id");
 						sesionQuestion.removeAttribute("mapa");
 						sesionQuestion.removeAttribute("descTipo");
 
-			
-						
 						usu = (Usuario) request.getSession().getAttribute("usuario");
 
 						request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
-						
+
 					}
-						
+
 					List<Pregunta> listaA = pdao.findByTipoEneg(z.get(0));
 					List<Pregunta> listaB = pdao.findByTipoEneg(z.get(1));
-					
 
 					sesionQuestion.setAttribute("tipoEneA", edao.findEneagrama(z.get(0)));
 
 					sesionQuestion.setAttribute("tipoEneB", edao.findEneagrama(z.get(1)));
-					
+
 					request.setAttribute("preguntaA", listaA);
 					request.setAttribute("preguntaB", listaB);
 
-					
-					
 					request.getRequestDispatcher("preguntaExtra.jsp").forward(request, response);
-					
-					
+
 				}
-				
-			
+
 				if (mayor20) {
 
 					System.out.println(usu);
@@ -289,54 +280,50 @@ public class GestionPreguntas extends HttpServlet {
 			}
 
 			break;
-			
-		case "extra": 
-			
+
+		case "extra":
+
 			int a = 0;
 			int b = 0;
-			
-			for (int i=6; i<=7; i++) {
+
+			for (int i = 6; i <= 7; i++) {
 				request.getParameterValues("isbn");
-				a += Integer.valueOf(request.getParameter("cantidadA"+i));
+				a += Integer.valueOf(request.getParameter("cantidadA" + i));
 
-				b += Integer.valueOf(request.getParameter("cantidadB"+i));
+				b += Integer.valueOf(request.getParameter("cantidadB" + i));
 
-			} 
-			
+			}
+
 			int numID = 0;
-			
-			if(a != b) {
-				if(a > b) {
+
+			if (a != b) {
+				if (a > b) {
 
 					Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneA");
 					numID = res.getIdEneagrama();
-					System.out.println("en el desempate, A es mayor");	
-					}
-				if(a < b){
-			
-				Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneB");
-				numID = res.getIdEneagrama();
-
-				System.out.println("en el desempate, B es mayor");
+					System.out.println("en el desempate, A es mayor");
 				}
-				
+				if (a < b) {
+
+					Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneB");
+					numID = res.getIdEneagrama();
+
+					System.out.println("en el desempate, B es mayor");
+				}
+
 			} else {
-					
-					sesionQuestion.removeAttribute("idEneag");
-					sesionQuestion.removeAttribute("id");
-					sesionQuestion.removeAttribute("mapa");
-					sesionQuestion.removeAttribute("descTipo");
 
-		
-					
-					usu = (Usuario) request.getSession().getAttribute("usuario");
+				sesionQuestion.removeAttribute("idEneag");
+				sesionQuestion.removeAttribute("id");
+				sesionQuestion.removeAttribute("mapa");
+				sesionQuestion.removeAttribute("descTipo");
 
-					request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
-					}
-				
-			
+				usu = (Usuario) request.getSession().getAttribute("usuario");
+
+				request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
+			}
+
 			int max = 20;
-			
 
 			sesionQuestion.setAttribute("descTipo", edao.findEneagrama(numID));
 
@@ -370,31 +357,28 @@ public class GestionPreguntas extends HttpServlet {
 
 			}
 
-
 			request.setAttribute("preguntas", tdao.findByID(grupoRapido));
 			sesionQuestion.setAttribute("idRapido", grupoRapido);
 
 			if (grupoRapido > 2) {
-				
+
 				grupos = letra1 + combi.get(0).toString();
-				
-				rdao.findByCombinacion(grupos);
-				
-				resrap.getIdEneatipo();
-				resrap.getCombinacion();
-				
-				System.out.println("result rapido eneatipo: " + resrap.getIdEneatipo() + resrap.getCombinacion());
-				
-				sesionQuestion.setAttribute("descTipo", edao.findEneagrama(resrap.getIdEneatipo()));
-				
-			
-//				usu.setEneagrama();
-//				usu.setTipoEneagrama();
-//				usu.setResultadoTest();
-//
-//				udao.insert(usu);
+
+				System.out.println("grupos: " + grupos);
+
+				Resultadorapido rdo = rdao.findByCombinacion(grupos);
+
+				System.out.println("resultado rapido eneatipo: " + rdo.getIdEneatipo() + rdo.getCombinacion());
+
+				sesionQuestion.setAttribute("descTipo", edao.findEneagrama(rdo.getIdEneatipo()));
+
+				usu.setResultadoRapido(grupos);
+				//usu.setTipoRapido(rdo.getEneatiporapido());
+				//usu.setTipoEneagrama(rdo.getEneatiporapido());
+				udao.insert(usu);
 
 				request.getRequestDispatcher("resultado.jsp").forward(request, response);
+
 			} else {
 				request.getRequestDispatcher("questionRapido.jsp").forward(request, response);
 			}
