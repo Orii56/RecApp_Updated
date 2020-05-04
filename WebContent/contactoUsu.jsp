@@ -3,14 +3,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 <title>Contacto</title>
 
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -81,7 +82,8 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-									<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li><a href="GestionDashboard?option=dash"><i
+										class="fas fa-user-circle"></i></a></li>
 							</ul>
 						</nav>
 					</div>

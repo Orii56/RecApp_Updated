@@ -39,11 +39,12 @@
 <link href="vendor/aos/aos.css" rel="stylesheet">
 <link href="vendor/owlcarousel/assets/owl.carousel.min.css"
 	rel="stylesheet">
-	
 
 
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 <!-- Template Main CSS File -->
 <link href="style.css" rel="stylesheet">
@@ -88,8 +89,8 @@
 								<li class="active"><a href="#" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-									
-								<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li><a href="GestionDashboard?option=dash"><i
+										class="fas fa-user-circle"></i></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -165,10 +166,10 @@
 							tuvo origen alrededor del 2500 a. C. <br> <br> Otros
 							autores afirman libremente que el Eneagrama se trata de una
 							antiquísima teoría, nacida hace más de 2000 años en Afganistán y
-							Babilonia, pasando por filósofos griegos como Pitágoras y los primeros
-							cristianos y siendo transmitida por la tradición oral sufí. Sin
-							embargo, no existen testimonios arqueológicos o históricos
-							independientes que permitan corroborar muchas de esas
+							Babilonia, pasando por filósofos griegos como Pitágoras y los
+							primeros cristianos y siendo transmitida por la tradición oral
+							sufí. Sin embargo, no existen testimonios arqueológicos o
+							históricos independientes que permitan corroborar muchas de esas
 							afirmaciones.
 						</p>
 						<p>
@@ -307,7 +308,7 @@
 					</tbody>
 				</table>
 				<br>
-				<p style="margin-bottom:80px;">
+				<p style="margin-bottom: 80px;">
 					<a class="test btn btn-outline-blue"
 						href="https://www.enneagraminstitute.com/type-descriptions"
 						target="_blank">leer mas</a>

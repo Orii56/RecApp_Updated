@@ -86,7 +86,7 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-								<li><a href="dashboard.jsp"><i
+								<li><a href="GestionDashboard?option=dash"><i
 										class="fas fa-user-circle"></i></a></li>
 							</ul>
 						</nav>

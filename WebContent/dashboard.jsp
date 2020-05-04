@@ -4,14 +4,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 
 <title>Dashboard</title>
@@ -85,8 +86,9 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-								<li class="active"><a href="#"><i class="fas fa-user-circle"></i></a></li>
-							
+								<li class="active"><a href="#"><i
+										class="fas fa-user-circle"></i></a></li>
+
 							</ul>
 						</nav>
 					</div>
@@ -105,7 +107,7 @@
 
 		</header>
 
-	<main id="main">
+		<main id="main">
 		<div class="hero-section inner-page">
 			<div class="wave">
 
@@ -132,8 +134,7 @@
 							<div class="col-md-7 text-center hero-text">
 								<h1 data-aos="fade-up" data-aos-delay="">Dashboard</h1>
 								<p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-									Aquí puedes ver y modificar tus datos.
-								</p>
+									Aquí puedes ver y modificar tus datos.</p>
 							</div>
 						</div>
 					</div>
@@ -157,43 +158,57 @@
 					<div class="col-md-4 mr-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
 							<li class="mb-3"><strong class="d-block mb-1">Nombre</strong>
-								<span>{sessionScope.usuario }</span></li>
-							<li class="mb-3"><strong class="d-block mb-1">Email usuario</strong> <span>xxxx@gmail.com</span></li>
+								<span>${sessionScope.cu.nombre }</span></li>
+							<li class="mb-3"><strong class="d-block mb-1">Email
+									usuario</strong> <span>${sessionScope.cu.email }</span></li>
 						</ul>
-					</div> <!-- col -->
-					
+					</div>
+					<!-- col -->
+
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><button type="button" class="btn btn-primary">Cambiar mi nombre</button></li>
-							<li class="mb-3"><button type="button" class="btn btn-primary">Cambiar mi contraseña</button></li>
+							<li class="mb-3"><a href="GestionDashboard?option=nombre">
+									<button type="button" class="btn btn-primary">Cambiar
+										mi nombre</button>
+							</a></li>
+							<li class="mb-3"><a href="GestionDashboard?option=pwd">
+									<button type="button" class="btn btn-primary">Cambiar
+										mi contraseña</button>
+							</a></li>
 							<!-- estos son los botones -->
-							</ul>
+						</ul>
 					</div>
-					
-							</div> <!-- Termina class:row -->
-			</div><!-- termina container -->
-		</div><!-- termina sitesection -->
-		
-		
-		
+
+				</div>
+				<!-- Termina class:row -->
+			</div>
+			<!-- termina container -->
+		</div>
+		<!-- termina sitesection -->
+
+
+
 		<div class="site-section">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Tipo de Eneagrama</h2>
 						<p class="mb-4">
-							Descripción del eneagrama que tiene el usuario, la misma que sale al final del test y sacamos de la base de datos <br>
-							¿Y si no ha hecho aún el test? ¿Sacamos la historia de los eneagramas o algo asi? 
-						 	elementum odio in, mattis risus. Nulla lorem elit, varius non fringilla sed, volutpat non eros
-							Proin nec dui tortor. Ut nibh diam, ornare ultrices nibh in, tincidunt viverra erat. Proin consectetur sit amet lacus vitae semper.
+							Descripción del eneagrama que tiene el usuario, la misma que sale
+							al final del test y sacamos de la base de datos <br> ¿Y si
+							no ha hecho aún el test? ¿Sacamos la historia de los eneagramas o
+							algo asi? elementum odio in, mattis risus. Nulla lorem elit,
+							varius non fringilla sed, volutpat non eros Proin nec dui tortor.
+							Ut nibh diam, ornare ultrices nibh in, tincidunt viverra erat.
+							Proin consectetur sit amet lacus vitae semper.
 						</p>
-						
-						<strong >Quote</strong>
+
+						<strong>Quote</strong>
 						<p>Quote del eneagrama aquí yay</p>
-						
-						
-						<a class="test btn btn-outline-blue"
-							href="#danger">Quiero repetir el test...</a>
+
+
+						<a class="test btn btn-outline-blue" href="#danger">Quiero
+							repetir el test...</a>
 
 
 
@@ -205,17 +220,19 @@
 			</div>
 		</div>
 		<!-- .site-section -->
-		
-		
-		
-				<div id="danger" class="site-section">
+
+
+
+		<div id="danger" class="site-section">
 			<div class="container">
 				<div class="row mb-5 align-items-end">
 					<div class="col-md-6" data-aos="fade-up">
 
 						<h2>Zona de peligro</h2>
-						<p class="mb-0">¿Estas seguro de que quieres continuar?<br>
-						Una vez utilices alguna de estas opciones, no hay marcha atrás.</p>
+						<p class="mb-0">
+							¿Estas seguro de que quieres continuar?<br> Una vez utilices
+							alguna de estas opciones, no hay marcha atrás.
+						</p>
 					</div>
 
 				</div>
@@ -223,24 +240,30 @@
 				<div class="row">
 					<div class="col-md-4 mr-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><button type="button" class="btn btn-outline-danger">Quiero repetir el test</button></li>
-							
-							</ul>
-					</div> <!-- col -->
-					
-					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-					<ul class="list-unstyled">
-						<li class="mb-3"><button type="button" class="btn btn-outline-danger">Quiero eliminar mi cuenta</button></li>
-							<!-- estos son los botones -->
-							</ul>
+							<li class="mb-3"><a href="GestionDashboard?option=test">
+									<button type="button" class="btn btn-outline-danger">Quiero
+										repetir el test</button>
+							</a></li>
+
+						</ul>
 					</div>
-					
-							</div> <!-- Termina class:row -->
-			</div><!-- termina container -->
-		</div><!-- termina sitesection -->
-		
-		
-		<br>
+					<!-- col -->
+
+					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+						<ul class="list-unstyled">
+							<li class="mb-3"><a href="GestionDashboard?option=delete"> <button type="button"
+									class="btn btn-outline-danger">Quiero eliminar mi
+									cuenta</button></a></li>
+							<!-- estos son los botones -->
+						</ul>
+					</div>
+
+				</div>
+				<!-- Termina class:row -->
+			</div>
+			<!-- termina container -->
+		</div>
+		<!-- termina sitesection --> <br>
 		<br>
 		<div class="site-section cta-section">
 			<div class="container">
@@ -336,8 +359,8 @@
 		</main>
 
 
-		
-				<footer class="footer" role="contentinfo">
+
+		<footer class="footer" role="contentinfo">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mb-4 mb-md-0">
@@ -382,7 +405,8 @@
 						Hudson.
 				</i></span>
 
-				<div style="margin-top:25px;" class="row justify-content-center text-center">
+				<div style="margin-top: 25px;"
+					class="row justify-content-center text-center">
 					<div class="col-md-7">
 						<div class="credits">Designed by Diego / Oriana / Jesus</div>
 					</div>
