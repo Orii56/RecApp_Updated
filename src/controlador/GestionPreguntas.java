@@ -373,8 +373,10 @@ public class GestionPreguntas extends HttpServlet {
 				sesionQuestion.setAttribute("descTipo", edao.findEneagrama(rdo.getIdEneatipo()));
 
 				usu.setResultadoRapido(grupos);
-				//usu.setTipoRapido(rdo.getEneatiporapido());
-				//usu.setTipoEneagrama(rdo.getEneatiporapido());
+				usu.setTipoRapido(rdo.getEneatiporapido());
+				usu.setTipoEneagrama(rdo.getEneatiporapido());
+				usu.setEneagrama(edao.findEneagrama(rdo.getIdEneatipo()));
+				
 				udao.insert(usu);
 
 				request.getRequestDispatcher("resultado.jsp").forward(request, response);

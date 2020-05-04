@@ -4,14 +4,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 
 <title>Nosotros</title>
@@ -85,7 +86,8 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-									<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li><a href="dashboard.jsp"><i
+										class="fas fa-user-circle"></i></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -246,14 +248,15 @@
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Equipo RecApp</h2>
 						<p class="mb-4">
-						El team RecApp es uno bastante diverso, con personas de experiencias muy variadas 
-						a nivel personal, académico y profesional.<br>
-						Hemos tenido la oportunidad de explorar campos que desconocemos, 
-						así como de probar nuestras habilidades como Desarrolladores web,
-					    lo que nos ha ayudado a crecer como equipo y como individuos.<br>
-					    Sabemos lo importante que es encontrar tu vocación y estamos 
-					    convencidos de que RecApp te ayudará en tu búsqueda.
-					    </p>
+							El team RecApp es uno bastante diverso, con personas de
+							experiencias muy variadas a nivel personal, académico y
+							profesional.<br> Hemos tenido la oportunidad de explorar
+							campos que desconocemos, así como de probar nuestras habilidades
+							como Desarrolladores web, lo que nos ha ayudado a crecer como
+							equipo y como individuos.<br> Sabemos lo importante que es
+							encontrar tu vocación y estamos convencidos de que RecApp te
+							ayudará en tu búsqueda.
+						</p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">
@@ -419,7 +422,7 @@
 									<li><a href="eneagramasUsu.jsp">Eneagramas</a></li>
 									<li><a href="GestionTest?option=validar">Test</a></li>
 									<li><a href="GestionAnuncios?option=anuncios"
-									class="nav-link">Empleo</a></li>
+										class="nav-link">Empleo</a></li>
 								</ul>
 							</div>
 							<div class="col-md-4 mb-4 mb-md-0">

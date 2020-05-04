@@ -83,7 +83,7 @@
 								<li><a href="sobreNosotrosUsu.jsp" class="nav-link">nosotros</a></li>
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li class="active"><a  href="#" class="nav-link">empleo</a></li>
-								<li><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li><a href="dashboard.jsp"><i class="fas fa-user-circle" style="color:white;"></i></a></li>
 							</ul>
 						</nav>
 					</div>

@@ -46,29 +46,28 @@ public class GestionAnuncios extends HttpServlet {
 
 		Usuario usu = null;
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-		UsuarioDAOImpl udao = new UsuarioDAOImpl();		
+		UsuarioDAOImpl udao = new UsuarioDAOImpl();
 		Eneagrama userValues = usu.getEneagrama();
-			
+
 		Anuncio anuncio = null;
 		AnuncioDAOImpl anundao = new AnuncioDAOImpl();
-			
+
 		switch (request.getParameter("option")) {
-		
-			case "anuncios":
-	
-				if (usu.getTipoEneagrama() == null) {
-					request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
-				} else if (usu.getEneagrama() != null) {
-					request.getSession().setAttribute("anuncio", anundao.findByID(userValues.getIdEneagrama()));
-					request.getRequestDispatcher("anuncios.jsp").forward(request, response);
-				} else {
-					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
-				}
-				
+
+		case "anuncios":
+
+			if (usu.getTipoEneagrama() == null) {
+				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
+			} else if (usu.getEneagrama() != null) {
+				request.getSession().setAttribute("anuncio", anundao.findByID(userValues.getIdEneagrama()));
+				request.getRequestDispatcher("anuncios.jsp").forward(request, response);
+			} else {
+				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
+			}
+
 			break;
 		}
 
 	}
 
 }
-

@@ -85,7 +85,7 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-								<li class="active"><a href="dashboard.jsp"><i class="fas fa-user-circle"></i></a></li>
+								<li class="active"><a href="#"><i class="fas fa-user-circle"></i></a></li>
 							
 							</ul>
 						</nav>
@@ -148,7 +148,7 @@
 					<div class="col-md-6" data-aos="fade-up">
 
 						<h2>Información personal</h2>
-						<p class="mb-0">Éstos son tus datos.[Scope and bring info]</p>
+						<p class="mb-0">Éstos son tus datos:</p>
 					</div>
 
 				</div>
@@ -157,7 +157,7 @@
 					<div class="col-md-4 mr-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
 							<li class="mb-3"><strong class="d-block mb-1">Nombre</strong>
-								<span>Nombre Apellido</span></li>
+								<span>{sessionScope.usuario }</span></li>
 							<li class="mb-3"><strong class="d-block mb-1">Email usuario</strong> <span>xxxx@gmail.com</span></li>
 						</ul>
 					</div> <!-- col -->

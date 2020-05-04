@@ -10,7 +10,9 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 
 <title>RecApp</title>
@@ -133,7 +135,7 @@
 								<h1 data-aos="fade-right">Tú nos hablas sobre ti, y
 									nosotros encontramos el trabajo que mejor encaja contigo.</h1>
 								<p class="mb-5" data-aos="fade-right" data-aos-delay="100">Realiza
-									el test de personalidad y accede a las ofertas.</p>
+									el test* de personalidad y accede a las ofertas.</p>
 								<div>
 									<p data-aos="fade-right" data-aos-delay="200"
 										data-aos-offset="-500">

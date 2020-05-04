@@ -4,15 +4,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
-
-<link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 <title>Resultado</title>
 
@@ -60,7 +60,8 @@
 			<div class="site-mobile-menu-body"></div>
 		</div>
 
-		<main id="viewPort"> <header
+		<main id="viewPort"> 
+		<header
 			class="site-navbar js-sticky-header site-navbar-target" role="banner">
 			<div class="container">
 				<div class="row align-items-center">
@@ -85,7 +86,7 @@
 								<li><a href="eneagramasUsu.jsp" class="nav-link">eneagramas</a></li>
 								<li><a href="GestionAnuncios?option=anuncios"
 									class="nav-link">empleo</a></li>
-
+								<li><a href="dashboard.jsp"><i class="fas fa-user-circle" style="color:white;"></i></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -125,10 +126,10 @@
 						<img src="img/undraw_svg_15.svg" alt="Image" class="img-fluid">
 					</div>
 				</div>
-				<span style="font-size: 10px; color:white;"><i>*Este test tiene un
-						porcentaje de acierto del 70%. <br>**Información obtenida del
-						libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
-						Hudson.
+				<span style="font-size: 10px; color: white;"><i>*Este
+						test tiene un porcentaje de acierto del 70%. <br>**Información
+						obtenida del libro "La Sabiduría del Eneagrama" de Don Richard
+						Riso y Russ Hudson.
 				</i></span>
 			</div>
 		</div>

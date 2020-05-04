@@ -132,7 +132,7 @@
 													name="letra" value="${pregunta.letraGrupo }" required>
 
 												<td><p
-														style="color: white; padding: 0px 10px 0px 10px; min-width: 450px;">
+														style="color: white; padding: 0px 10px 0px 10px; min-width: 550px;">
 														${pregunta.letraGrupo } - ${pregunta.txtGrupo }</p></td>
 											</tr>
 										</table>
