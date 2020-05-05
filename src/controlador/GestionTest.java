@@ -68,7 +68,7 @@ public class GestionTest extends HttpServlet {
 				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 			}
 
-			System.out.println("aqui");
+			System.out.println("aqui ¿seguro?, Pero de verdad¿?");
 			System.out.println(usu);
 
 			break;
