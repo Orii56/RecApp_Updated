@@ -258,7 +258,7 @@
 							grandes corporaciones.</p>
 						<p>
 							<a class="test btn btn-outline-blue"
-								href="GestionTest?option=validar">test</a>
+								href="Login?option=registrar">test</a>
 						</p>
 					</div>
 					<div class="col-md-6" data-aos="fade-left">
@@ -280,7 +280,7 @@
 							de vista de la psicología.</p>
 						<p>
 							<a class="test btn btn-outline-blue"
-								href="GestionTest?option=validar">test</a>
+								href="Login?option=registrar">test</a>
 						</p>
 					</div>
 					<div class="col-md-6" data-aos="fade-right">

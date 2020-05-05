@@ -311,7 +311,7 @@
 					<h2 class="section-heading">Anímate y realiza el test!</h2>
 					<p style="margin-top: 50px;">
 						<a class="test btn btn-outline-blue"
-							href="GestionTest?option=validar">test</a>
+							href="Login?option=registrar">test</a>
 					</p>
 					<span style="font-size: 10px;"><i>*Este test tiene un
 							porcentaje de acierto del 70%. <br>**Información obtenida

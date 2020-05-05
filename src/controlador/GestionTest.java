@@ -45,7 +45,7 @@ public class GestionTest extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		Usuario usu = null;
+		Usuario usu;
 		usu = (Usuario) request.getSession().getAttribute("usuario");
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();		
 		Eneagrama userValues = usu.getEneagrama();
