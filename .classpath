@@ -3,24 +3,25 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="lib" path="C:/apache-tomcat-9.0.31/lib/jstl-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/apache-tomcat-9.0.31/lib/mysql-connector-java-5.1.35-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/apache-tomcat-9.0.31/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/javax.mail-1.5.5.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.2">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/RecApp">
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0 RECAPP ">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_231">
 		<attributes>
-			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/mysql-connector-java-5.1.35-bin.jar"/>
-	<classpathentry kind="lib" path="C:/apache-tomcat-9.0.31/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
