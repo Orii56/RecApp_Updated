@@ -119,33 +119,17 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 
 	public Usuario deleteUser(String email) {
 
-		sql = "delete from usuario u where u.email = :email";
+		Usuario usu = findByEmail(email);
 
-		try {
-			query = em.createQuery(sql);
-			query.setParameter("email", email);
-			return (Usuario) query.getSingleResult();
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+		em.getTransaction().begin();
+		em.remove(usu);
+		em.getTransaction().commit();
+		
 		return null;
 
 	}
 
-	public Usuario updatePassword(String pwd) {
-
-		sql = "update usuario u set u.password = :pwd";
-
-		try {
-			query = em.createQuery(sql);
-			query.setParameter("pwd", pwd);
-			return (Usuario) query.getSingleResult();
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		return null;
-
-	}
+	
 
 	public Usuario deleteEneagrama(String idUsuario) {
 

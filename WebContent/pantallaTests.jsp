@@ -88,22 +88,24 @@
 		</header>
 
 
-		<div class="site-section pb-0">
-			<div class="container">
-				<div class="row align-items-center ">
 
+		<div class="site-section pb-0">
+
+			<div class="container">
+				<span style="color: white;"><c:out
+						value="${requestScope.mensaje_error}" /></span>
+				<div class="row align-items-center ">
 					<a href="test.jsp" style="text-decoration: none;"><div
 							class="mr-auto"
-							style="min-width: 400px; min-height: 400px; position: relative; padding: 40px 80px 40px 80px; left: 40px; top: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+							style="min-width: 400px; min-height: 400px; position: relative; padding: 40px 80px 40px 80px; left: 40px; top: 30px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
 							<h4 class="mb-4" style="color: grey; text-align: center;">TEST
 								COMPLETO</h4>
 							<img src="img/undraw_svg_6.svg" alt="Image" class="img-fluid"
 								style="max-width: 300px; margin-top: 40px;">
 
-						</div></a> 
-						<a href="testRapido.jsp" style="text-decoration: none;">
+						</div></a> <a href="testRapido.jsp" style="text-decoration: none;">
 						<div
-							style="padding: 40px 80px 40px 80px; min-width: 400px; min-height: 400px; position: relative; left: 170px; top: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+							style="padding: 40px 80px 40px 80px; min-width: 400px; min-height: 400px; position: relative; left: 170px; top: 30px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
 							<h4 class="mb-4" style="color: grey; text-align: center;">TEST
 								RÁPIDO</h4>
 							<img src="img/undraw_svg_14.svg" alt="Image" class="img-fluid"
@@ -122,10 +124,11 @@
 			<div class="row justify-content-center text-center mb-5">
 				<div class="col-md-4">
 
-					<span style="font-size: 10px; position:relative; top:45px; color:white;"><i>*Este test tiene un
-							porcentaje de acierto del 70%. <br>**Información obtenida
-							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
-							Hudson.
+					<span
+						style="font-size: 10px; position: relative; top: 25px; color: white;"><i>*Este
+							test tiene un porcentaje de acierto del 70%. <br>**Información
+							obtenida del libro "La Sabiduría del Eneagrama" de Don Richard
+							Riso y Russ Hudson.
 					</i></span>
 				</div>
 			</div>

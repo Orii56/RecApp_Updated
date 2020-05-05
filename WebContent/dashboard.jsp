@@ -193,15 +193,20 @@
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Tipo de Eneagrama</h2>
-						<p class="mb-4">
-							Descripción del eneagrama que tiene el usuario, la misma que sale
-							al final del test y sacamos de la base de datos <br> ¿Y si
-							no ha hecho aún el test? ¿Sacamos la historia de los eneagramas o
-							algo asi? elementum odio in, mattis risus. Nulla lorem elit,
-							varius non fringilla sed, volutpat non eros Proin nec dui tortor.
-							Ut nibh diam, ornare ultrices nibh in, tincidunt viverra erat.
-							Proin consectetur sit amet lacus vitae semper.
-						</p>
+						<p class="mb-4">El eneagrama de la personalidad es un sistema
+							de clasificación de la personalidad. Esta propuesta es una
+							elaboración histórica por parte de autores occidentales que se
+							basa en ideas anteriores de origen místico y oriental. Don
+							Richard Riso autor del libro La sabiduría del Eneagrama, sostiene
+							que la figura del eneagrama tuvo origen alrededor del 2500 a. C.
+
+							Otros autores afirman libremente que el Eneagrama se trata de una
+							antiquísima teoría, nacida hace más de 2000 años en Afganistán y
+							Babilonia, pasando por los griegos Pitágoras y los primeros
+							cristianos y siendo transmitida por la tradición oral sufí. Sin
+							embargo, no existen testimonios arqueológicos o históricos
+							independientes que permitan corroborar muchas de esas
+							afirmaciones.</p>
 
 						<strong>Quote</strong>
 						<p>Quote del eneagrama aquí yay</p>
@@ -251,9 +256,10 @@
 
 					<div class="col-md-4 ml-auto order-2" data-aos="fade-up">
 						<ul class="list-unstyled">
-							<li class="mb-3"><a href="GestionDashboard?option=delete"> <button type="button"
-									class="btn btn-outline-danger">Quiero eliminar mi
-									cuenta</button></a></li>
+							<li class="mb-3"><a href="GestionDashboard?option=delete">
+									<button type="button" class="btn btn-outline-danger">Quiero
+										eliminar mi cuenta</button>
+							</a></li>
 							<!-- estos son los botones -->
 						</ul>
 					</div>

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import modelo.DAOS.UsuarioDAOImpl;
 import modelo.beans.Usuario;
 
 /**
@@ -43,11 +44,11 @@ public class GestionDashboard extends HttpServlet {
 
 		Usuario usu = null;
 		usu = (Usuario) request.getSession().getAttribute("usuario");
-		
+		UsuarioDAOImpl udao = new UsuarioDAOImpl();
+
 		System.out.println("usuario dentro del dashboard " + usu.getNombre());
-		
+
 		// request.getSession().setAttribute("usuario", usu);
-		
 
 		switch (request.getParameter("option")) {
 
@@ -60,22 +61,82 @@ public class GestionDashboard extends HttpServlet {
 
 			break;
 
-			
 		case "nombre":
-			
+
 			request.getRequestDispatcher("cambiarNombre.jsp").forward(request, response);
-			
+
 			break;
-			
-			
+
 		case "pwd":
+
+			request.getRequestDispatcher("cambiarPwd.jsp").forward(request, response);
+
+			break;
+
+		case "name-change":
+
+			request.getParameter("name");
+			System.out.println("nuevo nombre: " + request.getParameter("name"));
+			usu.setNombre(request.getParameter("name"));
+			udao.insert(usu);
+
+			request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+
+			break;
+
+		case "pwd-change":
+
+			request.getParameter("pwd");
+			System.out.println("nueva contrasena: " + request.getParameter("pwd"));
+			usu.setPassword(request.getParameter("pwd"));
+			udao.insert(usu);
+
+			request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+
+			break;
+
+		case "test":
 			
-			
+			if (usu == null) {
+				request.getRequestDispatcher("registro.jsp").forward(request, response);
+			} else if (usu.getEneagrama() == null) {
+				request.setAttribute("mensaje_error", "Primero, realice el test y despues podra repetirlo.");
+				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
+			} else {
+				
+				usu.setEneagrama(null);
+				usu.setResultadoRapido(null);
+				usu.setResultadoTest(0);
+				usu.setTipoEneagrama(null);
+				usu.setTipoRapido(null);
+				
+				udao.insert(usu);
+				
+				request.getSession().removeAttribute("idEneag");
+				request.getSession().removeAttribute("id");
+				request.getSession().removeAttribute("mapa");
+				request.getSession().removeAttribute("letra1");
+				request.getSession().removeAttribute("idRapido");
+				
+				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
+			}
+
 			break;
 			
-		case "name-change":
+		case "delete":
 			
+			System.out.println(usu.getEmail());
+			udao.deleteUser(usu.getEmail());
 			
+			request.getSession().removeAttribute("usuario");
+			request.getSession().removeAttribute("idEneag");
+			request.getSession().removeAttribute("id");
+			request.getSession().removeAttribute("mapa");
+
+			request.getSession().invalidate();
+
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+
 			
 			break;
 

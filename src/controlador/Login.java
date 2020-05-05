@@ -186,38 +186,7 @@ public class Login extends HttpServlet {
 			}
 
 			break;
-		case "borrarUsuario":
-			
-			request.getSession().invalidate();
-			
-			udao.deleteUser(email);
-			
-			request.getRequestDispatcher("index.jsp").forward(request,response);
-			break;
 
-		case "actualizarPasssword":
-			
-			
-			request.getSession();
-			request.getAttribute(pwd);
-			udao.updatePassword(pwd);
-			
-			request.setAttribute("estado", "Ha cambiado la contrase√±a con Èxito");
-			
-			
-			break;
-		case "borrarEneagrama":
-			
-			
-			request.getSession();
-			
-			udao.deleteEneagrama(Integer.toString(usu.getIdUsuario()));
-			
-			request.setAttribute("estado", "Ha borrado su tipo de Eneagrama");
-			
-			
-			break;
-			
 		}
 
 	}

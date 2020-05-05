@@ -112,15 +112,15 @@
 	<div id="id01" class="modal">
 		<span class="close" title="Close Modal"></span>
 
-		<form class="modal-content" action="GestionDashboard?option=name-change"
-			method="POST">
+		<form class="modal-content"
+			action="GestionDashboard?option=name-change" method="POST">
 
 			<div class="container">
 				<p>Rellena los campos</p>
 
-				<label for="email"><b>Nombre actual</b></label>
+				<label><b>Nombre actual</b></label>
 				<p>${sessionScope.cu.nombre }</p>
-				<label for="psw"><b>Nuevo nombre</b></label> <input type="text"
+				<label><b>Nuevo nombre</b></label> <input type="text"
 					placeholder="" name="name" required>
 
 				<div class="clearfix">
