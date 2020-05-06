@@ -166,7 +166,7 @@
 					</div>
 
 					<div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-						<form action="forms/contact.php" method="post" role="form"
+						<form action="EmailSender?validar=send" method="post" role="form"
 							class="php-email-form">
 
 							<div class="row">
@@ -225,6 +225,11 @@
 						<a class="test btn btn-outline-blue"
 							href="GestionTest?option=validar">test</a>
 					</p>
+					<span style="font-size: 10px;"><i>*Este test tiene un
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+							Hudson.
+					</i></span>
 				</div>
 			</div>
 		</div>

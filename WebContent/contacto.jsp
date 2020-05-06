@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -160,7 +160,7 @@
 					</div>
 
 					<div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-						<form action="forms/contact.php" method="post" role="form"
+						<form action="EmailSender?validar=send" method="post" role="form"
 							class="php-email-form">
 
 							<div class="row">
