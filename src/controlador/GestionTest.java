@@ -45,8 +45,8 @@ public class GestionTest extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		Usuario usu;
-		usu = (Usuario) request.getSession().getAttribute("usuario");
+		Usuario usu = (Usuario) request.getSession().getAttribute("usuario");
+		
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();		
 		Eneagrama userValues = usu.getEneagrama();
 			
@@ -57,7 +57,7 @@ public class GestionTest extends HttpServlet {
 
 		case "validar":
 
-			if (usu == null) {
+			if (usu == null && userValues == null) {
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 			} else if (usu.getTipoEneagrama() == null) {
 				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
@@ -67,8 +67,10 @@ public class GestionTest extends HttpServlet {
 			} else {
 				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 			}
+			
+			request.getRequestDispatcher("registro.jsp").forward(request, response);
 
-			System.out.println("aqui");
+			System.out.println("aqui ¿seguro?, Pero de verdad¿?");
 			System.out.println(usu);
 
 			break;

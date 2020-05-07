@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -239,13 +239,16 @@
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
 						<h2 class="mb-4">Equipo RecApp</h2>
-						<p class="mb-4">El team RecApp es uno bastante diverso, con personas de experiencias muy variadas 
-						a nivel personal, académico y profesional.<br>
-						Hemos tenido la oportunidad de explorar campos que desconocemos, 
-						así como de probar nuestras habilidades como Desarrolladores web,
-					    lo que nos ha ayudado a crecer como equipo y como individuos.<br>
-					    Sabemos lo importante que es encontrar tu vocación y estamos 
-					    convencidos de que RecApp te ayudará en tu búsqueda.</p>
+						<p class="mb-4">
+							El team RecApp es uno bastante diverso, con personas de
+							experiencias muy variadas a nivel personal, académico y
+							profesional.<br> Hemos tenido la oportunidad de explorar
+							campos que desconocemos, así como de probar nuestras habilidades
+							como Desarrolladores web, lo que nos ha ayudado a crecer como
+							equipo y como individuos.<br>
+							<br> Sabemos lo importante que es encontrar tu vocación y
+							estamos convencidos de que RecApp te ayudará en tu búsqueda.
+						</p>
 
 					</div>
 					<div class="col-md-6" data-aos="fade-right">
@@ -316,10 +319,11 @@
 								</p>
 								<h3>RecApp es excelente</h3>
 								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
-										optio dolorem facilis itaque voluptatum recusandae deleniti
-										minus animi, provident voluptates consectetur maiores quos.</p>
+									<p>Gracias a RecApp pude encontrar un trabajo que encaja
+										conmigo. Tanto la fase de busqueda, como los pasos intermedios
+										hasta la contratacion, fueron muy sencillos. Tambien aprendi a
+										conocerme mejor. El Test de la personalidad para averiguar mi
+										Eneatipo me enseno cosas de mi que desconocia.</p>
 								</blockquote>
 
 								<p class="review-user">
@@ -340,11 +344,13 @@
 								</p>
 								<h3>RecApp se usa facilmente</h3>
 								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
-										optio dolorem facilis itaque voluptatum recusandae deleniti
-										minus animi, provident voluptates consectetur maiores quos.</p>
+									<p>Usar la herramienta de busqueda de empleo RecApp es muy
+										gratificante. Me gusta mucho saber a que tipos de trabajos
+										puedo aplicar gracias al test de la personalidad. RecApp tiene
+										un elemento diferenciador muy potente gracias a su algoritmo.
+										No hay otra igual en el mercado! Animate y haz el test!</p>
 								</blockquote>
+
 
 								<p class="review-user">
 									<img src="img/person_2.jpg" alt="Image"
@@ -365,12 +371,14 @@
 								</p>
 								<h3>RecApp funciona muy bien</h3>
 								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-										elit. Eius ea delectus pariatur, numquam aperiam dolore nam
-										optio dolorem facilis itaque voluptatum recusandae deleniti
-										minus animi, provident voluptates consectetur maiores quos.</p>
+									<p>Gracias a RecApp he logrado cambiar de vida y de
+										trabajo. Buscaba empleo en portales muy populares, pero
+										despues de realizar el test de la personalidad me di cuenta de
+										que RecApp es el portal de empleo que siempre hemos
+										necesitado, pero que hasta ahora nadie habia tenido la idea.
+										Conociendome mejor he sabido en que puestos de trabajo encajo
+										mas. Le debo mucho a RecApp!</p>
 								</blockquote>
-
 
 
 								<p class="review-user">

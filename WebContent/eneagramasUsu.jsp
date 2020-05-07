@@ -315,7 +315,24 @@
 				</p>
 			</div>
 		</div>
-
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-md-4">
+					<h2 class="section-heading">Anímate y realiza el test!</h2>
+					<p style="margin-top: 50px;">
+						<a class="test btn btn-outline-blue"
+							href="GestionTest?option=validar">test</a>
+					</p>
+					<span style="font-size: 10px;"><i>*Este test tiene un
+							porcentaje de acierto del 70%. <br>**Información obtenida
+							del libro "La Sabiduría del Eneagrama" de Don Richard Riso y Russ
+							Hudson.
+					</i></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
 
 
 
