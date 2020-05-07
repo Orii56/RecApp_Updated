@@ -120,7 +120,7 @@
 								</h2>
 
 							</div>
-							<div style="max-width: 750px; position: absolute; z-index: 99;">
+							<div style="max-width: 900px; position: absolute; z-index: 99;">
 								<c:forEach items="${requestScope.preguntas}" var="pregunta"
 									begin="0" end="2">
 
