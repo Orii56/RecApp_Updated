@@ -47,29 +47,7 @@ public class Usuario implements Serializable {
 	private Eneagrama eneagrama;
 
 	public Usuario() {
-		
 	}
-
-	
-	
-	
-	public Usuario(int idUsuario, String email, Date fechaAlta, String nombre, String password, String resultadoRapido,
-			int resultadoTest, String tipoEneagrama, String tipoRapido, Eneagrama eneagrama) {
-		super();
-		this.idUsuario = idUsuario;
-		this.email = email;
-		this.fechaAlta = fechaAlta;
-		this.nombre = nombre;
-		this.password = password;
-		this.resultadoRapido = resultadoRapido;
-		this.resultadoTest = resultadoTest;
-		this.tipoEneagrama = tipoEneagrama;
-		this.tipoRapido = tipoRapido;
-		this.eneagrama = eneagrama;
-	}
-
-
-
 
 	public int getIdUsuario() {
 		return this.idUsuario;
@@ -148,6 +126,21 @@ public class Usuario implements Serializable {
 	}
 
 	public void setEneagrama(Eneagrama eneagrama) {
+		this.eneagrama = eneagrama;
+	}
+
+	public Usuario(int idUsuario, String email, Date fechaAlta, String nombre, String password, String resultadoRapido,
+			int resultadoTest, String tipoEneagrama, String tipoRapido, Eneagrama eneagrama) {
+		super();
+		this.idUsuario = idUsuario;
+		this.email = email;
+		this.fechaAlta = fechaAlta;
+		this.nombre = nombre;
+		this.password = password;
+		this.resultadoRapido = resultadoRapido;
+		this.resultadoTest = resultadoTest;
+		this.tipoEneagrama = tipoEneagrama;
+		this.tipoRapido = tipoRapido;
 		this.eneagrama = eneagrama;
 	}
 

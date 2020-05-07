@@ -70,4 +70,14 @@ public class Resultadorapido implements Serializable {
 		this.palabraclave = palabraclave;
 	}
 
+	public Resultadorapido(int idResultadorapido, String combinacion, String eneatiporapido, int idEneatipo,
+			String palabraclave) {
+		super();
+		this.idResultadorapido = idResultadorapido;
+		this.combinacion = combinacion;
+		this.eneatiporapido = eneatiporapido;
+		this.idEneatipo = idEneatipo;
+		this.palabraclave = palabraclave;
+	}
+
 }

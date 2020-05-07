@@ -61,4 +61,14 @@ public class Testrapido implements Serializable {
 		this.txtGrupo = txtGrupo;
 	}
 
+	public Testrapido(int idRapido, int grupo, String letraGrupo, String txtGrupo) {
+		super();
+		this.idRapido = idRapido;
+		this.grupo = grupo;
+		this.letraGrupo = letraGrupo;
+		this.txtGrupo = txtGrupo;
+	}
+
+	
+	
 }

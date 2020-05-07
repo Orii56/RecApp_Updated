@@ -57,6 +57,7 @@ public class GestionTest extends HttpServlet {
 
 		case "validar":
 
+			
 			if (usu == null) {
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 			} else if (usu.getTipoEneagrama() == null) {
