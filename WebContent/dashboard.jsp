@@ -175,6 +175,10 @@
 									<button type="button" class="btn btn-primary">Cambiar
 										mi contraseña</button>
 							</a></li>
+							
+					<%if(request.getAttribute("estado") != null){ %>
+					<p class="alert alert-danger float-right" role="alert"><%=request.getAttribute("estado")%></p>
+					<%}%>
 							<!-- estos son los botones -->
 						</ul>
 					</div>

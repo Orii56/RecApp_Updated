@@ -87,12 +87,19 @@ public class GestionDashboard extends HttpServlet {
 
 		case "pwd-change":
 
-			request.getParameter("pwd");
-			System.out.println("nueva contrasena: " + request.getParameter("pwd"));
-			usu.setPassword(request.getParameter("pwd"));
-			udao.insert(usu);
+			String newPwd = request.getParameter("pwd");
+			System.out.println("nueva contrasena: " + newPwd);
+			if(newPwd.length()>= 5){
+				usu.setPassword(request.getParameter("pwd"));
+				udao.insert(usu);
 
-			request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+				request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+			}else {
+				
+				request.setAttribute("estado", "la contraseña no puede tener menos de 5 caracteres");
+				request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+			}
+			
 
 			break;
 
