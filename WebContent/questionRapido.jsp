@@ -109,7 +109,7 @@
 			<div class="container">
 				<div class="row align-items-center ">
 
-					<div class="mr-auto" style="max-width: 600px; margin-top: -20px;">
+					<div class="mr-auto" style="max-width: 900px; margin-top: -20px;">
 
 						<form class="" action="GestionPreguntas?option=rapido"
 							method="POST">
@@ -120,7 +120,7 @@
 								</h2>
 
 							</div>
-							<div style="max-width: 750px; position: absolute; z-index: 99;">
+							<div style="max-width: 900px; position: absolute; z-index: 99;">
 								<c:forEach items="${requestScope.preguntas}" var="pregunta"
 									begin="0" end="2">
 
