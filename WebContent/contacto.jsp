@@ -198,7 +198,7 @@
 									<div class="col-md-12 mb-3">
 										<div class="loading">Cargando</div>
 										<div class="error-message"></div>
-										<div class="sent-message">�Su mensaje ha sido enviado!
+										<div class="sent-message">¡Su mensaje ha sido enviado!
 											Gracias por contactar con RecApp</div>
 									</div>
 

@@ -189,31 +189,17 @@
 			<!-- termina container -->
 		</div>
 		<!-- termina sitesection -->
-
-
-
+	<c:choose>
+		<c:when test="${eu != null}">
 		<div class="site-section">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-4 ml-auto order-2">
-						<h2 class="mb-4">Tipo de Eneagrama</h2>
-						<p class="mb-4">El eneagrama de la personalidad es un sistema
-							de clasificación de la personalidad. Esta propuesta es una
-							elaboración histórica por parte de autores occidentales que se
-							basa en ideas anteriores de origen místico y oriental. Don
-							Richard Riso autor del libro La sabiduría del Eneagrama, sostiene
-							que la figura del eneagrama tuvo origen alrededor del 2500 a. C.
-
-							Otros autores afirman libremente que el Eneagrama se trata de una
-							antiquísima teoría, nacida hace más de 2000 años en Afganistán y
-							Babilonia, pasando por los griegos Pitágoras y los primeros
-							cristianos y siendo transmitida por la tradición oral sufí. Sin
-							embargo, no existen testimonios arqueológicos o históricos
-							independientes que permitan corroborar muchas de esas
-							afirmaciones.</p>
+						<h2 class="mb-4">${sessionScope.eu.tipo}</h2>
+						<p class="mb-4">${sessionScope.eu.descripcion }</p>
 
 						<strong>Quote</strong>
-						<p>Quote del eneagrama aquí yay</p>
+						<p>${sessionScope.eu.quote}</p>
 
 
 						<a class="test btn btn-outline-blue" href="#danger">Quiero
@@ -229,7 +215,45 @@
 			</div>
 		</div>
 		<!-- .site-section -->
+		
+		
+		</c:when>
+		<c:otherwise>
+	
+		<div class="site-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4 ml-auto order-2">
+						<h2 class="mb-4">Eneagrama</h2>
+						<p class="mb-4">
+							El eneagrama describe nueve tipos de personalidad distintos y sus
+							interrelaciones, asociadas a esta figura. Cada tipo de
+							personalidad asociada al Eneagrama representa un mapa de
+							características que denotan patrones de pensamiento, sentimiento
+							y comportamiento. <br> <br>Uno de los propósitos del
+							Eneagrama es aprender sobre el tipo de uno mismo y los patrones y
+							hábitos asociados a ese tipo con el fin de autocomprenderse y
+							autodesarrollarse.</p>
 
+
+						<a class="test btn btn-outline-blue" href="GestionTest?option=validar">Haz el test</a>
+
+
+
+					</div>
+					<div class="col-md-6" data-aos="fade-right">
+						<img src="img/undraw_svg_8.svg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .site-section -->
+	
+	
+	
+		</c:otherwise>
+	
+	</c:choose>	
 
 
 		<div id="danger" class="site-section">

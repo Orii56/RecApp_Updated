@@ -8,7 +8,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import modelo.DAOS.EneagramaDAOImpl;
 import modelo.DAOS.UsuarioDAOImpl;
+import modelo.beans.Eneagrama;
 import modelo.beans.Usuario;
 
 /**
@@ -48,7 +50,12 @@ public class GestionDashboard extends HttpServlet {
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
 
 		System.out.println("usuario dentro del dashboard " + usu.getNombre());
-
+		
+		
+		//Dashboard eneagrama
+		Eneagrama ene = null;
+		EneagramaDAOImpl edao = new EneagramaDAOImpl();
+		
 		// request.getSession().setAttribute("usuario", usu);
 
 		switch (request.getParameter("option")) {
@@ -56,8 +63,21 @@ public class GestionDashboard extends HttpServlet {
 		case "dash":
 
 			if (usu != null) {
+				
 				request.getSession().setAttribute("cu", usu);
-				request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+				
+				if(usu.getTipoEneagrama() != null) {
+					System.out.println("entre en el if");
+					ene = usu.getEneagrama();
+				
+					System.out.println(ene.getTipo());
+				
+					request.getSession().setAttribute("eu", ene);			
+				
+				}
+				
+				request.getRequestDispatcher("dashboard.jsp").forward(request, response);	
+			
 			}
 
 			break;

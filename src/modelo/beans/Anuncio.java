@@ -110,4 +110,20 @@ public class Anuncio implements Serializable {
 		this.ubicacion = ubicacion;
 	}
 
+	public Anuncio(int idAnunAux, String cargo, String detalle, int eneagrama, String keyword, String requerimientos,
+			String salario, String tipoJornada, String ubicacion) {
+		super();
+		this.idAnunAux = idAnunAux;
+		this.cargo = cargo;
+		this.detalle = detalle;
+		this.eneagrama = eneagrama;
+		this.keyword = keyword;
+		this.requerimientos = requerimientos;
+		this.salario = salario;
+		this.tipoJornada = tipoJornada;
+		this.ubicacion = ubicacion;
+	}
+
+	
+	
 }
