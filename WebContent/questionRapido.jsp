@@ -109,7 +109,7 @@
 			<div class="container">
 				<div class="row align-items-center ">
 
-					<div class="mr-auto" style="max-width: 600px; margin-top: -20px;">
+					<div class="mr-auto" style="max-width: 900px; margin-top: -20px;">
 
 						<form class="" action="GestionPreguntas?option=rapido"
 							method="POST">
