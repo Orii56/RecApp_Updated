@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -92,10 +92,11 @@
 		<div class="site-section pb-0">
 
 			<div class="container">
-				<span style="color: white;"><c:out
-						value="${requestScope.mensaje_error}" /></span>
+				<span style="color: white;">
+				<c:out value="${requestScope.mensaje_error}" /></span>
 				<div class="row align-items-center ">
-					<a href="test.jsp" style="text-decoration: none;"><div
+					<a href="test.jsp" style="text-decoration: none;">
+					<div
 							class="mr-auto"
 							style="min-width: 400px; min-height: 400px; position: relative; padding: 40px 80px 40px 80px; left: 40px; top: 30px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
 							<h4 class="mb-4" style="color: grey; text-align: center;">TEST
