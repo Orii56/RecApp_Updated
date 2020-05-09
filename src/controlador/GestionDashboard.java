@@ -118,7 +118,8 @@ public class GestionDashboard extends HttpServlet {
 				request.getSession().removeAttribute("letra1");
 				request.getSession().removeAttribute("idRapido");
 				
-				request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
+				request.setAttribute("mensaje_error", "Repita el test que quiera y acceda a nuevas ofertas de empleo");
+				request.getRequestDispatcher("pantallaTests.jsp").forward(request, response);
 			}
 
 			break;
