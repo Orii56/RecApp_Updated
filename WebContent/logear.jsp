@@ -129,7 +129,7 @@
 					<%
 						if (request.getAttribute("estado") != null) {
 					%>
-					<p class="mt-2 p-3 text-danger text-white float-left"><%=request.getAttribute("estado")%></p>
+					<p class="alert alert-danger float-right"><%=request.getAttribute("estado")%></p>
 					<%
 						}
 					%>

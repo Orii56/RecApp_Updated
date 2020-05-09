@@ -66,29 +66,44 @@ public class Login extends HttpServlet {
 		switch (request.getParameter("option")) {
 
 		case "validar":
+			
+			
 
 			Pattern pattern = Pattern.compile(
 					"^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
 			Matcher mather = pattern.matcher(email);
 
 			if (mather.find() == true && pwd.length() >= 5) {
+				
+				
+				if(udao.findByEmail(email) != null){
+					
+					if (udao.findLogin(email, pwd) == null) {
+	
+						request.setAttribute("estado", "combinación de usuario y contraseña incorrecta");
+						request.getRequestDispatcher("logear.jsp").forward(request, response);
 
-				if (udao.findLogin(email, pwd) == null) {
+					}	 else {
+						System.out.println("El usuario y contrasena ok!");
+						usu = udao.findLogin(email, pwd);
 
-					// showMessageDialog(null, "El usuario no existe. Registrate :)");
+						request.getSession().setAttribute("usuario", usu);
+						request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
+						}
+				
+				
+				
+				} else {
+
+					request.setAttribute("estado", "el usuario no existe, registrate");
 					request.getRequestDispatcher("registro.jsp").forward(request, response);
 
-				} else {
-					System.out.println("El usuario y contrasena ok!");
-					// showMessageDialog(null, "El usuario y contrasena ok!");
-					usu = udao.findLogin(email, pwd);
-
-					request.getSession().setAttribute("usuario", usu);
-					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
+			
+			
 				}
-
-			} else {
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				} else {
+				request.setAttribute("estado", "El email es invalido o contraseña muy corta");
+				request.getRequestDispatcher("logear.jsp").forward(request, response);
 			}
 
 			break;
@@ -117,16 +132,10 @@ public class Login extends HttpServlet {
 
 				if (udao.findByEmail(email) != null) {
 
-					if (udao.findLogin(email, pwd) != null) {
-
 						request.setAttribute("estado", "ya estas registrado, haz login!");
 						request.getRequestDispatcher("logear.jsp").forward(request, response);
 
 					} else {
-						request.getRequestDispatcher("registro.jsp").forward(request, response);
-					}
-
-				} else {
 
 					usu = new Usuario(autoIncrement, email, new Date(), nombre, pwd, null, 0, null, null, null);
 
@@ -147,7 +156,7 @@ public class Login extends HttpServlet {
 				}
 			} else {
 				
-				request.setAttribute("estado", "El email es invalido o la contraseÃ±a muy corta");
+				request.setAttribute("estado", "El email es invalido o la contraseña muy corta");
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 
 			}
