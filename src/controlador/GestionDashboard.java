@@ -49,7 +49,6 @@ public class GestionDashboard extends HttpServlet {
 		usu = (Usuario) request.getSession().getAttribute("usuario");
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
 
-		System.out.println("usuario dentro del dashboard " + usu.getNombre());
 		
 		
 		//Dashboard eneagrama
