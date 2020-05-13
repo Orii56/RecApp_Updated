@@ -204,7 +204,9 @@ public class GestionPreguntas extends HttpServlet {
 
 						numID = (i + 1);
 						z.add(numID);
+
 						// volvemos a recorrer para ver si hay mas de uno con esa cantidad
+
 					}
 				}
 
@@ -283,9 +285,13 @@ public class GestionPreguntas extends HttpServlet {
 
 		case "extra":
 
+			
+			//En caso de un empate
+
 			int a = 0;
 			int b = 0;
 
+			//Sacamos las preguntas extras
 			for (int i = 6; i <= 7; i++) {
 				request.getParameterValues("isbn");
 				a += Integer.valueOf(request.getParameter("cantidadA" + i));
@@ -299,12 +305,14 @@ public class GestionPreguntas extends HttpServlet {
 			if (a != b) {
 				if (a > b) {
 
+					//Eneagrama A es mayor
 					Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneA");
 					numID = res.getIdEneagrama();
 					System.out.println("en el desempate, A es mayor");
 				}
 				if (a < b) {
 
+					//Eneagrama B es mayor
 					Eneagrama res = (Eneagrama) sesionQuestion.getAttribute("tipoEneB");
 					numID = res.getIdEneagrama();
 
@@ -312,6 +320,8 @@ public class GestionPreguntas extends HttpServlet {
 				}
 
 			} else {
+				
+				//Vuelven a empatar, llevamos a testIncorrecto.
 
 				sesionQuestion.removeAttribute("idEneag");
 				sesionQuestion.removeAttribute("id");
@@ -323,6 +333,7 @@ public class GestionPreguntas extends HttpServlet {
 				request.getRequestDispatcher("testIncorrecto.jsp").forward(request, response);
 			}
 
+			//Establecemos max a 20 por conveniencia.
 			int max = 20;
 
 			sesionQuestion.setAttribute("descTipo", edao.findEneagrama(numID));
@@ -335,6 +346,7 @@ public class GestionPreguntas extends HttpServlet {
 
 			udao.insert(usu);
 
+			//Insertamos el usuario
 			request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
 		case "rapido":
