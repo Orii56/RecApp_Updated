@@ -66,10 +66,8 @@ public class GestionDashboard extends HttpServlet {
 				request.getSession().setAttribute("cu", usu);
 				
 				if(usu.getTipoEneagrama() != null) {
-					System.out.println("entre en el if");
+					
 					ene = usu.getEneagrama();
-				
-					System.out.println(ene.getTipo());
 				
 					request.getSession().setAttribute("eu", ene);			
 				
@@ -96,7 +94,6 @@ public class GestionDashboard extends HttpServlet {
 		case "name-change":
 
 			request.getParameter("name");
-			System.out.println("nuevo nombre: " + request.getParameter("name"));
 			usu.setNombre(request.getParameter("name"));
 			udao.insert(usu);
 
@@ -107,7 +104,6 @@ public class GestionDashboard extends HttpServlet {
 		case "pwd-change":
 
 			String newPwd = request.getParameter("pwd");
-			System.out.println("nueva contrasena: " + newPwd);
 			if(newPwd.length()>= 5){
 				usu.setPassword(request.getParameter("pwd"));
 				udao.insert(usu);
@@ -153,7 +149,6 @@ public class GestionDashboard extends HttpServlet {
 			
 		case "delete":
 			
-			System.out.println(usu.getEmail());
 			udao.deleteUser(usu.getEmail());
 			
 			request.getSession().removeAttribute("usuario");

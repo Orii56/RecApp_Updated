@@ -53,8 +53,6 @@ public class Login extends HttpServlet {
 
 		Usuario usu = null;
 		UsuarioDAOImpl udao = new UsuarioDAOImpl();
-
-		// request.getSession().setAttribute("usuario", usu);
 		usu = (Usuario) request.getSession().getAttribute("usuario");
 
 		String email = request.getParameter("email");
@@ -84,7 +82,6 @@ public class Login extends HttpServlet {
 						request.getRequestDispatcher("logear.jsp").forward(request, response);
 
 					}	 else {
-						System.out.println("El usuario y contrasena ok!");
 						usu = udao.findLogin(email, pwd);
 
 						request.getSession().setAttribute("usuario", usu);
@@ -112,8 +109,7 @@ public class Login extends HttpServlet {
 
 			usu = (Usuario) request.getSession().getAttribute("usuario");
 
-			System.out.println(usu);
-
+			
 			if (usu == null) {
 				request.getRequestDispatcher("registro.jsp").forward(request, response);
 			} else {
@@ -141,17 +137,11 @@ public class Login extends HttpServlet {
 
 					udao.insert(usu);
 
-					System.out.println("Objeto usuario " + usu);
-
+					
 					Usuario usuPrueba = null;
 					request.getSession().setAttribute("usuario", usu);
 					usuPrueba = (Usuario) request.getSession().getAttribute("usuario");
-					System.out.println(usuPrueba.getEmail());
-
-					System.out.println("obj sesion: " + request.getSession().getAttribute("usuario"));
-					System.out.println();
-
-					// showMessageDialog(null, "Usuario registrado :)");
+				
 					request.getRequestDispatcher("indexUsu.jsp").forward(request, response);
 				}
 			} else {
