@@ -204,7 +204,9 @@ public class GestionPreguntas extends HttpServlet {
 
 						numID = (i + 1);
 						z.add(numID);
-						// volvemos a recorrer para ver si hay más de uno con esa cantidad
+
+						// volvemos a recorrer para ver si hay mas de uno con esa cantidad
+
 					}
 				}
 
