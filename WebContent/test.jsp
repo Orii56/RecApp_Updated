@@ -119,7 +119,7 @@
 						<p class="mb-4" style="color: white;">No se puede dejar
 							ninguna pregunta sin responder.</p>
 						<p class="mb-4" style="color: white;">Puedes encontrar el
-							sistema de puntucaion en la tabla de la derecha.</p>
+							sistema de puntuación en la tabla de la derecha.</p>
 					</div>
 
 					<div
