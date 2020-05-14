@@ -260,7 +260,7 @@ public class GestionPreguntas extends HttpServlet {
 					usu.setResultadoTest(max);
 
 					udao.insert(usu);
-
+					
 					request.getRequestDispatcher("resultado.jsp").forward(request, response);
 
 				} else {

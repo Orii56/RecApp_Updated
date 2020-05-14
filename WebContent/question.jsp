@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' >
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
 <meta charset="UTF-8">
 
 <link rel="stylesheet" href="style.css">
@@ -158,8 +158,10 @@
 					</div>
 
 					<div
-						style="padding: 40px 80px 40px 80px; max-width: 400px; position: absolute; left: 780px; bottom: 75px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
-						<h4 class="mb-4" style="color: grey;">sistema de puntos</h4>
+						style="padding: 40px 80px 40px 80px; max-width: 400px; position: absolute; left: 720px; bottom: 50px; background-color: rgba(255, 255, 255); border-radius: 20px; box-shadow: 10px -2px 22px -4px rgba(0, 0, 0, 0.2);">
+						<h6 class="mb-4" style="color: grey; text-align: center;">Pon puntos, de 1 a 5, a
+							cada una de las afirmaciones siguientes, según sean verdaderas o
+							aplicables a ti.</h6>
 						<ul style="list-style-type: none; margin-left: -35px;">
 							<li style="text-align: center;"><span
 								style="color: steelblue; font-size: 25px; font-weight: 500;">...
